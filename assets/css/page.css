@@ -1,0 +1,13 @@
+*{box-sizing:border-box}
+body{margin:0;color:#3a3430;font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif;background:#f8f2e7;line-height:1.8}
+.page{width:min(760px,calc(100% - 32px));margin:36px auto;padding:clamp(24px,6vw,54px);border:1px solid #e4d6bc;border-radius:22px;background:#fffdf7;box-shadow:0 12px 28px rgba(100,83,61,.11)}
+h1,h2{font-family:"Noto Serif TC",Georgia,serif}
+h1{margin-top:0;line-height:1.25}
+h2{margin-top:30px}
+a{color:#397452;font-weight:800}
+.back{display:inline-flex;margin-bottom:24px;text-decoration:none}
+.updated{color:#766c64;font-size:13px}
+.note,.contact-box{padding:14px 16px;border-radius:12px;background:#eef6f0;color:#42604c}
+.contact-box{padding:16px 18px}
+.pending{color:#8a5d2c;font-weight:800}
+footer{margin-top:36px;padding-top:18px;border-top:1px solid #e4d6bc;color:#766c64;font-size:13px}

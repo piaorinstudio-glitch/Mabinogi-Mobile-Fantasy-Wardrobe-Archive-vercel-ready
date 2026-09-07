@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#f8f2e7">
+<meta name="description" content="整理瑪奇 Mobile 韓服歷屆通行證、幸運箱、套組、傳說時裝、寵物與副本外觀，提供中韓文名稱搜尋與圖片瀏覽。">
+<meta name="google-adsense-account" content="ca-pub-5116561987707056">
+<link rel="canonical" href="https://piaorinstudio.com/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<title>瑪奇Mobile 韓服外觀未來視</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap hero-grid">
+    <figure class="hero-photo hero-photo-main" data-image="image/hero-campfire.webp" tabindex="0" role="button" aria-label="放大查看玩家營火合照"><img src="image/hero-campfire.webp" alt="瑪奇 Mobile 玩家營火合照" width="1600" height="900" loading="eager" decoding="async" fetchpriority="high"></figure>
+    <div class="hero-card"><h1><span class="title-small">瑪奇Mobile</span><span class="title-main">韓服外觀未來視</span></h1></div>
+    <figure class="hero-photo hero-photo-sub" data-image="image/hero-friends.webp" tabindex="0" role="button" aria-label="放大查看三人合照"><img src="image/hero-friends.webp" alt="瑪奇 Mobile 三人合照" width="511" height="498" loading="lazy" decoding="async"></figure>
+    <button class="source-btn" id="openSources" type="button">資料來源</button>
+  </div>
+</header>
+<div class="toolbar-shell">
+  <div class="wrap">
+    <nav class="category-nav" aria-label="圖鑑分類">
+      <button class="category active" data-type="pass"><span class="cat-zh">通行證</span><span class="cat-en">PASS</span></button>
+      <button class="category" data-type="lucky"><span class="cat-zh">幸運箱</span><span class="cat-en">LUCKY BOX</span></button>
+      <button class="category" data-type="package"><span class="cat-zh">全套套組</span><span class="cat-en">SET ITEM</span></button>
+      <button class="category" data-type="legend"><span class="cat-zh">傳說時裝</span><span class="cat-en">LEGEND</span></button>
+      <button class="category" data-type="pet"><span class="cat-zh">寵物</span><span class="cat-en">PET</span></button>
+      <button class="category" data-type="abyss"><span class="cat-zh">深淵副本時裝</span><span class="cat-en">ABYSS</span></button>
+      <button class="category" data-type="raid"><span class="cat-zh">團隊副本時裝</span><span class="cat-en">RAID</span></button>
+      <button class="category" data-type="tools"><span class="cat-zh">小工具</span><span class="cat-en">TOOLS</span></button>
+    </nav>
+  </div>
+</div>
+<main class="wrap">
+  <div class="section-head">
+    <div class="section-heading-block"><div class="section-title" id="sectionTitle" data-en="PASS">通行證</div><button class="section-tips-btn" id="sectionTipsBtn" type="button" aria-haspopup="dialog" aria-controls="tipsModal"><span>TIPS</span><span class="section-tips-q" aria-hidden="true">?</span></button></div>
+    <div class="archive-tools" id="archiveTools">
+      <label class="archive-search-wrap" for="archiveSearch"><span class="search-icon">⌕</span><input id="archiveSearch" class="archive-search" type="search" placeholder="搜尋中文名 / 韓文名" autocomplete="off"></label>
+      <div class="archive-count" id="archiveCount"></div>
+    </div>
+    <div class="section-actions">
+      <select class="sort" id="sort"><option value="old" selected>舊到新</option><option value="new">新到舊</option></select>
+      <div class="pet-filters" id="petFilters">
+        <button class="pet-filter-btn active" data-kind="all" type="button">全部</button>
+        <button class="pet-filter-btn" data-kind="regular" type="button">常駐</button>
+        <button class="pet-filter-btn" data-kind="limited" type="button">限定</button>
+        <button class="pet-filter-btn" data-kind="collab" type="button">聯動</button>
+      </div>
+      <div class="legend-views" id="legendViews">
+        <button class="legend-view-btn active" data-view="regular" type="button">一般版</button>
+        <button class="legend-view-btn" data-view="hooded" type="button">長袍版</button>
+      </div>
+    </div>
+  </div>
+  <section class="feed" id="feed"></section>
+</main>
+<footer class="wrap site-footer">
+  <div><strong>Mabinogi Mobile KR 外觀整理｜整理與網頁製作：飄鈴</strong></div>
+  <div>本網站為玩家整理資料，非官方網站。遊戲名稱、圖片與相關素材版權屬原權利方所有。</div>
+  <nav class="footer-links" aria-label="網站資訊"><a href="about.html">關於本站</a><a href="privacy.html">隱私權政策</a><a href="contact.html">聯絡與更正</a></nav>
+</footer>
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="圖片放大預覽，可左右切換" aria-hidden="true">
+  <button class="viewer-close" id="viewerClose" type="button" aria-label="關閉圖片預覽">×</button>
+  <button class="viewer-nav viewer-prev" id="viewerPrev" type="button" aria-label="上一張">‹</button>
+  <div class="viewer-modes" id="viewerModes" role="group" aria-label="傳說時裝圖片版本" hidden>
+    <button class="viewer-mode-btn" id="viewerRegular" data-mode="regular" type="button">一般版</button>
+    <button class="viewer-mode-btn" id="viewerHooded" data-mode="hooded" type="button">長袍版</button>
+  </div>
+  <img id="viewerImg" alt="">
+  <div class="viewer-pet-rarities" id="viewerPetRarities" hidden aria-label="寵物稀有度資訊"><div class="viewer-pet-rarity-list" id="viewerPetRarityList"></div></div>
+  <button class="viewer-nav viewer-next" id="viewerNext" type="button" aria-label="下一張">›</button>
+  <div class="viewer-counter" id="viewerCounter" aria-live="polite"></div>
+</div>
+<div class="tips-modal" id="tipsModal" role="dialog" aria-modal="true" aria-labelledby="tipsTitle" aria-hidden="true">
+  <section class="tips-panel">
+    <div class="tips-head">
+      <div class="tips-head-title"><h2 id="tipsTitle">通行證小提示</h2><span class="tips-head-en" id="tipsTitleEn">PASS TIPS</span></div>
+      <button class="tips-close" id="tipsClose" type="button" aria-label="關閉小提示">×</button>
+    </div>
+    <div class="tips-body" id="tipsBody"></div>
+  </section>
+</div>
+<div class="sources-modal" id="sourcesModal" role="dialog" aria-modal="true" aria-labelledby="sourcesTitle" aria-hidden="true">
+  <section class="sources-panel">
+    <div class="sources-head"><h2 id="sourcesTitle">資料來源</h2><button class="sources-close" id="sourcesClose" type="button" aria-label="關閉資料來源">×</button></div>
+    <p class="sources-intro">各項外觀的韓服官方公告集中整理於此；中文名稱為參考翻譯，實際內容以原公告為準。</p>
+    <div class="sources-list" id="sourcesList"></div>
+  </section>
+</div>
+<div class="pet-detail-modal" id="petDetailModal" role="dialog" aria-modal="true" aria-labelledby="petDetailTitle" aria-hidden="true">
+  <section class="pet-detail-panel">
+    <div class="pet-detail-head">
+      <div>
+        <div class="pet-detail-title-row"><h2 id="petDetailTitle"></h2><span class="rarity-badge" id="petDetailRarity"></span></div>
+        <div class="pet-detail-ko" id="petDetailKo"></div>
+      </div>
+      <button class="pet-detail-close" id="petDetailClose" type="button" aria-label="關閉寵物詳細資訊">×</button>
+    </div>
+    <div class="pet-detail-body">
+      <section class="pet-detail-block">
+        <div class="pet-detail-label">固有技能（韓服原名）</div>
+        <div class="pet-skill-version-row">
+          <span class="pet-skill-version-chip" id="petSkillVersion"></span>
+        </div>
+        <div class="pet-skill-name" id="petSkillName"></div>
+        <p class="pet-skill-effect" id="petSkillEffect"></p>
+        <div class="pet-legend-skill" id="petLegendSkill">
+          <div class="pet-skill-version-row">
+            <span class="pet-skill-version-chip legend" id="petLegendSkillVersion">升階至傳說</span>
+          </div>
+          <div class="pet-skill-name" id="petLegendSkillName"></div>
+          <p class="pet-skill-effect" id="petLegendSkillEffect"></p>
+        </div>
+      </section>
+      <section class="pet-detail-block">
+        <div class="pet-detail-label">固定同行能力</div>
+        <div class="pet-stat-pills" id="petStatPills"></div>
+        <div class="pet-stat-caption">詞條名稱採用台服遊戲內用語。</div>
+      </section>
+      <p class="pet-data-note" id="petDataNote"></p>
+    </div>
+  </section>
+</div>
+<script defer src="data/ads-config.js"></script>
+<script defer src="assets/js/ads.js"></script>
+<script defer src="data/catalog.js"></script>
+<script defer src="data/pets.js"></script>
+<script defer src="data/site-config.js"></script>
+<script defer src="assets/js/app.js"></script>
+</body>
+</html>
