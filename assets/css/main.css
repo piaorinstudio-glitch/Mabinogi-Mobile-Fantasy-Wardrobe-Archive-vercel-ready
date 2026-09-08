@@ -32,7 +32,7 @@ button,a,select,input{touch-action:manipulation}
 }
 .hero-card{
   position:relative;z-index:3;
-  width:min(100%,880px);margin:46px auto 54px;
+  width:min(100%,880px);margin:66px auto 34px;
   display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 40px 24px;min-width:0;
   background:rgba(255,253,247,.88);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
 }
@@ -294,7 +294,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 .footer-links a:hover{text-decoration:underline}
 
 @media(max-width:1180px){
-  .hero-card{width:min(100%,820px);margin:52px auto 56px}
+  .hero-card{width:min(100%,820px);margin:68px auto 40px}
   .hero-photo-lt{left:24px;top:28px;width:300px}
   .hero-photo-lb{left:78px;top:128px;width:270px}
   .hero-photo-rt{right:82px;top:34px;width:190px}
