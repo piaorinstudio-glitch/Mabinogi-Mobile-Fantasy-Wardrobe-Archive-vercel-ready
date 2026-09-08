@@ -1,0 +1,27 @@
+2026-09-08 SEO / Google 索引修正
+
+需要覆蓋到 GitHub 根目錄的檔案：
+index.html
+about.html
+privacy.html
+contact.html
+robots.txt
+sitemap.xml
+vercel.json
+
+修正內容：
+- canonical 全部統一成 www.piaorinstudio.com
+- robots / sitemap 統一使用 www
+- sitemap 更新日期
+- 首頁補 Google 可辨識的 WebSite 結構化資料
+- 補 Open Graph / Twitter metadata
+- 補 robots index/follow
+- AdSense script 直接放進 head，並用 data-mabi-adsense 避免與既有 ads.js 重複載入
+- Vercel 將裸網域 piaorinstudio.com 永久轉址到 www.piaorinstudio.com
+- 隱私權頁更新 AdSense 使用狀態
+
+部署完成後：
+1. Search Console 網址檢查：https://www.piaorinstudio.com/
+2. 測試實際網址
+3. 要求建立索引
+4. 重新提交 https://www.piaorinstudio.com/sitemap.xml

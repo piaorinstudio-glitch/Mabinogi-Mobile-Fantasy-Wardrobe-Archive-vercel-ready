@@ -1,4 +1,18 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": false,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "piaorinstudio.com"
+        }
+      ],
+      "destination": "https://www.piaorinstudio.com/:path*",
+      "permanent": true
+    }
+  ]
 }
