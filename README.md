@@ -1,55 +1,43 @@
 # 瑪奇 Mobile｜韓服外觀未來視
 
-玩家整理的純靜態外觀資料站。支援 GitHub 保存版本、Vercel 自動部署，不需要 Node.js 或前端框架。
+> 玩家整理的《瑪奇 Mobile》韓服外觀與寵物資料站，方便台服玩家查找韓服已推出內容、預覽未來可能登場的外觀。
 
-## 專案結構
+🌐 **網站入口：** https://www.piaorinstudio.com/
 
-```text
-/
-├─ index.html                 # 主頁骨架（不要再塞大量資料）
-├─ about.html / privacy.html / contact.html
-├─ data/
-│  ├─ catalog.js              # 所有外觀卡片資料
-│  ├─ pets.js                 # 寵物技能與同行能力
-│  ├─ site-config.js          # Tips、台服狀態、小工具
-│  └─ ads-config.js           # AdSense 開關
-├─ assets/
-│  ├─ css/main.css            # 主站樣式
-│  ├─ css/page.css            # 資訊頁共用樣式
-│  ├─ js/app.js               # UI 邏輯
-│  ├─ js/ads.js               # AdSense 集中載入器
-│  └─ normalized/             # 標準化外觀圖
-├─ image/                     # 一般卡片圖片
-├─ scripts/                   # 維護/驗證工具
-├─ docs/                      # 維護與部署說明
-├─ ads.txt / robots.txt / sitemap.xml
-└─ vercel.json
-```
+## 收錄內容
 
-## 本機預覽
+目前主要整理：
 
-```bash
-python -m http.server 8000
-```
+- 通行證外觀
+- 幸運箱時裝
+- 全套套組
+- 傳說時裝
+- 寵物與固有技能
+- 深淵副本時裝
+- 團隊副本時裝
+- 外觀相關小工具
 
-打開 `http://localhost:8000/`。
+資料會依韓服推出順序持續補充，部分內容也會標示台服目前的推出狀態，方便對照。
 
-## 更新資料
+## 寵物技能資料
 
-大多數更新只需要改 `data/`，不用碰 HTML 或 UI 程式。詳細步驟見 `docs/MAINTENANCE.md`。
+寵物技能以**遊戲內實際描述、台服已公開文字、韓服官方公告或可確認的遊戲內資料**為優先。
 
-更新後先跑：
+- 台服已有正式中文文字時，優先採用台服內容。
+- 尚未有台服文字時，依韓服遊戲內描述翻譯。
+- 找不到可靠係數、持續時間、冷卻時間等細節時，會標示「未知」或「詳細數值缺失」。
+- 不以推測數值補入正式資料。
 
-```bash
-python scripts/validate_site.py
-```
+## 資料說明
 
-## Vercel
+本網站為**玩家自行整理的非官方資料站**，並非 NEXON 官方網站。
 
-直接把 GitHub repository 匯入 Vercel 即可，這是無建置步驟的靜態網站。詳見 `docs/DEPLOY_VERCEL.md`。
+韓服與台服的上架方式、推出順序、內容組合及數值可能有所不同。中文名稱若尚未有台服正式譯名，會以參考翻譯呈現；台服正式推出後會盡量改為遊戲內用語。
 
-## Google AdSense
+圖片、遊戲名稱、角色、道具及相關素材之權利歸原權利人所有。本網站僅作資料整理、查閱與玩家交流用途。
 
-網站已保留 `ads.txt`、AdSense account meta、隱私權說明與集中式廣告載入器，但 `data/ads-config.js` 預設 `enabled:false`，測試期間不會載入 Google 廣告 script。核准後只需在一處開啟。
+## 資料來源
 
-中文名稱為參考翻譯；正式內容以官方公告為準。
+網站內容主要參考韓服及台服官方公告、遊戲內資訊，以及可交叉確認的玩家實機資料。各分類中的「資料來源」可查看目前整理時使用的來源。
+
+如果發現資料錯誤、缺漏或已有台服正式譯名，歡迎提出修正。
