@@ -32,7 +32,8 @@ button,a,select,input{touch-action:manipulation}
 }
 .hero-card{
   position:relative;z-index:3;
-  width:min(100%,880px);margin:66px auto 34px;
+  width:min(100%,880px);margin:46px auto 54px;
+  transform:translateY(56px);
   display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 40px 24px;min-width:0;
   background:rgba(255,253,247,.88);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
 }
@@ -294,7 +295,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 .footer-links a:hover{text-decoration:underline}
 
 @media(max-width:1180px){
-  .hero-card{width:min(100%,820px);margin:68px auto 40px}
+  .hero-card{width:min(100%,820px);margin:52px auto 56px;transform:translateY(42px)}
   .hero-photo-lt{left:24px;top:28px;width:300px}
   .hero-photo-lb{left:78px;top:128px;width:270px}
   .hero-photo-rt{right:82px;top:34px;width:190px}
@@ -312,7 +313,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
   .hero-grid{min-height:0}
   .hero-photo{display:none}
   .source-btn{position:static;display:block;width:max-content;height:34px;margin:0 auto;padding:0 13px;font-size:13px}
-  .hero-card{min-width:0;width:min(84%,360px);margin:0 auto 10px;padding:10px 10px 9px;border-radius:15px}
+  .hero-card{min-width:0;width:min(84%,360px);margin:0 auto 10px;padding:10px 10px 9px;border-radius:15px;transform:none}
   .title-small{font-size:clamp(20px,6.5vw,26px)}
   .title-main{font-size:clamp(25px,7vw,34px);white-space:nowrap}
 
