@@ -44,11 +44,11 @@ h1{width:100%;margin:0;display:flex;flex-direction:column;align-items:center;gap
 .hero-photo:focus-visible,.image-wrap:focus-visible{outline:3px solid #397452;outline-offset:5px}
 .hero-photo:before{content:"";position:absolute;left:50%;top:-11px;width:96px;height:20px;transform:translateX(-50%) rotate(-2deg);background:rgba(183,211,194,.62);border-radius:3px;z-index:2}
 .hero-photo img{display:block;width:100%;height:auto;border-radius:4px}
-.hero-photo-lt{left:56px;top:2px;width:360px;padding:8px 8px 16px;transform:rotate(-4deg)}
-.hero-photo-lb{left:132px;top:78px;width:324px;padding:8px 8px 16px;transform:rotate(3deg)}
-.hero-photo-rt{right:108px;top:4px;width:220px;padding:5px 5px 10px;transform:rotate(4deg)}
+.hero-photo-lt{left:34px;top:0;width:390px;padding:7px 7px 14px;transform:rotate(-3deg)}
+.hero-photo-lb{left:150px;top:66px;width:390px;padding:7px 7px 14px;transform:rotate(1.5deg)}
+.hero-photo-rt{right:62px;top:0;width:238px;padding:5px 5px 9px;transform:rotate(3deg)}
 .hero-photo-rt:before{width:82px;height:16px;top:-8px}
-.hero-photo-rb{right:196px;top:92px;width:296px;padding:6px 6px 12px;transform:rotate(-3deg)}
+.hero-photo-rb{right:148px;top:66px;width:365px;padding:6px 6px 11px;transform:rotate(-2deg)}
 .hero-photo-rb:before{width:84px;height:16px;top:-9px}
 .source-btn{position:absolute;right:0;top:0;height:46px;padding:0 20px;border:1px solid #e4d4b9;border-radius:999px;background:rgba(255,253,247,.92);color:#6d625b;font-weight:900;box-shadow:0 10px 20px rgba(111,94,72,.10);cursor:pointer}
 
@@ -296,10 +296,10 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 @media(max-width:1180px){
   .hero-grid{min-height:330px}
   .hero-card{width:min(100%,820px);top:auto;bottom:0}
-  .hero-photo-lt{left:24px;top:2px;width:300px}
-  .hero-photo-lb{left:78px;top:82px;width:270px}
-  .hero-photo-rt{right:82px;top:4px;width:190px}
-  .hero-photo-rb{right:132px;top:92px;width:244px}
+  .hero-photo-lt{left:8px;top:0;width:320px}
+  .hero-photo-lb{left:72px;top:68px;width:315px}
+  .hero-photo-rt{right:40px;top:0;width:200px}
+  .hero-photo-rb{right:82px;top:68px;width:300px}
   .section-head{grid-template-columns:1fr auto}
   .archive-tools{grid-column:1/-1;grid-row:2}
   .feed{grid-template-columns:repeat(2,minmax(0,1fr))}
