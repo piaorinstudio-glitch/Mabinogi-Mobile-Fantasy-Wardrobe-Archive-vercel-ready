@@ -28,12 +28,11 @@ button,a,select,input{touch-action:manipulation}
 }
 .hero-grid{
   position:relative;
-  min-height:250px;
+  min-height:355px;
 }
 .hero-card{
-  position:relative;z-index:3;
-  width:min(100%,880px);margin:46px auto 54px;
-  transform:translateY(56px);
+  position:absolute;z-index:3;left:50%;top:118px;transform:translateX(-50%);
+  width:min(100%,880px);margin:0;
   display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 40px 24px;min-width:0;
   background:rgba(255,253,247,.88);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
 }
@@ -45,13 +44,13 @@ h1{width:100%;margin:0;display:flex;flex-direction:column;align-items:center;gap
 .hero-photo:focus-visible,.image-wrap:focus-visible{outline:3px solid #397452;outline-offset:5px}
 .hero-photo:before{content:"";position:absolute;left:50%;top:-11px;width:96px;height:20px;transform:translateX(-50%) rotate(-2deg);background:rgba(183,211,194,.62);border-radius:3px;z-index:2}
 .hero-photo img{display:block;width:100%;height:auto;border-radius:4px}
-.hero-photo-lt{left:56px;top:18px;width:360px;padding:8px 8px 16px;transform:rotate(-4deg)}
-.hero-photo-lb{left:132px;top:108px;width:324px;padding:8px 8px 16px;transform:rotate(3deg)}
-.hero-photo-rt{right:108px;top:24px;width:220px;padding:5px 5px 10px;transform:rotate(4deg)}
+.hero-photo-lt{left:56px;top:2px;width:360px;padding:8px 8px 16px;transform:rotate(-4deg)}
+.hero-photo-lb{left:132px;top:78px;width:324px;padding:8px 8px 16px;transform:rotate(3deg)}
+.hero-photo-rt{right:108px;top:4px;width:220px;padding:5px 5px 10px;transform:rotate(4deg)}
 .hero-photo-rt:before{width:82px;height:16px;top:-8px}
-.hero-photo-rb{right:196px;top:128px;width:296px;padding:6px 6px 12px;transform:rotate(-3deg)}
+.hero-photo-rb{right:196px;top:92px;width:296px;padding:6px 6px 12px;transform:rotate(-3deg)}
 .hero-photo-rb:before{width:84px;height:16px;top:-9px}
-.source-btn{position:absolute;right:0;top:4px;height:46px;padding:0 20px;border:1px solid #e4d4b9;border-radius:999px;background:rgba(255,253,247,.92);color:#6d625b;font-weight:900;box-shadow:0 10px 20px rgba(111,94,72,.10);cursor:pointer}
+.source-btn{position:absolute;right:0;top:0;height:46px;padding:0 20px;border:1px solid #e4d4b9;border-radius:999px;background:rgba(255,253,247,.92);color:#6d625b;font-weight:900;box-shadow:0 10px 20px rgba(111,94,72,.10);cursor:pointer}
 
 .toolbar-shell{position:sticky;top:0;z-index:20;padding:12px 0;background:rgba(255,250,239,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
 .category-nav{display:grid;grid-template-columns:repeat(8,minmax(120px,1fr));gap:12px}
@@ -295,11 +294,12 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 .footer-links a:hover{text-decoration:underline}
 
 @media(max-width:1180px){
-  .hero-card{width:min(100%,820px);margin:52px auto 56px;transform:translateY(42px)}
-  .hero-photo-lt{left:24px;top:28px;width:300px}
-  .hero-photo-lb{left:78px;top:128px;width:270px}
-  .hero-photo-rt{right:82px;top:34px;width:190px}
-  .hero-photo-rb{right:132px;top:140px;width:244px}
+  .hero-grid{min-height:330px}
+  .hero-card{width:min(100%,820px);top:108px}
+  .hero-photo-lt{left:24px;top:2px;width:300px}
+  .hero-photo-lb{left:78px;top:82px;width:270px}
+  .hero-photo-rt{right:82px;top:4px;width:190px}
+  .hero-photo-rb{right:132px;top:92px;width:244px}
   .section-head{grid-template-columns:1fr auto}
   .archive-tools{grid-column:1/-1;grid-row:2}
   .feed{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -313,7 +313,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
   .hero-grid{min-height:0}
   .hero-photo{display:none}
   .source-btn{position:static;display:block;width:max-content;height:34px;margin:0 auto;padding:0 13px;font-size:13px}
-  .hero-card{min-width:0;width:min(84%,360px);margin:0 auto 10px;padding:10px 10px 9px;border-radius:15px;transform:none}
+  .hero-card{position:relative;left:auto;top:auto;transform:none;min-width:0;width:min(84%,360px);margin:0 auto 10px;padding:10px 10px 9px;border-radius:15px}
   .title-small{font-size:clamp(20px,6.5vw,26px)}
   .title-main{font-size:clamp(25px,7vw,34px);white-space:nowrap}
 
