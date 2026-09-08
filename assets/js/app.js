@@ -147,7 +147,7 @@ function openPetDetail(button){
   rarityEl.className=`rarity-badge ${rarityKey(rarity)}`;
 
   const versionEl=$('#petSkillVersion');
-  versionEl.textContent=nativeEpic?'原生史詩｜技能 S':'升階至史詩｜技能（無 S）';
+  versionEl.textContent=nativeEpic?'原生史詩｜技能 S':'升階至史詩｜技能';
   versionEl.className=`pet-skill-version-chip ${nativeEpic?'native':'promoted'}`;
 
   const currentSkillName=nativeEpic?(family.epic||family.base):(family.base||family.epic);
