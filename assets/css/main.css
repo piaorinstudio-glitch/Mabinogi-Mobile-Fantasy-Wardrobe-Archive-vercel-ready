@@ -21,7 +21,7 @@ button,a,select,input{touch-action:manipulation}
 .wrap{width:min(1320px,calc(100% - 44px));margin:auto}
 
  .hero{
-  padding:22px 0 20px;
+  padding:22px 0 0;
   background:linear-gradient(90deg,rgba(201,226,214,.74),rgba(255,252,244,.95) 24%,rgba(255,252,244,.95) 76%,rgba(211,230,218,.74));
   border-bottom:1px solid var(--line);
   overflow:hidden;
@@ -31,9 +31,9 @@ button,a,select,input{touch-action:manipulation}
   min-height:355px;
 }
 .hero-card{
-  position:absolute;z-index:3;left:50%;top:118px;transform:translateX(-50%);
+  position:absolute;z-index:3;left:50%;top:auto;bottom:0;transform:translateX(-50%);
   width:min(100%,880px);margin:0;
-  display:flex;align-items:center;justify-content:center;text-align:center;padding:28px 40px 24px;min-width:0;
+  display:flex;align-items:center;justify-content:center;text-align:center;padding:24px 40px 14px;min-width:0;
   background:rgba(255,253,247,.88);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);
 }
 h1{width:100%;margin:0;display:flex;flex-direction:column;align-items:center;gap:8px;text-align:center;font-family:"Noto Serif TC",Georgia,serif;line-height:1;letter-spacing:-.02em}
@@ -295,7 +295,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 
 @media(max-width:1180px){
   .hero-grid{min-height:330px}
-  .hero-card{width:min(100%,820px);top:108px}
+  .hero-card{width:min(100%,820px);top:auto;bottom:0}
   .hero-photo-lt{left:24px;top:2px;width:300px}
   .hero-photo-lb{left:78px;top:82px;width:270px}
   .hero-photo-rt{right:82px;top:4px;width:190px}
