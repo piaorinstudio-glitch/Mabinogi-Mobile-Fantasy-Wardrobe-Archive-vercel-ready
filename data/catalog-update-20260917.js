@@ -23,7 +23,7 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545050',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260916/42bd81a4-abb1-4de4-bfc6-ea9fba2ffc23/%EB%AA%A8%ED%97%98%EA%B0%80%ED%8C%A8%EC%8A%A4%EA%B2%8C%EC%8B%9C%EB%AC%BC%EC%9D%B4%EB%AF%B8%EC%A7%80900x750.png',
-      image: 'image/pass-13.webp',
+      image: 'image/pass-13.png',
       latest: true
     },
     {
@@ -39,7 +39,7 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545054',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260916/65bf6c16-9ba6-44b9-82eb-2cc0f16aacb7/%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EB%9E%98%EB%AF%B8%ED%8C%A8%EC%85%98%EB%9F%AD%ED%82%A4%EB%B0%95%EC%8A%A4%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4%EB%AF%B8%EC%A7%80900x750.png',
-      image: 'image/lucky-37.webp',
+      image: 'image/lucky-37.png',
       latest: true
     },
     {
@@ -55,7 +55,7 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545054',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260916/3b9f6fff-1e65-49cc-a895-9e77ee9ea298/%EB%A3%A8%EC%84%BC%ED%8A%B8%EC%98%A4%EC%8A%A4%ED%8C%A8%EC%85%98%EB%9F%AD%ED%82%A4%EB%B0%95%EC%8A%A4%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4%EB%AF%B8%EC%A7%80900x750.png',
-      image: 'image/lucky-38.webp',
+      image: 'image/lucky-38.png',
       latest: true
     },
     {
@@ -71,7 +71,7 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545055',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260916/c6e12ff5-645e-4736-b1b9-8879859a33ec/%ED%86%A0%ED%83%88%ED%8C%A8%ED%82%A4%EC%A7%80%EA%B2%8C%EC%8B%9C%EB%AC%BC%EC%9D%B4%EB%AF%B8%EC%A7%80900x750B.png',
-      image: 'image/package-7.webp'
+      image: 'image/package-7.png'
     },
     {
       id: 'legend-7',
@@ -86,9 +86,9 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545058',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260917/693fc379-8b1e-4d02-b3d4-294477c66576/%ED%95%98%EB%B2%A0%EC%8A%A4%ED%8B%B0%EC%95%84%EB%B8%94%EB%A0%88%EC%8B%B1%EC%95%A1%ED%84%B0.png',
-      image: 'image/legend-7.webp',
-      regularImage: 'image/legend-7.webp',
-      hoodedImage: 'image/legend-7-robe.webp',
+      image: 'image/legend-7.png',
+      regularImage: 'image/legend-7.png',
+      hoodedImage: 'image/legend-7-robe.png',
       imageMode: 'regular'
     },
     {
@@ -105,7 +105,7 @@
       year: '2026',
       notice: 'https://mabinogimobile.nexon.com/News/Notice/3545053',
       sourceImage: 'https://dszw1qtcnsa5e.cloudfront.net/community/20260916/9864aedd-648e-41a3-9d9e-74e5103a9859/%EC%9E%89%EA%B8%80%EB%A6%AC%EC%8B%9C%EC%89%BD%EB%8F%85%EA%B2%8C%EC%8B%9C%EA%B8%80%EC%9D%B4%EB%AF%B8%EC%A7%80900x750.png',
-      image: 'image/pet-20.webp',
+      image: 'image/pet-20.png',
       variants: [
         {zh: '慶典英國牧羊犬', ko: '페스티벌 잉글리시 쉽독', rarity: '史詩'},
         {zh: '圍巾英國牧羊犬', ko: '스카프 잉글리시 쉽독', rarity: '菁英'},
