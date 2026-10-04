@@ -109,8 +109,6 @@ function petSkillEffectText(value){
 
   const cleaned=cleanPetInfoText(raw);
 
-  // 已知效果照常保留；只有百分比、倍率、傷害值、持續時間等細節缺資料時，
-  // 在已知內容下方補上「詳細數值缺失」。
   const missingDetail=/未知|確切.*(?:未|尚未)|(?:未|尚未).*確切|未可靠核對|尚未可靠核對|未能.*核對|未從.*核對|未從.*確認|尚無可靠資料|目前尚無可靠資料|未確認數字|數值會隨寵物等級成長|詳細數值尚未確認/.test(raw);
 
   if(missingDetail){
@@ -155,7 +153,6 @@ function openPetDetail(button){
   $('#petSkillName').textContent=petSkillNameText(currentSkillName);
   renderPetSkillEffect($('#petSkillEffect'),currentSkillEffect);
 
-  // 傳說資料：不再自動推測 SS 名稱。沒有可靠名稱或詳細數值就直接顯示「資料缺失」。
   const legendSkillName=nativeEpic
     ?family.legendEpic
     :family.epic;
@@ -189,6 +186,7 @@ function closePetDetail(){
 }
 function issueText(item){
   if(item.id==='pet-0')return '常駐池';
+  if(item.server==='TW' && item.displayNumber)return item.displayNumber;
   if(item.type==='lucky'||item.type==='pet')return `韓服 #${item.number}`;
   if(item.type==='package'||item.type==='legend')return `第 ${item.number} 代`;
   if(item.type==='abyss'||item.type==='raid')return `第 ${item.number} 套`;
@@ -251,7 +249,21 @@ function render(){
   $$('.legend-view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===state.legendView));
   let rows=DATA.filter(x=>x.type===state.type).filter(itemMatches);
   if(state.type==='pet' && state.petKind!=='all') rows=rows.filter(x=>kindKey(x.kind)===state.petKind);
-  rows.sort((a,b)=>{const d=String(a.date||'').localeCompare(String(b.date||'')) || (Number(a.number)-Number(b.number));return state.sort==='old'?d:-d;});
+  rows.sort((a,b)=>{
+    const anchor=(item)=>{
+      if(item.server==='TW'&&item.pairAfterId){
+        const pair=DATA.find(x=>x.id===item.pairAfterId);
+        if(pair)return {date:String(pair.date||''),number:Number(pair.number)||0,tw:1};
+      }
+      if(item.server==='TW'&&Number.isFinite(Number(item.pairOrder))){
+        return {date:String(item.date||''),number:Number(item.pairOrder),tw:1};
+      }
+      return {date:String(item.date||''),number:Number(item.number)||0,tw:0};
+    };
+    const A=anchor(a),B=anchor(b);
+    const d=A.date.localeCompare(B.date)||(A.number-B.number)||(A.tw-B.tw);
+    return state.sort==='old'?d:-d;
+  });
   $('#archiveCount').textContent=`共 ${rows.length} 筆`;
   if(!rows.length){$('#feed').innerHTML=`<div class="empty">沒有找到符合的外觀</div>`; return;}
   const petHint=state.type==='pet'?'<div class="lucky-order-hint">※ 「韓服 #」代表<strong>韓服推出順序</strong>，下方日期為韓服推出日期。電腦：滑鼠移到寵物圖片可查看各稀有度並點選詳細資訊；手機：點圖片放大後查看。</div>':'';
