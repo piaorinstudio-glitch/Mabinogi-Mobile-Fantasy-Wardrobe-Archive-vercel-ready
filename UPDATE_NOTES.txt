@@ -30,3 +30,19 @@ ZIP 內新增／替換
 index.html 已載入 data/catalog-update-20261001.js。
 四個資料 image 路徑均有對應 PNG 實體檔。
 中文名在台服正式譯名公布前以英文羅馬字 +「暫譯」標示。
+
+
+[台服 2026-09-30 新楓之谷聯名追加]
+保留原有韓服楓之谷資料，不刪除、不覆蓋。
+新增兩張獨立台服當期卡片：
+- 台版 #1：楓葉朋友們：時裝幸運箱
+- 台版 #2：楓葉朋友們：寵物幸運箱
+販售期間：2026-09-30 維護後 ～ 2026-10-21 05:59
+台服公告：https://tw.nexon.com/mabinogimobile/home/news/notice/3550868
+
+新增檔案：
+- data/tw-update-20260930.js
+- image/tw-lucky-maple-1.png
+- image/tw-pet-maple-2.png
+
+index.html 已在 data/tw-update-20260925.js 後載入 data/tw-update-20260930.js。
