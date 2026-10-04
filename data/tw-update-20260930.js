@@ -8,7 +8,7 @@
     {
       id:'tw-lucky-maple-1', type:'lucky', typeLabel:'幸運箱',
       number:1, displayNumber:'台版 #1', server:'TW',
-      pairOrder:1.1,
+      pairOrder:1,
       zh:'楓葉朋友們：時裝幸運箱', ko:'',
       lines:['台版 #1','楓葉朋友們：時裝幸運箱','《瑪奇 Mobile》×《新楓之谷》'],
       date:'2026-09-30', endDate:'2026-10-21', year:'2026',
@@ -20,10 +20,10 @@
     },
     {
       id:'tw-pet-maple-2', type:'pet', typeLabel:'寵物',
-      number:2, displayNumber:'台版 #2', server:'TW',
-      pairAfterId:'pet-14',
+      number:1, displayNumber:'台版 #1', server:'TW',
+      pairOrder:1,
       zh:'楓葉朋友們：寵物幸運箱', ko:'',
-      lines:['台版 #2','楓葉朋友們：寵物幸運箱','《瑪奇 Mobile》×《新楓之谷》'],
+      lines:['台版 #1','楓葉朋友們：寵物幸運箱','《瑪奇 Mobile》×《新楓之谷》'],
       kind:'聯動',
       date:'2026-09-30', endDate:'2026-10-21', year:'2026',
       notice:'https://tw.nexon.com/mabinogimobile/home/news/notice/3550868',
@@ -44,7 +44,6 @@
     else data[i]={...data[i],...item};
   }
 
-  // Taiwan in-game pet data supplied from the live TW client.
   M.PET_STATS=M.PET_STATS||{};
   M.PET_FAMILY_BY_KO=M.PET_FAMILY_BY_KO||{};
   M.PET_SKILL_FAMILIES=M.PET_SKILL_FAMILIES||{};

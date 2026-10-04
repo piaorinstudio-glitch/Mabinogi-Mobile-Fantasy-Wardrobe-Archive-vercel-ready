@@ -261,7 +261,18 @@ function render(){
       return {date:String(item.date||''),number:Number(item.number)||0,tw:0};
     };
     const A=anchor(a),B=anchor(b);
-    const d=A.date.localeCompare(B.date)||(A.number-B.number)||(A.tw-B.tw);
+    // TW entries with pairOrder are grouped by sequence number first so
+    // 韓服 #1 / 台版 #1 appear together even when their release dates differ.
+    const pairedA=a.server==='TW'&&Number.isFinite(Number(a.pairOrder));
+    const pairedB=b.server==='TW'&&Number.isFinite(Number(b.pairOrder));
+    let d;
+    if(pairedA||pairedB){
+      const aNo=pairedA?Number(a.pairOrder):(Number(a.number)||0);
+      const bNo=pairedB?Number(b.pairOrder):(Number(b.number)||0);
+      d=(aNo-bNo)||(A.tw-B.tw)||A.date.localeCompare(B.date);
+    }else{
+      d=A.date.localeCompare(B.date)||(A.number-B.number)||(A.tw-B.tw);
+    }
     return state.sort==='old'?d:-d;
   });
   $('#archiveCount').textContent=`共 ${rows.length} 筆`;
