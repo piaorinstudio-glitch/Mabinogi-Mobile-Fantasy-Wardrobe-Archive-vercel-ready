@@ -1,80 +1,32 @@
-瑪奇 Mobile 韓服外觀未來視｜完整更新包
-更新包日期：2026-09-25
-韓服內容截止：2026-09-17
-台服狀態截止：2026-09-25
+Mabinogi Mobile 更新包 2026-10-01 — Crion
 
-【本次韓服新增】
-1. 冒險家通行證 #13：柔和豐收｜마일드 하베스트
-2. 幸運箱 #37：克勞德・萊米（音譯）｜클라우드 래미
-3. 幸運箱 #38：路森特・奧斯（音譯）｜루센트 오스
-4. 全套套組 #7：盛大合奏｜그랜드 앙상블
-5. 傳說時裝 #7：哈維斯提亞・布雷辛（音譯）｜하베스티아 블레싱
-   - 一般版 PNG
-   - 長袍版 PNG
-6. 寵物 #20：英國牧羊犬系列｜잉글리시 쉽독
-   - 史詩：慶典英國牧羊犬｜페스티벌 잉글리시 쉽독
-   - 菁英：圍巾英國牧羊犬｜스카프 잉글리시 쉽독
-   - 稀有：緞帶英國牧羊犬｜리본 잉글리시 쉽독
-   - 高級：灰色英國牧羊犬｜회색 잉글리시 쉽독
+韓服新增（全套套組，男性角色專用）
+- package-8: 크리온 스트라이커 / Crion Striker（暫譯）
+- package-9: 크리온 독 택 / Crion Dog Tag（暫譯）
+- package-10: 크리온 팝 패치 / Crion Pop Patch（暫譯）
+- package-11: 크리온 와이어 / Crion Wire（暫譯）
+販售：2026-10-01 維護後 ～ 2026-10-29 05:59
+官方公告：https://mabinogimobile.nexon.com/News/Notice/3554491
 
-【英國牧羊犬技能／同行能力】
-固有技能：재빠른 경계
-史詩技能：재빠른 경계 S
-- 施放時 23 秒內造成傷害 +6%、快速技能 +2，冷卻 60 秒。
-基礎固有技能資料：
-- 施放時 18 秒內造成傷害 +5.5%、快速技能 +2，冷卻 60 秒。
-- 菁英／稀有／高級持有固有技能，但低於史詩時不可使用。
-傳說／SS：目前沒有找到足以可靠核對的完整數值，網站會顯示「詳細數值缺失」，不猜。
+圖片
+4 張均為本次對話中使用者提供的 Crion PNG，已寫入 image/ 並驗證為有效 PNG；無遠端圖片、無占位圖。
 
-固定同行戰鬥詞條：
-- 史詩：暴擊 +14、快速技能 +14
-- 菁英：技能威力 +14、追擊（追加打擊）+14
-- 稀有：破防 +14、攻擊力 +8
-- 高級：快速技能 +14、絕招 +14
-基本同行能力：四種皆為力量／敏捷／智力／意志／幸運 +5。
-最高等級：史詩 48、菁英 43、稀有 38、高級 33。
-魅力：史詩 3000、菁英 1500、稀有 750、高級 300。
-史詩／菁英服裝可染色（3 個染色部位）；稀有／高級不可染色。
+台服狀態
+本次四套未標記台服已推出。既有 data/tw-update-20260925.js 不替換。
 
-史詩取得稱號：(에픽) 페스티벌 잉글리시 쉽독의 친구
-- 裝備效果：智力 +50、幸運 +50
-- 持有效果：攻擊力 +20、防禦力 +20、快速技能 +130
+寵物
+本次沒有新增寵物，無新增技能資料。
 
-【台服狀態同步】
-台服當期：pass-3、lucky-3、lucky-14、lucky-15、package-2、legend-2、pet-3、pet-6。
-並同步台服正式名稱及推出／結束日期；過往已推出項目仍保留「台服已推出」。
+ZIP 內新增／替換
+替換：index.html
+新增：data/catalog-update-20261001.js
+新增：image/package-8.png
+新增：image/package-9.png
+新增：image/package-10.png
+新增：image/package-11.png
+新增：UPDATE_NOTES.txt
 
-【實體圖片】
-本包中的所有本次新增圖片均為真正 PNG 檔案，不依賴外部 CDN 顯示，不需要 GitHub Action 下載。
-- image/pass-13.png
-- image/lucky-37.png
-- image/lucky-38.png
-- image/package-7.png
-- image/legend-7.png
-- image/legend-7-robe.png
-- image/pet-20.png
-
-【資料來源】
-韓服官方－9/17 寵物幸運箱：https://mabinogimobile.nexon.com/News/Notice/3545053
-韓服官方－9/17 冒險家通行證：https://mabinogimobile.nexon.com/News/Notice/3545050
-韓服官方－9/17 傳說時裝：https://mabinogimobile.nexon.com/News/Notice/3545058
-韓服官方－9/17 新品頁面／公告：各卡片 notice 欄位
-寵物技能與同行能力核對：https://jun-ordinary.tistory.com/384
-
-【直接上傳方式】
-將本 ZIP 解壓後，把 index.html、data/、image/、UPDATE_NOTES.txt 直接拖到 GitHub repo 根目錄。
-選擇覆蓋既有同名檔案並 Commit。這包不依賴 GitHub Action。
-
-【ZIP 內需要更新／新增的檔案】
-index.html
-data/catalog-update-20260917.js
-data/pet-update-20260917.js
-data/tw-update-20260925.js
-image/pass-13.png
-image/lucky-37.png
-image/lucky-38.png
-image/package-7.png
-image/legend-7.png
-image/legend-7-robe.png
-image/pet-20.png
-UPDATE_NOTES.txt
+驗證
+index.html 已載入 data/catalog-update-20261001.js。
+四個資料 image 路徑均有對應 PNG 實體檔。
+中文名在台服正式譯名公布前以英文羅馬字 +「暫譯」標示。
