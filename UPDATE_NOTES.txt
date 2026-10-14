@@ -1,37 +1,52 @@
-Mabinogi Mobile 最終更新包 — 2026-10-04
+Mabinogi Mobile 韓／台服圖鑑更新說明
+資料核對日期：2026-10-14（台灣時間）
+對照基準：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready / main
 
-【本次保留】
-台版《新楓之谷》聯名：
-- 台版 #1：楓葉朋友們：時裝幸運箱
-- 台版 #2：楓葉朋友們：寵物幸運箱
-販售：2026-09-30 維護後 ～ 2026-10-21 05:59
-台服公告：https://tw.nexon.com/mabinogimobile/home/news/notice/3550868
+【本次韓服新增】
+截至 2026-10-14 中午，韓服官方公告頁尚無新的可確認「外觀圖鑑」條目。
+韓服 2026-10-15 定期維護公告（10/13 發布）僅表示新商品、更新日誌將另行公告，
+因此不預先建立未公布的套組、幸運箱、通行證、寵物、深淵或團隊副本時裝資料。
+韓服來源：https://mabinogimobile.nexon.com/News/Notice/3562456
+韓服公告列表：https://mabinogimobile.nexon.com/News/notice
 
-【寵物實機資料】
-快樂粉豆貓（史詩）
-- 不許動 S
-- 4 秒內使鎖定的 1 名敵人移動速度 -20%，冷卻 10 秒
-- 同行：力量/技巧/智力/意志/幸運 +5、破防 +14、攻擊力 +8、魅力 +3000
+【台服狀態變更：2026-10-14 05:59 起由「台服當期」改為「台服已推出」】
+- pass-3：寧靜花漾（本期冒險家通行證票券結束）
+- lucky-3：寂靜的審判：時裝幸運箱
+- lucky-14：淡雅誘惑：時裝幸運箱
+- lucky-15：盛宴的主人：時裝幸運箱
+- pet-3：幼貓頭鷹：寵物幸運箱
+- pet-6：中秋節期間寵物商品（依原資料台服結束日 2026-10-14）
+台服來源：https://tw.nexon.com/mabinogimobile/home/news/notice/3562593
+先前各品項期間來源：
+https://tw.nexon.com/mabinogimobile/home/news/notice/3541015
+https://tw.nexon.com/mabinogimobile/home/news/notice/3541055
+https://tw.nexon.com/mabinogimobile/home/news/notice/3550055
 
-企鵝王與小熊（史詩）
-- 鬥志爆發 S
-- 主人被破防時可施放；6 秒內同行寵物攻擊力 +20%，冷卻 8 秒
-- 同行：力量/技巧/智力/意志/幸運 +5、連段強化 +14、暴擊 +14、魅力 +3000
+【維持「台服當期」】
+- package-2：皇家交響（原收錄結束日 2026-11-25）
+- legend-2：古樹統治者（原收錄結束日 2026-11-25）
+- tw-lucky-maple-1：楓葉朋友們：時裝幸運箱（至 2026-10-21 05:59）
+- tw-pet-maple-2：楓葉朋友們：寵物幸運箱（至 2026-10-21 05:59）
+楓葉朋友們來源：https://tw.nexon.com/mabinogimobile/home/news/notice/3550860
 
-【Crion】
-Crion Striker / Dog Tag / Pop Patch / Wire 不納入網站。
-index.html 已移除 data/catalog-update-20261001.js 載入。
-本包不含 package-8~11 圖片，也不含 catalog-update-20261001.js。
+【副本相關公告，不新增時裝卡片】
+台服 10/14 維護新增深淵「地獄6」難度，預計 10/19 開放；
+公告未確認新副本時裝，因此不新增外觀項目或圖片。
+來源：https://tw.nexon.com/mabinogimobile/home/news/notice/3562593
 
-【檔案】
-替換：index.html
-替換：data/tw-update-20260930.js
-新增/替換：image/tw-lucky-maple-1.png
-新增/替換：image/tw-pet-maple-2.png
-新增：assets/js/tw-maple-ui.js
-- 台版卡片只顯示「台版 #1 / 台版 #2」，不再出現「韓服 #台版 #...」
-- 台版 #1 排在韓服 #1 旁；台版 #2 排在韓服 #2 旁
-替換：UPDATE_NOTES.txt
+【寵物補充資料】
+本次沒有韓服新寵物；既有台服楓葉朋友們兩隻寵物的技能、詞條與
+未確認升階資料均保留，不覆寫原檔案。
 
-注意：若 GitHub 目前已存在 data/catalog-update-20261001.js 或 image/package-8.png ~ package-11.png，
-它們可留在 repo 中，因 index.html 已不載入 Crion 資料，不會出現在網站。
+【ZIP 內所有新增／替換檔案】
+替換 index.html：在既有台服 09/30 資料之後、主程式之前載入 10/14 同步檔。
+新增 data/tw-update-20261014.js：僅更新台服當期／已推出狀態與核對日期。
+新增 UPDATE_NOTES.txt：本說明。
+
+【圖片與載入驗證】
+本次沒有新增外觀，因此沒有新 PNG 檔案；既有圖片完全保留。
+新資料檔已由 index.html 載入，不使用遠端圖片網址或占位圖。
+
+【套用方式】
+解壓 ZIP，將其中檔案覆蓋／新增到 GitHub 儲存庫根目錄並提交。
+請勿刪除既有 data/、image/ 或其他檔案。等待 Vercel 部署後重新整理。
