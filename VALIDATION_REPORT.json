@@ -1,0 +1,22 @@
+{
+  "recordCount": 114,
+  "appendOnly": true,
+  "dateBoundaries": true,
+  "tests": [
+    {
+      "width": 1440,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "width": 390,
+      "status": "PASS",
+      "errors": []
+    },
+    {
+      "width": 320,
+      "status": "PASS",
+      "errors": []
+    }
+  ]
+}

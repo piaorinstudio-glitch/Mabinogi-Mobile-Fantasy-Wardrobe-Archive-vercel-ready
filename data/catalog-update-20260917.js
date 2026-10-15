@@ -127,3 +127,35 @@
     }
   }
 })();
+
+// 2026-10-15 KR additions. Kept in this already-loaded file to avoid HTML/UI changes.
+(() => {
+  const M=window.MABI;
+  const notice='https://mabinogimobile.nexon.com/News/Notice/3562734';
+  const petNotice='https://mabinogimobile.nexon.com/News/Notice/3562732';
+  const additions=[
+    {id:'lucky-39',type:'lucky',typeLabel:'幸運箱',number:39,
+      zh:'卡邁恩・永恆',ko:'카마인 에버모어',nameStatus:'provisional',
+      lines:['卡邁恩・永恆','카마인 에버모어','套裝｜Carmine Evermore','카마인 에버모어'],
+      date:'2026-10-15',endDate:'2026-11-12',year:'2026',notice,image:'image/lucky-39.png',latest:true},
+    {id:'lucky-40',type:'lucky',typeLabel:'幸運箱',number:40,
+      zh:'諾克斯・米斯提卡',ko:'녹스 미스티카',nameStatus:'provisional',
+      lines:['諾克斯・米斯提卡','녹스 미스티카','套裝｜Nox Mystica','녹스 미스티카'],
+      date:'2026-10-15',endDate:'2026-11-12',year:'2026',notice,image:'image/lucky-40.png',latest:true},
+    {id:'pet-21',type:'pet',typeLabel:'寵物',number:21,zh:'貂系列',ko:'담비',nameStatus:'provisional',
+      lines:['貂系列','담비'],kind:'常規',date:'2026-10-15',endDate:'2026-12-17',year:'2026',
+      notice:petNotice,image:'image/pet-21.png',imageNote:'',
+      variants:[{zh:'婚禮貂',ko:'웨딩 담비',rarity:'史詩'},{zh:'飛行員貂',ko:'비행사 담비',rarity:'菁英'},
+        {zh:'紳士貂',ko:'신사 담비',rarity:'稀有'},{zh:'黃色貂',ko:'노랑 담비',rarity:'高級'}]},
+    {id:'pet-22',type:'pet',typeLabel:'寵物',number:22,zh:'水獺系列',ko:'수달',nameStatus:'provisional',
+      lines:['水獺系列','수달'],kind:'常規',date:'2026-10-15',endDate:'2026-12-17',year:'2026',
+      notice:petNotice,image:'image/pet-22.png',imageNote:'',
+      variants:[{zh:'水手水獺',ko:'세일러 수달',rarity:'史詩'},{zh:'圍裙水獺',ko:'앞치마 수달',rarity:'菁英'},
+        {zh:'圍巾水獺',ko:'스카프 수달',rarity:'稀有'},{zh:'棕色水獺',ko:'갈색 수달',rarity:'高級'}]}
+  ];
+  for(const item of M.DATA){if(item.type==='lucky'&&item.server!=='TW')item.latest=false;}
+  for(const item of additions){
+    const index=M.DATA.findIndex(old=>old.id===item.id);
+    if(index<0)M.DATA.push(item);else M.DATA[index]={...M.DATA[index],...item};
+  }
+})();
