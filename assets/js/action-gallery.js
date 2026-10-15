@@ -18,7 +18,7 @@
   }
   M.renderActionCards=rows=>{
     visibleBoxes=rows.slice();
-    $('feed').innerHTML=rows.map(box=>`
+    $('feed').innerHTML='<div class="lucky-order-hint">※ 「韓服 #」代表<strong>韓服推出順序</strong>；下方日期為韓服推出日期。台服與韓服的上架組合、批次可能不同。</div>'+rows.map(box=>`
       <article class="entry action-entry" data-action-box="${escape(box.id)}">
         <button type="button" class="image-wrap action-cover action-open" data-action-id="${escape(box.id)}" aria-label="查看${escape(displayName(box.zh))}全部 ${box.actions.length} 個動作">
           <img src="${escape(box.image)}" alt="${escape(displayName(box.zh))}動作預覽封面" loading="lazy" decoding="async" width="640" height="640">
