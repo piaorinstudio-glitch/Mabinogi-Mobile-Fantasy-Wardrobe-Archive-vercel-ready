@@ -1,0 +1,3206 @@
+{
+  "checkedDate": "2026-10-15",
+  "verification": "GIF magic header + Pillow format/n_frames + every frame decoded; original bytes retained",
+  "summary": {
+    "boxes": 14,
+    "actions": 44,
+    "gif_total": 92,
+    "success": 92,
+    "failed": 0,
+    "bytes": 1279346174,
+    "other_animated_formats": 0
+  },
+  "files": [
+    {
+      "box_id": "action-01",
+      "box_ko": "신호의 액션! 상자",
+      "box_zh": "信號",
+      "kr_date": "2025-06-19",
+      "action_names_ko": [
+        "아님 X"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/68dacd54-cde9-49b2-a590-2d5cb568e723/04%EC%95%84%EB%8B%98X%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/2957837",
+      "relative_path": "image/actions/action-01/action-01-01.gif",
+      "original_filename": "04아님X남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/68dacd54-cde9-49b2-a590-2d5cb568e723/04%EC%95%84%EB%8B%98X%EB%82%A8%EC%95%84.gif",
+      "bytes": 7479816,
+      "frames": 168,
+      "width": 280,
+      "height": 505,
+      "duration_ms": 5040,
+      "loop": 0,
+      "sha256": "3b5ef6b8b874e5f49b62f39e0a3757c2726b8776a805e7c74e612b6bb406d354",
+      "cover_path": "image/actions/action-01/action-01-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-01",
+      "box_ko": "신호의 액션! 상자",
+      "box_zh": "信號",
+      "kr_date": "2025-06-19",
+      "action_names_ko": [
+        "경례 2"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/9ae1317b-3183-4ff2-9910-8f930ab0a77c/05%EA%B2%BD%EB%A1%802%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/2957837",
+      "relative_path": "image/actions/action-01/action-01-02.gif",
+      "original_filename": "05경례2여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/9ae1317b-3183-4ff2-9910-8f930ab0a77c/05%EA%B2%BD%EB%A1%802%EC%97%AC%EC%95%84.gif",
+      "bytes": 10259513,
+      "frames": 225,
+      "width": 280,
+      "height": 505,
+      "duration_ms": 6340,
+      "loop": 0,
+      "sha256": "4868959fe2bd324ec37f0716655d68477b83c78a15689a20fe397ec041e2ddcd",
+      "cover_path": "image/actions/action-01/action-01-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-01",
+      "box_ko": "신호의 액션! 상자",
+      "box_zh": "信號",
+      "kr_date": "2025-06-19",
+      "action_names_ko": [
+        "아하"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/5a5fdfbf-01d7-443e-b401-ca0cd3627188/06%EC%95%84%ED%95%98%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/2957837",
+      "relative_path": "image/actions/action-01/action-01-03.gif",
+      "original_filename": "06아하남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/5a5fdfbf-01d7-443e-b401-ca0cd3627188/06%EC%95%84%ED%95%98%EB%82%A8%EC%95%84.gif",
+      "bytes": 8785001,
+      "frames": 192,
+      "width": 280,
+      "height": 505,
+      "duration_ms": 5430,
+      "loop": 0,
+      "sha256": "7624c6300dd814df2f0714a9e7609e60bbb413d198728be225146641313c7857",
+      "cover_path": "image/actions/action-01/action-01-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "손부채"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/98155e80-7138-4411-9371-9334036912dd/%EC%86%90%EB%B6%80%EC%B1%84%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-01.gif",
+      "original_filename": "손부채남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/98155e80-7138-4411-9371-9334036912dd/%EC%86%90%EB%B6%80%EC%B1%84%EB%82%A8%EC%9E%90.gif",
+      "bytes": 13912473,
+      "frames": 370,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 7990,
+      "loop": 0,
+      "sha256": "1b0e035ac56d597c231b9991b52afa9edb2f7c9732f86b9ba02b975f1ca3ddea",
+      "cover_path": "image/actions/action-02/action-02-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "손부채"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/d1c4e71c-e2bf-4984-8180-89e528828b5f/%EC%86%90%EB%B6%80%EC%B1%84%EC%95%84%EC%9D%B4.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-02.gif",
+      "original_filename": "손부채아이.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/d1c4e71c-e2bf-4984-8180-89e528828b5f/%EC%86%90%EB%B6%80%EC%B1%84%EC%95%84%EC%9D%B4.gif",
+      "bytes": 6739002,
+      "frames": 207,
+      "width": 300,
+      "height": 516,
+      "duration_ms": 7960,
+      "loop": 0,
+      "sha256": "7ae028c83a1509452b73ec9a5691f21d5e5d008f8b7821806099a60168724549",
+      "cover_path": "image/actions/action-02/action-02-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "손부채"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/c2331145-2251-40b1-a969-3f90a92adecc/%EC%86%90%EB%B6%80%EC%B1%84%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-03.gif",
+      "original_filename": "손부채여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/c2331145-2251-40b1-a969-3f90a92adecc/%EC%86%90%EB%B6%80%EC%B1%84%EC%97%AC%EC%9E%90.gif",
+      "bytes": 11480389,
+      "frames": 336,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 7820,
+      "loop": 0,
+      "sha256": "5444b9d4861d13642907d76c8844335de3220699918b76b9d13a174bafe69622",
+      "cover_path": "image/actions/action-02/action-02-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "불꽃놀이"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/74980839-6f96-4569-a4cb-678d4dbdbb1e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-04.gif",
+      "original_filename": "불꽃놀이남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/74980839-6f96-4569-a4cb-678d4dbdbb1e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15466944,
+      "frames": 369,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 8000,
+      "loop": 0,
+      "sha256": "eacd3cb3e2e6be0c7af6de86ac4e12373bb4bc7a5ea32312a4a86499ffacb491",
+      "cover_path": "image/actions/action-02/action-02-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "불꽃놀이"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/71f21f0b-0144-44f2-b48c-028b3733b429/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%95%84%EC%9D%B4.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-05.gif",
+      "original_filename": "불꽃놀이아이.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/71f21f0b-0144-44f2-b48c-028b3733b429/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%95%84%EC%9D%B4.gif",
+      "bytes": 4850472,
+      "frames": 101,
+      "width": 300,
+      "height": 516,
+      "duration_ms": 4030,
+      "loop": 0,
+      "sha256": "a3505bbf698b2bd468525f24f9cdcc39661a0ecae47573ae39d74ee91f200af4",
+      "cover_path": "image/actions/action-02/action-02-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "불꽃놀이"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/636c8d77-d346-4e09-bd75-8ee61286d87e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-06.gif",
+      "original_filename": "불꽃놀이여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/636c8d77-d346-4e09-bd75-8ee61286d87e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%97%AC%EC%9E%90.gif",
+      "bytes": 12143056,
+      "frames": 308,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 7970,
+      "loop": 0,
+      "sha256": "d51765d7d1f72a4c98e51db78fa9fa4a26abbeffa31dce522a3955a20054bf40",
+      "cover_path": "image/actions/action-02/action-02-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "수박먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/72edd699-d092-43f2-8ce6-113bd13bee2b/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-07.gif",
+      "original_filename": "수박먹기남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/72edd699-d092-43f2-8ce6-113bd13bee2b/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 13414095,
+      "frames": 343,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 7670,
+      "loop": 0,
+      "sha256": "e97878ee51130c2f88e4804bf32850d4d84b2637afe13d1edac56ebc91da659a",
+      "cover_path": "image/actions/action-02/action-02-07.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "수박먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/f45439a3-02ff-415e-8235-8cda7e26385d/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%95%84%EC%9D%B4.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-08.gif",
+      "original_filename": "수박먹기아이.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/f45439a3-02ff-415e-8235-8cda7e26385d/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%95%84%EC%9D%B4.gif",
+      "bytes": 6729137,
+      "frames": 197,
+      "width": 300,
+      "height": 516,
+      "duration_ms": 7670,
+      "loop": 0,
+      "sha256": "2368a48ed1686f2d91cdaa8179f97be4f754f71d041bfa4223941722d3c339a9",
+      "cover_path": "image/actions/action-02/action-02-08.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-02",
+      "box_ko": "한여름의 액션! 상자",
+      "box_zh": "盛夏",
+      "kr_date": "2025-07-17",
+      "action_names_ko": [
+        "수박먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/509e5d23-9ccd-419a-9eb9-53cc51baddb7/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "relative_path": "image/actions/action-02/action-02-09.gif",
+      "original_filename": "수박먹기여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/509e5d23-9ccd-419a-9eb9-53cc51baddb7/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "bytes": 11028444,
+      "frames": 274,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 7650,
+      "loop": 0,
+      "sha256": "126d676158385a6c793957769a585bb3d9f95f118c2e44ffce63cc53b1f9e0e3",
+      "cover_path": "image/actions/action-02/action-02-09.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "부채질"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/27f0e802-d43f-4f03-974d-94a5d165edd5/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-01.gif",
+      "original_filename": "부채질남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/27f0e802-d43f-4f03-974d-94a5d165edd5/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%95%84.gif",
+      "bytes": 15303080,
+      "frames": 274,
+      "width": 300,
+      "height": 516,
+      "duration_ms": 6260,
+      "loop": 0,
+      "sha256": "f2d337cb2b6777326bc65fb03a58e080e97c53fd1035ac169a136cadf7205240",
+      "cover_path": "image/actions/action-03/action-03-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "부채질"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/048bc59e-62c7-4123-baa6-a836701510dc/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-02.gif",
+      "original_filename": "부채질남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/048bc59e-62c7-4123-baa6-a836701510dc/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%9E%90.gif",
+      "bytes": 29859711,
+      "frames": 247,
+      "width": 470,
+      "height": 808,
+      "duration_ms": 6010,
+      "loop": 0,
+      "sha256": "16b0d440cf016dd45db61d58361cdc932e98b9fae3b72dfe39cb2dcd5a0237e0",
+      "cover_path": "image/actions/action-03/action-03-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "부채질"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/9a2e346e-64da-4c71-a0e6-b3163a5b2d1a/%EB%B6%80%EC%B1%84%EC%A7%88%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-03.gif",
+      "original_filename": "부채질여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/9a2e346e-64da-4c71-a0e6-b3163a5b2d1a/%EB%B6%80%EC%B1%84%EC%A7%88%EC%97%AC%EC%9E%90.gif",
+      "bytes": 29210914,
+      "frames": 428,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 12010,
+      "loop": 0,
+      "sha256": "a3b96dfeaff3a29ce9932aed07c1c221e39716e5d1acb208b0b2df8576f9e1f3",
+      "cover_path": "image/actions/action-03/action-03-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "음악듣기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/c9476100-b682-4663-9d24-d2e2f04d56d7/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-04.gif",
+      "original_filename": "음악감상남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/c9476100-b682-4663-9d24-d2e2f04d56d7/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15114565,
+      "frames": 223,
+      "width": 470,
+      "height": 808,
+      "duration_ms": 5410,
+      "loop": 0,
+      "sha256": "b765e926b5a56b77c76363b3140a3be70b1e47a3d5073919edd2f78a346e5130",
+      "cover_path": "image/actions/action-03/action-03-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "음악듣기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/1eae1419-040f-467d-b614-2b9f4fae3d00/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-05.gif",
+      "original_filename": "음악감상여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/1eae1419-040f-467d-b614-2b9f4fae3d00/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%95%84.gif",
+      "bytes": 7288203,
+      "frames": 210,
+      "width": 378,
+      "height": 651,
+      "duration_ms": 4910,
+      "loop": 0,
+      "sha256": "e659abdb122cc86a957fbdadf6d4fd96363a6b9128fe9b35a905a1ab162b4587",
+      "cover_path": "image/actions/action-03/action-03-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "음악듣기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/18361a37-c9ba-4f0d-8277-642d887e378d/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-06.gif",
+      "original_filename": "음악감상여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/18361a37-c9ba-4f0d-8277-642d887e378d/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%9E%90.gif",
+      "bytes": 14484982,
+      "frames": 275,
+      "width": 470,
+      "height": 808,
+      "duration_ms": 6360,
+      "loop": 0,
+      "sha256": "0d3ce2f731e22a11e93bfc2a39cc2539451ca3a1340fa983872d23593e472e54",
+      "cover_path": "image/actions/action-03/action-03-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "반디잡기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/d629f1d2-5d6b-4936-9199-a7d35c7fbbe6/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-07.gif",
+      "original_filename": "반디잡기남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/d629f1d2-5d6b-4936-9199-a7d35c7fbbe6/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 27218724,
+      "frames": 398,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 9960,
+      "loop": 0,
+      "sha256": "8f41ae8b30d808e6ce0560ecfbf06ef874dd80e00eea82a6cdf680c3c43b1363",
+      "cover_path": "image/actions/action-03/action-03-07.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "반디잡기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/2e8cad2d-5cb7-417c-b9d2-5c8468779960/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-08.gif",
+      "original_filename": "반디잡기여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/2e8cad2d-5cb7-417c-b9d2-5c8468779960/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 32357064,
+      "frames": 438,
+      "width": 378,
+      "height": 651,
+      "duration_ms": 10250,
+      "loop": 0,
+      "sha256": "8721c26f8e92235ff6da4599ce114f47d037af24b01ffe7a926d7fcb59bdfee9",
+      "cover_path": "image/actions/action-03/action-03-08.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-03",
+      "box_ko": "낭만의 여름 액션! 상자",
+      "box_zh": "浪漫夏日",
+      "kr_date": "2025-08-21",
+      "action_names_ko": [
+        "반디잡기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/58e04750-be20-4ff2-a9a6-88d5587f80cb/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "relative_path": "image/actions/action-03/action-03-09.gif",
+      "original_filename": "반디잡기여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/58e04750-be20-4ff2-a9a6-88d5587f80cb/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "bytes": 26259231,
+      "frames": 406,
+      "width": 300,
+      "height": 515,
+      "duration_ms": 9990,
+      "loop": 0,
+      "sha256": "a70884013df80f5d22d7eed71677645ccbdcdf0323efd69162c641c0ca9ef53a",
+      "cover_path": "image/actions/action-03/action-03-09.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "다짐"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/506f7f05-d08f-4a7a-92a2-46cb8aa38ffe/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-01.gif",
+      "original_filename": "다짐남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/506f7f05-d08f-4a7a-92a2-46cb8aa38ffe/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%95%84.gif",
+      "bytes": 11535017,
+      "frames": 245,
+      "width": 300,
+      "height": 537,
+      "duration_ms": 7440,
+      "loop": 0,
+      "sha256": "9262190429c8d27b362a003caf3378ae612c591ba55fbfbbca60821688f82482",
+      "cover_path": "image/actions/action-04/action-04-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "다짐"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/80e451b4-1b2a-403b-9bee-bf4d1c2fb386/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-02.gif",
+      "original_filename": "다짐남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/80e451b4-1b2a-403b-9bee-bf4d1c2fb386/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15332166,
+      "frames": 249,
+      "width": 390,
+      "height": 700,
+      "duration_ms": 6750,
+      "loop": 0,
+      "sha256": "50778ae014116b89f006b4cea8d4bc520ddfad8730a95d6076f2681926f183c2",
+      "cover_path": "image/actions/action-04/action-04-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "다짐"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ac77797f-4ef2-477d-b496-39ddc1203bdd/%EB%8B%A4%EC%A7%90%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-03.gif",
+      "original_filename": "다짐여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ac77797f-4ef2-477d-b496-39ddc1203bdd/%EB%8B%A4%EC%A7%90%EC%97%AC%EC%9E%90.gif",
+      "bytes": 11184544,
+      "frames": 248,
+      "width": 300,
+      "height": 538,
+      "duration_ms": 7140,
+      "loop": 0,
+      "sha256": "96d2330b7082a83123787ebbd9b52dc56d2a6d4eaa551be95f5cb2cd0ffc7b11",
+      "cover_path": "image/actions/action-04/action-04-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "간청"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/2beed8a1-5d54-443f-9e27-4fecbab019b1/%EA%B0%84%EC%B2%AD%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-04.gif",
+      "original_filename": "간청남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/2beed8a1-5d54-443f-9e27-4fecbab019b1/%EA%B0%84%EC%B2%AD%EB%82%A8%EC%9E%90.gif",
+      "bytes": 12479897,
+      "frames": 222,
+      "width": 300,
+      "height": 538,
+      "duration_ms": 6120,
+      "loop": 0,
+      "sha256": "52ecd2149cfaf90f2a61877705fc8e19cfbd35d9e0b0a81131d09acda399bf86",
+      "cover_path": "image/actions/action-04/action-04-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "간청"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/7aba0073-bbc0-49c7-ba63-ad1fc50979eb/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-05.gif",
+      "original_filename": "간청여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/7aba0073-bbc0-49c7-ba63-ad1fc50979eb/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%95%84.gif",
+      "bytes": 10142235,
+      "frames": 211,
+      "width": 300,
+      "height": 538,
+      "duration_ms": 6390,
+      "loop": 0,
+      "sha256": "b9f2927e4b1eec1008b0dfd4e23450f98e465e2d659c4c078b85df1d52f055f1",
+      "cover_path": "image/actions/action-04/action-04-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "간청"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/1b0cef05-7f30-411e-8460-748aee77d585/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-06.gif",
+      "original_filename": "간청여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/1b0cef05-7f30-411e-8460-748aee77d585/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%9E%90.gif",
+      "bytes": 12764701,
+      "frames": 218,
+      "width": 390,
+      "height": 700,
+      "duration_ms": 6220,
+      "loop": 0,
+      "sha256": "edc36c704a45dbbad681b25c3b40facf50e13d04f94b18d6d9ea31020ad3cabc",
+      "cover_path": "image/actions/action-04/action-04-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "기도"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/59d3b2ec-06d8-4acc-91d4-35df377926f0/%EA%B8%B0%EB%8F%84%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-07.gif",
+      "original_filename": "기도남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/59d3b2ec-06d8-4acc-91d4-35df377926f0/%EA%B8%B0%EB%8F%84%EB%82%A8%EC%9E%90.gif",
+      "bytes": 14085498,
+      "frames": 244,
+      "width": 300,
+      "height": 538,
+      "duration_ms": 7100,
+      "loop": 0,
+      "sha256": "433e7f1ca4cc97464d782048d02423132108dd47d1ad0d4c3bee8cf0135878b1",
+      "cover_path": "image/actions/action-04/action-04-07.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "기도"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ce6bf619-0191-42ef-aaa8-33e3c00509cb/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-08.gif",
+      "original_filename": "기도여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ce6bf619-0191-42ef-aaa8-33e3c00509cb/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%95%84.gif",
+      "bytes": 11768575,
+      "frames": 248,
+      "width": 300,
+      "height": 537,
+      "duration_ms": 7220,
+      "loop": 0,
+      "sha256": "47dd67cfa0f125402cc3865cc9726ad536cbf07f8ab53163279013e9e228ff32",
+      "cover_path": "image/actions/action-04/action-04-08.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-04",
+      "box_ko": "경건한 액션! 상자",
+      "box_zh": "虔誠",
+      "kr_date": "2025-09-25",
+      "action_names_ko": [
+        "기도"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/48fadf75-e6ab-4e21-93bd-5afb86e0869e/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "relative_path": "image/actions/action-04/action-04-09.gif",
+      "original_filename": "기도여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 3",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/48fadf75-e6ab-4e21-93bd-5afb86e0869e/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%9E%90.gif",
+      "bytes": 10979570,
+      "frames": 203,
+      "width": 390,
+      "height": 700,
+      "duration_ms": 6250,
+      "loop": 0,
+      "sha256": "f699e527e532404d77969724e13e3fb6d4e7f2f59c1bcf925c9856d1f0e34a26",
+      "cover_path": "image/actions/action-04/action-04-09.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "트위스트댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/f2fd210e-a8ff-400a-a25e-e9a5c749e130/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-01.gif",
+      "original_filename": "트위스트댄스남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/f2fd210e-a8ff-400a-a25e-e9a5c749e130/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "bytes": 6192876,
+      "frames": 228,
+      "width": 400,
+      "height": 539,
+      "duration_ms": 5450,
+      "loop": 0,
+      "sha256": "b53596f7b5b830ddd31815cadf208657ce5f12b53397957f078e54e0ef67003a",
+      "cover_path": "image/actions/action-05/action-05-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "트위스트댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/1e4f340a-58be-4c6b-a577-12bbceb2d853/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-02.gif",
+      "original_filename": "트위스트댄스여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/1e4f340a-58be-4c6b-a577-12bbceb2d853/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+      "bytes": 7136922,
+      "frames": 166,
+      "width": 400,
+      "height": 540,
+      "duration_ms": 5280,
+      "loop": 0,
+      "sha256": "55dba946bd82d77dc8d60df2a576a4bce82d7668910913ee0729d9f4167625fc",
+      "cover_path": "image/actions/action-05/action-05-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "브이스텝댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/fd80f494-d993-4611-b748-d066b50b8b8b/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EC%97%AC%EC%95%84%EB%8C%84%EC%8A%A4.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-03.gif",
+      "original_filename": "브이스텝여아댄스.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/fd80f494-d993-4611-b748-d066b50b8b8b/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EC%97%AC%EC%95%84%EB%8C%84%EC%8A%A4.gif",
+      "bytes": 5016397,
+      "frames": 160,
+      "width": 400,
+      "height": 539,
+      "duration_ms": 4780,
+      "loop": 0,
+      "sha256": "8b4ff272470cf74e80f6a78ada77d475976838f1f6450c8a3bd88746c7e32d3e",
+      "cover_path": "image/actions/action-05/action-05-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "브이스텝댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/dfdd7bf0-0428-4a33-8de3-4ac8c7b91fad/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-04.gif",
+      "original_filename": "브이스텝댄스남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/dfdd7bf0-0428-4a33-8de3-4ac8c7b91fad/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%9E%90.gif",
+      "bytes": 7631189,
+      "frames": 205,
+      "width": 400,
+      "height": 539,
+      "duration_ms": 4950,
+      "loop": 0,
+      "sha256": "d5197a086a49603dc38801e884bc3870e54668f7122789ed51e059432906d2e4",
+      "cover_path": "image/actions/action-05/action-05-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "투스텝댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/8f18e477-bb0f-4916-a462-e95ab5a26816/%ED%88%AC%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-05.gif",
+      "original_filename": "투스텝댄스남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/8f18e477-bb0f-4916-a462-e95ab5a26816/%ED%88%AC%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "bytes": 5184465,
+      "frames": 191,
+      "width": 400,
+      "height": 539,
+      "duration_ms": 4480,
+      "loop": 0,
+      "sha256": "e6f9a3bb8386adaf27293ef849777a64405961d995533d17328de75a4e45181b",
+      "cover_path": "image/actions/action-05/action-05-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-05",
+      "box_ko": "가벼운 스텝 액션",
+      "box_zh": "輕盈舞步",
+      "kr_date": "2025-10-30",
+      "action_names_ko": [
+        "투스텝댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/aa73dd2d-573c-442f-b2d1-44f31432990e/%ED%88%AC%EC%8A%A4%ED%85%9D%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "relative_path": "image/actions/action-05/action-05-06.gif",
+      "original_filename": "투스텝여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/aa73dd2d-573c-442f-b2d1-44f31432990e/%ED%88%AC%EC%8A%A4%ED%85%9D%EC%97%AC%EC%9E%90.gif",
+      "bytes": 8544689,
+      "frames": 188,
+      "width": 400,
+      "height": 540,
+      "duration_ms": 4420,
+      "loop": 0,
+      "sha256": "dabfd951ea820753473c65c0e86f16279c3af4b0f41c36317d33b32ca5f26452",
+      "cover_path": "image/actions/action-05/action-05-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-06",
+      "box_ko": "즐거운 항해 액션! 상자",
+      "box_zh": "歡樂航海",
+      "kr_date": "2025-11-27",
+      "action_names_ko": [
+        "오션댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ca9025d0-e976-4cd8-b2fc-b07a27c3ae3c/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3272482",
+      "relative_path": "image/actions/action-06/action-06-01.gif",
+      "original_filename": "오션댄스남아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ca9025d0-e976-4cd8-b2fc-b07a27c3ae3c/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+      "bytes": 5174332,
+      "frames": 127,
+      "width": 400,
+      "height": 636,
+      "duration_ms": 3680,
+      "loop": 0,
+      "sha256": "1f1728a995ba31c9407fe2782692e602d8f8c07272b3a30226c0ebe43ba61c5d",
+      "cover_path": "image/actions/action-06/action-06-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-06",
+      "box_ko": "즐거운 항해 액션! 상자",
+      "box_zh": "歡樂航海",
+      "kr_date": "2025-11-27",
+      "action_names_ko": [
+        "오션댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/33095053-52a1-491a-9a38-322892a2c1b2/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3272482",
+      "relative_path": "image/actions/action-06/action-06-02.gif",
+      "original_filename": "오션댄스여자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/33095053-52a1-491a-9a38-322892a2c1b2/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+      "bytes": 7103628,
+      "frames": 130,
+      "width": 400,
+      "height": 654,
+      "duration_ms": 3700,
+      "loop": 0,
+      "sha256": "3c259936e73dd80e1c20ed4491306be883e0e1be6796c21ca6cbfc75467604a1",
+      "cover_path": "image/actions/action-06/action-06-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-06",
+      "box_ko": "즐거운 항해 액션! 상자",
+      "box_zh": "歡樂航海",
+      "kr_date": "2025-11-27",
+      "action_names_ko": [
+        "망원경보기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ad4b16db-df1b-45f5-8a37-0b33b4b9a7f4/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3272482",
+      "relative_path": "image/actions/action-06/action-06-03.gif",
+      "original_filename": "망원경보기여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ad4b16db-df1b-45f5-8a37-0b33b4b9a7f4/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 12158881,
+      "frames": 352,
+      "width": 400,
+      "height": 636,
+      "duration_ms": 9300,
+      "loop": 0,
+      "sha256": "53baa3aa4a7ac34e9cd8c852721f59028ac678b0fd66526fe9f3528a37ad7c70",
+      "cover_path": "image/actions/action-06/action-06-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-06",
+      "box_ko": "즐거운 항해 액션! 상자",
+      "box_zh": "歡樂航海",
+      "kr_date": "2025-11-27",
+      "action_names_ko": [
+        "망원경보기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/7c0cb930-0ee3-499b-afc0-1990876a0307/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3272482",
+      "relative_path": "image/actions/action-06/action-06-04.gif",
+      "original_filename": "망원경보기남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/7c0cb930-0ee3-499b-afc0-1990876a0307/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15290558,
+      "frames": 312,
+      "width": 400,
+      "height": 636,
+      "duration_ms": 9360,
+      "loop": 0,
+      "sha256": "1dfaa941bc7746bd86db7ebac9b338afcc5a96eccd0ed73f500532577556cdc6",
+      "cover_path": "image/actions/action-06/action-06-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "선물은나야"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/b193c367-721e-431a-a250-4a9746b03ea1/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-01.gif",
+      "original_filename": "선물은나야남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/b193c367-721e-431a-a250-4a9746b03ea1/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EB%82%A8%EC%9E%90.gif",
+      "bytes": 10216942,
+      "frames": 138,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 6960,
+      "loop": 0,
+      "sha256": "454bf82fc8dea7f74b64310741babccd4f67a936d0caec138849422a54842f92",
+      "cover_path": "image/actions/action-07/action-07-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "선물은나야"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/385860ad-c215-465b-a0f4-a143209a49d3/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-02.gif",
+      "original_filename": "선물은나야여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/385860ad-c215-465b-a0f4-a143209a49d3/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EC%97%AC%EC%95%84.gif",
+      "bytes": 13498282,
+      "frames": 174,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 8030,
+      "loop": 0,
+      "sha256": "115a81c93bd1f5674c590ea528c778a373fed2682384a423fcb88ac606732a66",
+      "cover_path": "image/actions/action-07/action-07-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "눈스프레이"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/1d4a2e67-1de3-48f4-b11b-cfe97c8539b7/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-03.gif",
+      "original_filename": "눈스프레이남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/1d4a2e67-1de3-48f4-b11b-cfe97c8539b7/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+      "bytes": 9711814,
+      "frames": 95,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 5610,
+      "loop": 0,
+      "sha256": "3b9ae494eaeae8e811ca997949399f96c464882b1c5ff1b6551868d915c3396a",
+      "cover_path": "image/actions/action-07/action-07-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "눈스프레이"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/a04ab950-6c3f-43c0-bb3d-61217bee4893/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-04.gif",
+      "original_filename": "눈스프레이여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/a04ab950-6c3f-43c0-bb3d-61217bee4893/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EC%97%AC%EC%95%84.gif",
+      "bytes": 11306307,
+      "frames": 126,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 5810,
+      "loop": 0,
+      "sha256": "ab81f719824810c54d6d1121fe461a5e4e2ce1d790e1d7017891a48ef766756a",
+      "cover_path": "image/actions/action-07/action-07-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "눈사람만들기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/6f85613c-7fde-4cc0-8152-9f843886b73e/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-05.gif",
+      "original_filename": "눈사람만들기남자.gif",
+      "scope": "individual",
+      "variant": "官方預覽 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/6f85613c-7fde-4cc0-8152-9f843886b73e/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 27932466,
+      "frames": 326,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 13340,
+      "loop": 0,
+      "sha256": "71acbc1f0ebfd6449bed7478e46240bfbdf1c621663a828d5a13d27e6b466129",
+      "cover_path": "image/actions/action-07/action-07-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-07",
+      "box_ko": "겨울 휴일의 액션! 상자",
+      "box_zh": "冬日假期",
+      "kr_date": "2025-12-18",
+      "action_names_ko": [
+        "눈사람만들기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/e7b190ae-efb1-48fe-a65c-72cd6e47a368/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "relative_path": "image/actions/action-07/action-07-06.gif",
+      "original_filename": "눈사람만들기여아.gif",
+      "scope": "individual",
+      "variant": "官方預覽 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/e7b190ae-efb1-48fe-a65c-72cd6e47a368/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 20989524,
+      "frames": 287,
+      "width": 400,
+      "height": 724,
+      "duration_ms": 13690,
+      "loop": 0,
+      "sha256": "429f26bbbed3805762fa23eea055cf7f7961affcd1f7470e532ab3165a7be6d4",
+      "cover_path": "image/actions/action-07/action-07-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "비행기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/17c4d336-f57f-475b-880a-d7beea7afb91/%EB%B9%84%ED%96%89%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-01.gif",
+      "original_filename": "비행기남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/17c4d336-f57f-475b-880a-d7beea7afb91/%EB%B9%84%ED%96%89%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15554928,
+      "frames": 435,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 9520,
+      "loop": 0,
+      "sha256": "b581e13af3b06840ec77dcc325af63cb5777f8acba88af7ca8408e4a1ccdbf1c",
+      "cover_path": "image/actions/action-08/action-08-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "비행기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/63ed477f-7cfb-496f-ab7e-b96802e96035/%EB%B9%84%ED%96%89%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-02.gif",
+      "original_filename": "비행기여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/63ed477f-7cfb-496f-ab7e-b96802e96035/%EB%B9%84%ED%96%89%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 9038445,
+      "frames": 320,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 7300,
+      "loop": 0,
+      "sha256": "3cb20b425ed40e519ccafd4784651d762f6b29ed5e8ea9854dc27eeecb9b2c93",
+      "cover_path": "image/actions/action-08/action-08-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "종종빙글"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/5bc201fc-a0e3-4923-889a-b517609e11ed/%EC%A2%85%EC%A2%85%EB%B9%99%EA%B8%80%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-03.gif",
+      "original_filename": "종종빙글남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/5bc201fc-a0e3-4923-889a-b517609e11ed/%EC%A2%85%EC%A2%85%EB%B9%99%EA%B8%80%EB%82%A8%EC%95%84.gif",
+      "bytes": 8008777,
+      "frames": 248,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 5540,
+      "loop": 0,
+      "sha256": "90faaf840158871d7ca4703539090d094f970b827f0fb3f20975ad4ce1922597",
+      "cover_path": "image/actions/action-08/action-08-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "종종빙글"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/b3365901-6c81-4f5b-b19e-397a8e6546a9/%EC%A2%85%EC%A2%85%EB%B9%99%EA%B8%80%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-04.gif",
+      "original_filename": "종종빙글여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/b3365901-6c81-4f5b-b19e-397a8e6546a9/%EC%A2%85%EC%A2%85%EB%B9%99%EA%B8%80%EC%97%AC%EC%9E%90.gif",
+      "bytes": 9216146,
+      "frames": 202,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 5020,
+      "loop": 0,
+      "sha256": "65502aa1288c341e13de553013998cf75c8d27cf2e4eda1e4ac0f0409f14cecd",
+      "cover_path": "image/actions/action-08/action-08-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "짜잔"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/842d611d-b029-45a5-b008-e449aa1f40cc/%EC%A7%9C%EC%9F%8C%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-05.gif",
+      "original_filename": "짜쟌남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 2,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 3,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "corrected_from_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/842d611d-b029-45a5-b008-e449aa1f40cc/%EC%A7%9C%EC%9E%94%EB%82%A8%EC%95%84.gif",
+      "correction_reason": "Re-extracted exact original Korean filename from official notice; do not normalize spelling.",
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/842d611d-b029-45a5-b008-e449aa1f40cc/%EC%A7%9C%EC%9F%8C%EB%82%A8%EC%95%84.gif",
+      "bytes": 12481621,
+      "frames": 392,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 8930,
+      "loop": 0,
+      "sha256": "c38fd2f10bc2db9e1a365e5111defd5cfb387588778e1e870b74b545cb930a98",
+      "cover_path": "image/actions/action-08/action-08-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-08",
+      "box_ko": "장난스러운 행동! 상자",
+      "box_zh": "調皮",
+      "kr_date": "2026-03-26",
+      "action_names_ko": [
+        "짜잔"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/52ace710-cac6-41df-970b-c90b2c5229c8/%EC%A7%9C%EC%9F%8C%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3407261",
+      "relative_path": "image/actions/action-08/action-08-06.gif",
+      "original_filename": "짜쟌여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 2,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 3,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "corrected_from_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/52ace710-cac6-41df-970b-c90b2c5229c8/%EC%A7%9C%EC%9E%94%EC%97%AC%EC%9E%90.gif",
+      "correction_reason": "Re-extracted exact original Korean filename from official notice; do not normalize spelling.",
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260325/52ace710-cac6-41df-970b-c90b2c5229c8/%EC%A7%9C%EC%9F%8C%EC%97%AC%EC%9E%90.gif",
+      "bytes": 10296792,
+      "frames": 255,
+      "width": 400,
+      "height": 559,
+      "duration_ms": 6360,
+      "loop": 0,
+      "sha256": "b50068b302ad4eecefa06182c029b8462c51670d7cdd1d3077c4af1b1dfe0309",
+      "cover_path": "image/actions/action-08/action-08-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/33d6edc0-9293-423c-9f85-1613b0428d37/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%EC%98%AC%EB%B9%BC%EB%AF%B8.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-01.gif",
+      "original_filename": "모자마술남아올빼미.gif",
+      "scope": "individual",
+      "variant": "男性／貓頭鷹",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/33d6edc0-9293-423c-9f85-1613b0428d37/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%EC%98%AC%EB%B9%BC%EB%AF%B8.gif",
+      "bytes": 13951858,
+      "frames": 340,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 11870,
+      "loop": 0,
+      "sha256": "e33c8380e2573b266888cf770e8d5055c745764a0cb883266198e600993bd423",
+      "cover_path": "image/actions/action-09/action-09-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/68423b31-c221-489b-9481-839f8c89bfd1/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%ED%86%A0%EB%81%BC.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-02.gif",
+      "original_filename": "모자마술남아토끼.gif",
+      "scope": "individual",
+      "variant": "男性／兔子",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/68423b31-c221-489b-9481-839f8c89bfd1/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%ED%86%A0%EB%81%BC.gif",
+      "bytes": 14711612,
+      "frames": 351,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 12340,
+      "loop": 0,
+      "sha256": "2756d98fdc73612111709655fbb7280a0f9f770c38e2f4ccb8f9ae03c0678c25",
+      "cover_path": "image/actions/action-09/action-09-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/581118a0-0d65-4cfe-a427-6ccc24dec6e3/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%ED%96%84%EC%8A%A4%ED%84%B0.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-03.gif",
+      "original_filename": "모자마술남아햄스터.gif",
+      "scope": "individual",
+      "variant": "男性／倉鼠",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/581118a0-0d65-4cfe-a427-6ccc24dec6e3/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84%ED%96%84%EC%8A%A4%ED%84%B0.gif",
+      "bytes": 14266668,
+      "frames": 342,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 12220,
+      "loop": 0,
+      "sha256": "c423cbfd85727f51946b2737e01ad19f0f9e8616d05bac176e7fdf89414a8ac0",
+      "cover_path": "image/actions/action-09/action-09-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/77b30f0a-097a-4f39-9219-2b979daa7aaf/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%EC%98%AC%EB%BA%B4%EB%AF%B8.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-04.gif",
+      "original_filename": "모자마술여자올뺴미.gif",
+      "scope": "individual",
+      "variant": "女性／貓頭鷹",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 2,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 3,
+          "result": "failed",
+          "reason": "HTTP Error 403: Forbidden"
+        },
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "corrected_from_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/77b30f0a-097a-4f39-9219-2b979daa7aaf/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%EC%98%AC%EB%B9%BC%EB%AF%B8.gif",
+      "correction_reason": "Re-extracted exact original Korean filename from official notice; do not normalize spelling.",
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/77b30f0a-097a-4f39-9219-2b979daa7aaf/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%EC%98%AC%EB%BA%B4%EB%AF%B8.gif",
+      "bytes": 20457415,
+      "frames": 405,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 12210,
+      "loop": 0,
+      "sha256": "030951a714b1d878a93cadcb328cdc5fc573d6e6f166134ace1642b0f0394064",
+      "cover_path": "image/actions/action-09/action-09-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/4523d6c5-7a03-4647-9ebf-1caa5b96db72/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%ED%86%A0%EB%81%BC.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-05.gif",
+      "original_filename": "모자마술여자토끼.gif",
+      "scope": "individual",
+      "variant": "女性／兔子",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/4523d6c5-7a03-4647-9ebf-1caa5b96db72/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%ED%86%A0%EB%81%BC.gif",
+      "bytes": 14866467,
+      "frames": 275,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 12060,
+      "loop": 0,
+      "sha256": "7ec96ea14618337a3df25fc859d6d2c78e86daf0960d5b42e75cc80964264c05",
+      "cover_path": "image/actions/action-09/action-09-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "모자마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/1b51dfb6-64b1-421c-b0d2-423bb2d7d277/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%ED%96%84%EC%8A%A4%ED%84%B0.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-06.gif",
+      "original_filename": "모자마술여자햄스터.gif",
+      "scope": "individual",
+      "variant": "女性／倉鼠",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/1b51dfb6-64b1-421c-b0d2-423bb2d7d277/%EB%AA%A8%EC%9E%90%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%90%ED%96%84%EC%8A%A4%ED%84%B0.gif",
+      "bytes": 20814947,
+      "frames": 410,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 12240,
+      "loop": 0,
+      "sha256": "74e1aba2b6a66be52cad97b8a737a98571ab960c9f1608788d32c8e7b1ed9132",
+      "cover_path": "image/actions/action-09/action-09-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "카드마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/17ce2bfe-c204-4273-838b-43919da37305/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%8401.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-07.gif",
+      "original_filename": "카드마술남아01.gif",
+      "scope": "individual",
+      "variant": "男性／演出 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/17ce2bfe-c204-4273-838b-43919da37305/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%8401.gif",
+      "bytes": 17196171,
+      "frames": 452,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 16840,
+      "loop": 0,
+      "sha256": "4b8096bc319fbad4497c188bbd91c2d829482324e417e19910d82c68b8c77d5c",
+      "cover_path": "image/actions/action-09/action-09-07.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "카드마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/bb8641e0-7e13-49d5-9652-3326dd8e31cc/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84022.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-08.gif",
+      "original_filename": "카드마술남아022.gif",
+      "scope": "individual",
+      "variant": "男性／演出 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/bb8641e0-7e13-49d5-9652-3326dd8e31cc/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EB%82%A8%EC%95%84022.gif",
+      "bytes": 17772342,
+      "frames": 499,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 16880,
+      "loop": 0,
+      "sha256": "9b4f4764ef828a4c2c520fff9091df112c89ff49ab98224aa340746d31aeed38",
+      "cover_path": "image/actions/action-09/action-09-08.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "카드마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/c0af2502-f0b5-4dcd-aa55-fc2de1fb9103/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%9001.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-09.gif",
+      "original_filename": "카드마술여자01.gif",
+      "scope": "individual",
+      "variant": "女性／演出 1",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/c0af2502-f0b5-4dcd-aa55-fc2de1fb9103/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%9001.gif",
+      "bytes": 27401293,
+      "frames": 572,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 16700,
+      "loop": 0,
+      "sha256": "a2e5b48d1566891f47ad3c4fdc6e47ff5900f45bf9ae9a5613ddcfcb3232614f",
+      "cover_path": "image/actions/action-09/action-09-09.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "카드마술"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/59f8229b-aa9f-439f-9889-3effc89835d0/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%9002.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-10.gif",
+      "original_filename": "카드마술여자02.gif",
+      "scope": "individual",
+      "variant": "女性／演出 2",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/59f8229b-aa9f-439f-9889-3effc89835d0/%EC%B9%B4%EB%93%9C%EB%A7%88%EC%88%A0%EC%97%AC%EC%9E%9002.gif",
+      "bytes": 26360792,
+      "frames": 571,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 16950,
+      "loop": 0,
+      "sha256": "1c5e12d0a5fc1f3ff19f3520c8e04915eb734e1ee1997de0fd21e9ff037bc882",
+      "cover_path": "image/actions/action-09/action-09-10.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "접시돌리기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/74b72f5e-a8b8-441e-b224-8553f625e17f/%EC%A0%91%EC%8B%9C%EB%8F%8C%EB%A6%AC%EA%B0%80%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-11.gif",
+      "original_filename": "접시돌리가남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/74b72f5e-a8b8-441e-b224-8553f625e17f/%EC%A0%91%EC%8B%9C%EB%8F%8C%EB%A6%AC%EA%B0%80%EB%82%A8%EC%9E%90.gif",
+      "bytes": 16716709,
+      "frames": 342,
+      "width": 400,
+      "height": 661,
+      "duration_ms": 9690,
+      "loop": 0,
+      "sha256": "b4bb2fe2b3d4fae39bbb05631f0a5ad884bbd0ba8ecfdac9545930323acd21ac",
+      "cover_path": "image/actions/action-09/action-09-11.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-09",
+      "box_ko": "깜짝 마술 행동! 상자",
+      "box_zh": "驚喜魔術",
+      "kr_date": "2026-04-23",
+      "action_names_ko": [
+        "접시돌리기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/4d164953-8c14-40dc-a649-a6c7c97e9d68/%EC%A0%91%EC%8B%9C%EB%8F%8C%EB%A6%AC%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3428339",
+      "relative_path": "image/actions/action-09/action-09-12.gif",
+      "original_filename": "접시돌리기여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260422/4d164953-8c14-40dc-a649-a6c7c97e9d68/%EC%A0%91%EC%8B%9C%EB%8F%8C%EB%A6%AC%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 13134330,
+      "frames": 259,
+      "width": 400,
+      "height": 662,
+      "duration_ms": 9490,
+      "loop": 0,
+      "sha256": "717a62fc0de47417996a80494ed03049dce8f7ddae85e1499aa3162e47753c7d",
+      "cover_path": "image/actions/action-09/action-09-12.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "흔들흔들"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/82b09a1f-2b11-4e24-b582-bbcf70a8fde3/%ED%9D%94%EB%93%A4%ED%9D%94%EB%93%A4%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-01.gif",
+      "original_filename": "흔들흔들남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/82b09a1f-2b11-4e24-b582-bbcf70a8fde3/%ED%9D%94%EB%93%A4%ED%9D%94%EB%93%A4%EB%82%A8%EC%9E%90.gif",
+      "bytes": 15140532,
+      "frames": 289,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 6540,
+      "loop": 0,
+      "sha256": "358779a65c0e19c6e42d53c4bc610053ff6ec3c83c1c70fdb2ca6596a1695ade",
+      "cover_path": "image/actions/action-10/action-10-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "흔들흔들"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/f2c3f190-eed7-4fbf-ae0c-281c6b9c1617/%ED%9D%94%EB%93%A4%ED%9D%94%EB%93%A4%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-02.gif",
+      "original_filename": "흔들흔들여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/f2c3f190-eed7-4fbf-ae0c-281c6b9c1617/%ED%9D%94%EB%93%A4%ED%9D%94%EB%93%A4%EC%97%AC%EC%95%84.gif",
+      "bytes": 11039308,
+      "frames": 288,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 6580,
+      "loop": 0,
+      "sha256": "bb9e101d3d7818206c5429fbe9947bdc993818b2b468ea62a04a3ee76cdd613c",
+      "cover_path": "image/actions/action-10/action-10-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "동물흉내"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/e1bc2474-89eb-42f0-9cb3-cfba31af1efa/%EB%8F%99%EB%AC%BC%ED%9D%89%EB%82%B4%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-03.gif",
+      "original_filename": "동물흉내남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/e1bc2474-89eb-42f0-9cb3-cfba31af1efa/%EB%8F%99%EB%AC%BC%ED%9D%89%EB%82%B4%EB%82%A8%EC%95%84.gif",
+      "bytes": 14404703,
+      "frames": 553,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 12760,
+      "loop": 0,
+      "sha256": "6f9820164619799ad1caebf7e79d0ebdad12e3738e9b1f3fe5a3fb136631354e",
+      "cover_path": "image/actions/action-10/action-10-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "동물흉내"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/df0dfb83-84a1-4ba6-9813-2ad16b60d8c1/%EB%8F%99%EB%AC%BC%ED%9D%89%EB%82%B4%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-04.gif",
+      "original_filename": "동물흉내여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/df0dfb83-84a1-4ba6-9813-2ad16b60d8c1/%EB%8F%99%EB%AC%BC%ED%9D%89%EB%82%B4%EC%97%AC%EC%9E%90.gif",
+      "bytes": 18313814,
+      "frames": 531,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 13090,
+      "loop": 0,
+      "sha256": "5eb6e10978322e8331b10739b88292d3ce833aba958654d627281452dde8763e",
+      "cover_path": "image/actions/action-10/action-10-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "둘러보기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/5641711b-3d18-40d0-8cbc-7fe65207fb09/%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-05.gif",
+      "original_filename": "둘러보기남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/5641711b-3d18-40d0-8cbc-7fe65207fb09/%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 29287515,
+      "frames": 641,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 15390,
+      "loop": 0,
+      "sha256": "7ccd022f6fa0d007279438bb08f2c5c52631b4cfa4ea808d34d1c69320d55254",
+      "cover_path": "image/actions/action-10/action-10-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-10",
+      "box_ko": "천진난만 일상 행동! 상자",
+      "box_zh": "天真日常",
+      "kr_date": "2026-06-25",
+      "action_names_ko": [
+        "둘러보기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/ef77d61d-899c-44b8-ae6f-55cdeaa351ac/%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3481571",
+      "relative_path": "image/actions/action-10/action-10-06.gif",
+      "original_filename": "둘러보기여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260624/ef77d61d-899c-44b8-ae6f-55cdeaa351ac/%EB%91%98%EB%9F%AC%EB%B3%B4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 18857313,
+      "frames": 592,
+      "width": 400,
+      "height": 649,
+      "duration_ms": 13450,
+      "loop": 0,
+      "sha256": "e9ad46bc0c3ed047f1562708cd5252fc1d3b241b830397060272b69393285115",
+      "cover_path": "image/actions/action-10/action-10-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "오들오들"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260716/0d6c30c3-6d18-45e7-9212-53cfc2395808/%EC%98%A4%EB%93%A4%EC%98%A4%EB%93%A4%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-01.gif",
+      "original_filename": "오들오들남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260716/0d6c30c3-6d18-45e7-9212-53cfc2395808/%EC%98%A4%EB%93%A4%EC%98%A4%EB%93%A4%EB%82%A8%EC%95%84.gif",
+      "bytes": 11763591,
+      "frames": 455,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 10250,
+      "loop": 0,
+      "sha256": "48e41da138af03a5db74aab1c86095e7dfd6a5e289a22078b919e17828d25ddc",
+      "cover_path": "image/actions/action-11/action-11-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "오들오들"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/1af81255-973b-4c74-8d52-26c938c9d308/%EC%98%A4%EB%93%A4%EC%98%A4%EB%93%A4%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-02.gif",
+      "original_filename": "오들오들여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/1af81255-973b-4c74-8d52-26c938c9d308/%EC%98%A4%EB%93%A4%EC%98%A4%EB%93%A4%EC%97%AC%EC%9E%90.gif",
+      "bytes": 13033857,
+      "frames": 415,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 9260,
+      "loop": 0,
+      "sha256": "58c1154737d3e4bf68ffc43ee756014fd6bac43b61539ff9c81a477a8da111ec",
+      "cover_path": "image/actions/action-11/action-11-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "혼비백산"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/e915cb2b-18a4-4522-9e45-b51b505fc666/%ED%98%BC%EB%B9%84%EB%B0%B1%EC%82%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-03.gif",
+      "original_filename": "혼비백산남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/e915cb2b-18a4-4522-9e45-b51b505fc666/%ED%98%BC%EB%B9%84%EB%B0%B1%EC%82%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 16182883,
+      "frames": 496,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 11330,
+      "loop": 0,
+      "sha256": "5a0aa1f8c6b4302c5ffd0ef8d143b939f5fa9906749d699c334f958af429498b",
+      "cover_path": "image/actions/action-11/action-11-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "혼비백산"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260716/c873b90d-1fdc-48e8-9acb-e36749e977b6/%ED%98%BC%EB%B9%84%EB%B0%B1%EC%82%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-04.gif",
+      "original_filename": "혼비백산여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260716/c873b90d-1fdc-48e8-9acb-e36749e977b6/%ED%98%BC%EB%B9%84%EB%B0%B1%EC%82%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 15601373,
+      "frames": 510,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 10980,
+      "loop": 0,
+      "sha256": "8f50bcb578cfa5bf17d1377872d74bd45cb8b8cf722bdaa252ee3f72b42c7624",
+      "cover_path": "image/actions/action-11/action-11-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "놀라기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/85fd8dee-a841-4c8d-81e2-091c5204474e/%EB%86%80%EB%9D%BC%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-05.gif",
+      "original_filename": "놀라기남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/85fd8dee-a841-4c8d-81e2-091c5204474e/%EB%86%80%EB%9D%BC%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 9731750,
+      "frames": 312,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 6940,
+      "loop": 0,
+      "sha256": "4f51aebc33bccaed3a440dfe1f145eb5162c1a978ce694fadc249118b9aba7c2",
+      "cover_path": "image/actions/action-11/action-11-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "놀라기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/01d5f5d1-94f0-40a5-bf5c-2a6e7accb030/%EB%86%80%EB%9D%BC%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-06.gif",
+      "original_filename": "놀라기여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/01d5f5d1-94f0-40a5-bf5c-2a6e7accb030/%EB%86%80%EB%9D%BC%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 7128629,
+      "frames": 282,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 6330,
+      "loop": 0,
+      "sha256": "250885d972af863d919d7cb846f778f35e8702ad9e1fa5936d83c6df9f5d8942",
+      "cover_path": "image/actions/action-11/action-11-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "놀래키기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/4fcf98d8-947e-40e3-8efe-7c04636f9024/%EB%86%80%EB%9E%98%ED%82%A4%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-07.gif",
+      "original_filename": "놀래키기남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/4fcf98d8-947e-40e3-8efe-7c04636f9024/%EB%86%80%EB%9E%98%ED%82%A4%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "bytes": 9309056,
+      "frames": 321,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 7320,
+      "loop": 0,
+      "sha256": "46973bdb0267e688ac5ea553e70ddc3f96ee58c1738eb20abc16311f13cac4ff",
+      "cover_path": "image/actions/action-11/action-11-07.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-11",
+      "box_ko": "짓궂은 장난 행동! 상자",
+      "box_zh": "惡作劇",
+      "kr_date": "2026-07-16",
+      "action_names_ko": [
+        "놀래키기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/8e86101b-2059-45ea-8b10-feb7af1e5ab4/%EB%86%80%EB%9E%98%ED%82%A4%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3500242",
+      "relative_path": "image/actions/action-11/action-11-08.gif",
+      "original_filename": "놀래키기여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260715/8e86101b-2059-45ea-8b10-feb7af1e5ab4/%EB%86%80%EB%9E%98%ED%82%A4%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "bytes": 13648774,
+      "frames": 350,
+      "width": 400,
+      "height": 598,
+      "duration_ms": 8110,
+      "loop": 0,
+      "sha256": "df2aaa49ba1ef7da6137e2c123dedc670d657de8fab3e901eb548b0535ef3dfa",
+      "cover_path": "image/actions/action-11/action-11-08.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "솜사탕먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/4e03449a-b6d1-4067-b6b5-aa550ecb7707/%EC%86%9C%EC%82%AC%ED%83%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-01.gif",
+      "original_filename": "솜사탕먹기남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/4e03449a-b6d1-4067-b6b5-aa550ecb7707/%EC%86%9C%EC%82%AC%ED%83%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+      "bytes": 21709673,
+      "frames": 340,
+      "width": 380,
+      "height": 592,
+      "duration_ms": 13690,
+      "loop": 0,
+      "sha256": "40cca889a46fa9cdd28bd480737b71405a6e3991a2aa86d7c5c49c072b4aeff8",
+      "cover_path": "image/actions/action-12/action-12-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "솜사탕먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/e8584130-9191-400e-a91d-027ffda0430a/%EC%86%9C%EC%82%AC%ED%83%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-02.gif",
+      "original_filename": "솜사탕먹기여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/e8584130-9191-400e-a91d-027ffda0430a/%EC%86%9C%EC%82%AC%ED%83%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+      "bytes": 21659692,
+      "frames": 398,
+      "width": 380,
+      "height": 592,
+      "duration_ms": 16000,
+      "loop": 0,
+      "sha256": "d2a2dfb34a958d274012511d12be0979e1559e879bf004a3fca294ff39d52d88",
+      "cover_path": "image/actions/action-12/action-12-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "옥수수먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/4dfbd102-6d26-4046-b3c1-442d8346b8fc/%EC%98%A5%EC%88%98%EC%88%98%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-03.gif",
+      "original_filename": "옥수수먹기남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/4dfbd102-6d26-4046-b3c1-442d8346b8fc/%EC%98%A5%EC%88%98%EC%88%98%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "bytes": 11929505,
+      "frames": 198,
+      "width": 380,
+      "height": 592,
+      "duration_ms": 8000,
+      "loop": 0,
+      "sha256": "3f1405fcb48dbfdb23c7a597caf76dac04dae2e10c2019b975496f9529e8bce8",
+      "cover_path": "image/actions/action-12/action-12-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "옥수수먹기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/d967edbf-a375-4f85-8695-939cda88cc69/%EC%98%A5%EC%88%98%EC%88%98%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-04.gif",
+      "original_filename": "옥수수먹기여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/d967edbf-a375-4f85-8695-939cda88cc69/%EC%98%A5%EC%88%98%EC%88%98%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "bytes": 11465635,
+      "frames": 194,
+      "width": 380,
+      "height": 592,
+      "duration_ms": 8050,
+      "loop": 0,
+      "sha256": "b7c756e0017542802b939e470dd498d95781fb6632e156ee4ccdab83321e2dda",
+      "cover_path": "image/actions/action-12/action-12-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "음료마시기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/cfc426f6-9462-4e46-ba1f-82d27a7fe8f3/%EC%9D%8C%EB%A3%8C%EB%A7%88%EC%8B%9C%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-05.gif",
+      "original_filename": "음료마시기남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/cfc426f6-9462-4e46-ba1f-82d27a7fe8f3/%EC%9D%8C%EB%A3%8C%EB%A7%88%EC%8B%9C%EA%B8%B0%EB%82%A8%EC%95%84.gif",
+      "bytes": 13279590,
+      "frames": 222,
+      "width": 380,
+      "height": 592,
+      "duration_ms": 9100,
+      "loop": 0,
+      "sha256": "f610bd0c6e2fc7bc8ae0b8df82dbac9d7f18fbe88fe195fb191c2af5fd1a3a9c",
+      "cover_path": "image/actions/action-12/action-12-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-12",
+      "box_ko": "즐거운 군것질 행동! 상자",
+      "box_zh": "歡樂零食",
+      "kr_date": "2026-08-13",
+      "action_names_ko": [
+        "음료마시기"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/7754827c-6ef0-43bd-9652-8c9614d422c0/%EC%9D%8C%EB%A3%8C%EB%A7%88%EC%8B%9C%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3521627",
+      "relative_path": "image/actions/action-12/action-12-06.gif",
+      "original_filename": "음료마시기여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260812/7754827c-6ef0-43bd-9652-8c9614d422c0/%EC%9D%8C%EB%A3%8C%EB%A7%88%EC%8B%9C%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+      "bytes": 12462968,
+      "frames": 210,
+      "width": 380,
+      "height": 593,
+      "duration_ms": 9090,
+      "loop": 0,
+      "sha256": "8a2b45f200ee995ca87b0b9161997d861fd15814245344e4695d2b1e31e6ee9e",
+      "cover_path": "image/actions/action-12/action-12-06.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-13",
+      "box_ko": "짜릿한 등장 행동! 상자",
+      "box_zh": "熱血登場",
+      "kr_date": "2026-09-17",
+      "action_names_ko": [
+        "히어로레드",
+        "히어로그린",
+        "히어로옐로우",
+        "히어로블루",
+        "히어로핑크"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260916/198c103f-58e0-4018-b588-7f37c3b37ba3/%EC%A0%84%EB%8C%80%ED%8F%AC%EC%A6%88%EC%84%B1%EA%B3%B5.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3545049",
+      "relative_path": "image/actions/action-13/action-13-01.gif",
+      "original_filename": "전대포즈성공.gif",
+      "scope": "combined",
+      "variant": "五人合演／成功",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260916/198c103f-58e0-4018-b588-7f37c3b37ba3/%EC%A0%84%EB%8C%80%ED%8F%AC%EC%A6%88%EC%84%B1%EA%B3%B5.gif",
+      "bytes": 26760157,
+      "frames": 327,
+      "width": 750,
+      "height": 495,
+      "duration_ms": 9070,
+      "loop": 0,
+      "sha256": "9e24c9cf21e9d4adc89bf03ff5993bc6faa6c41567081699e2c064ec10ca9815",
+      "cover_path": "image/actions/action-13/action-13-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-13",
+      "box_ko": "짜릿한 등장 행동! 상자",
+      "box_zh": "熱血登場",
+      "kr_date": "2026-09-17",
+      "action_names_ko": [
+        "히어로레드",
+        "히어로그린",
+        "히어로옐로우",
+        "히어로블루",
+        "히어로핑크"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260916/81688a83-388f-48ba-98ff-3301bf570033/%EC%A0%84%EB%8C%80%ED%8F%AC%EC%A6%88%EC%8B%A4%ED%8C%A8.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3545049",
+      "relative_path": "image/actions/action-13/action-13-02.gif",
+      "original_filename": "전대포즈실패.gif",
+      "scope": "combined",
+      "variant": "五人合演／失敗",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20260916/81688a83-388f-48ba-98ff-3301bf570033/%EC%A0%84%EB%8C%80%ED%8F%AC%EC%A6%88%EC%8B%A4%ED%8C%A8.gif",
+      "bytes": 19580577,
+      "frames": 449,
+      "width": 750,
+      "height": 494,
+      "duration_ms": 8980,
+      "loop": 0,
+      "sha256": "5126352c91890a266d7fa56d16a03f1b3db40c6c0a4ddc5f5c2b45f3484708b1",
+      "cover_path": "image/actions/action-13/action-13-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/6927c453-4bbc-4ff2-9c2c-e176e4c4aeef/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%8C%84%EC%8A%A4%EB%82%A8%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-01.gif",
+      "original_filename": "할로윈댄스남자.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/6927c453-4bbc-4ff2-9c2c-e176e4c4aeef/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%8C%84%EC%8A%A4%EB%82%A8%EC%9E%90.gif",
+      "bytes": 6286837,
+      "frames": 105,
+      "width": 400,
+      "height": 638,
+      "duration_ms": 6430,
+      "loop": 0,
+      "sha256": "365d6e5c11a2bfd709c764002500fa6b4ed3d4d09decaadaf321e85973f30277",
+      "cover_path": "image/actions/action-14/action-14-01.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈댄스"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/d948c00e-3f71-4818-962e-528691df3917/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%8C%84%EC%8A%A4%EC%97%AC%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-02.gif",
+      "original_filename": "할로윈댄스여아.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/d948c00e-3f71-4818-962e-528691df3917/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%8C%84%EC%8A%A4%EC%97%AC%EC%95%84.gif",
+      "bytes": 5855566,
+      "frames": 111,
+      "width": 400,
+      "height": 638,
+      "duration_ms": 6390,
+      "loop": 0,
+      "sha256": "30cfd8bb13260e7f8b534b0a4ad59ca4a8f8880d8a3f963ae0930f15d32feb1b",
+      "cover_path": "image/actions/action-14/action-14-02.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈간식"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/96903747-90c2-4e00-835b-a9c5e2e8b826/%ED%95%A0%EB%A1%9C%EC%9C%88%EA%B0%84%EC%8B%9D%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-03.gif",
+      "original_filename": "할로윈간식남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/96903747-90c2-4e00-835b-a9c5e2e8b826/%ED%95%A0%EB%A1%9C%EC%9C%88%EA%B0%84%EC%8B%9D%EB%82%A8%EC%95%84.gif",
+      "bytes": 8416796,
+      "frames": 161,
+      "width": 400,
+      "height": 639,
+      "duration_ms": 9020,
+      "loop": 0,
+      "sha256": "23f32d047088f5ff428800f36a94416ab9d7fe319ad86987b4a3a801a39b8b8a",
+      "cover_path": "image/actions/action-14/action-14-03.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈간식"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/3d17404a-5068-4da2-8b22-94a0eef34700/%ED%95%A0%EB%A1%9C%EC%9C%88%EA%B0%84%EC%8B%9D%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-04.gif",
+      "original_filename": "할로윈간식여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/3d17404a-5068-4da2-8b22-94a0eef34700/%ED%95%A0%EB%A1%9C%EC%9C%88%EA%B0%84%EC%8B%9D%EC%97%AC%EC%9E%90.gif",
+      "bytes": 9100259,
+      "frames": 145,
+      "width": 400,
+      "height": 638,
+      "duration_ms": 9020,
+      "loop": 0,
+      "sha256": "4912d53f0ca07a358114ef74db6033d3883d53af208ec0b58859528fef7bbe02",
+      "cover_path": "image/actions/action-14/action-14-04.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈빗자루"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/53eef80f-bb5d-4dce-9781-b0bf4bd65a71/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%B9%97%EC%9E%90%EB%A3%A8%EB%82%A8%EC%95%84.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-05.gif",
+      "original_filename": "할로윈빗자루남아.gif",
+      "scope": "individual",
+      "variant": "男性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/53eef80f-bb5d-4dce-9781-b0bf4bd65a71/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%B9%97%EC%9E%90%EB%A3%A8%EB%82%A8%EC%95%84.gif",
+      "bytes": 10708668,
+      "frames": 201,
+      "width": 400,
+      "height": 638,
+      "duration_ms": 12070,
+      "loop": 0,
+      "sha256": "6a5bdd64a5382b8f27d1fba8fd976426bdc23e343a53e9b3469f2a33632e0af9",
+      "cover_path": "image/actions/action-14/action-14-05.png",
+      "all_frames_decoded": true
+    },
+    {
+      "box_id": "action-14",
+      "box_ko": "장난스러운 밤의 행동! 상자",
+      "box_zh": "淘氣之夜",
+      "kr_date": "2026-10-15",
+      "action_names_ko": [
+        "할로윈빗자루"
+      ],
+      "source_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/fdd2b984-3c32-455a-a371-8034c96e0abe/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%B9%97%EC%9E%90%EB%A3%A8%EC%97%AC%EC%9E%90.gif",
+      "notice_url": "https://mabinogimobile.nexon.com/News/Notice/3562730",
+      "relative_path": "image/actions/action-14/action-14-06.gif",
+      "original_filename": "할로윈빗자루여자.gif",
+      "scope": "individual",
+      "variant": "女性",
+      "status": "success",
+      "attempts": [
+        {
+          "attempt": 1,
+          "result": "success",
+          "cached": false
+        }
+      ],
+      "content_type": "image/gif",
+      "final_url": "https://dszw1qtcnsa5e.cloudfront.net/community/20261014/fdd2b984-3c32-455a-a371-8034c96e0abe/%ED%95%A0%EB%A1%9C%EC%9C%88%EB%B9%97%EC%9E%90%EB%A3%A8%EC%97%AC%EC%9E%90.gif",
+      "bytes": 11693549,
+      "frames": 200,
+      "width": 400,
+      "height": 638,
+      "duration_ms": 12020,
+      "loop": 0,
+      "sha256": "3f79514394fb8328c701c65334d48eeec4714fe7eeb9a90791570b1be7e9464e",
+      "cover_path": "image/actions/action-14/action-14-06.png",
+      "all_frames_decoded": true
+    }
+  ],
+  "limitations": [
+    "2026-09-17 official page supplies two combined success/failure GIFs for five actions, not five individual files.",
+    "Only officially published character/performance variants are included; unpublished variants are not invented."
+  ]
+}

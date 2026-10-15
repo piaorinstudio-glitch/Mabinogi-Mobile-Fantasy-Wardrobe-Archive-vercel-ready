@@ -1,0 +1,11 @@
+本機 Git 提交紀錄（未推送）
+儲存庫：https://github.com/piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
+基底 main：f5b8196419ebcc9a1f66bfd7d3ddf0f5acf8fe0d
+獨立分支：feature/deka-action-boxes-20261015
+本機提交：3b877256a6df18787ba0d188e3d4c685f703fda3
+訊息：Add verified Deka action boxes and 92 original GIF previews
+本機工作資料夾：D:\AI\mabinogi\work\current-main-accessible
+現況：工作目錄乾淨；207 個提交內變動檔案；交付 ZIP 另附本 COMMIT_RECORD.txt。
+GitHub API 權限：pull=true / push=false。
+沒有推送分支、沒有建立遠端 PR、沒有更改 main，亦未部署正式網站。
+網站完整 ZIP 已包含本機提交後的全部網站檔案及92個原始GIF，可於儲存庫根目錄覆蓋／新增。
