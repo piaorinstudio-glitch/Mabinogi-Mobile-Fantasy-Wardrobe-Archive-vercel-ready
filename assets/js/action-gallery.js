@@ -34,7 +34,6 @@
     if(!box)return;
     activeBox=box;actionIndex=0;previewIndex=0;trigger=button;
     $('actionDialogTitle').textContent=box.zh;
-    $('actionDialogKo').textContent=box.ko;
     $('actionChoices').innerHTML=box.actions.map((action,index)=>`<button class="action-choice" type="button" data-action-index="${index}" aria-pressed="${index===0}"><strong>${escape(action.zh)}${action.translationStatus==='provisional'?'（暫譯）':''}</strong><span lang="ko">${escape(action.ko)}</span></button>`).join('');
     $('actionChoices').querySelectorAll('button').forEach(choice=>choice.onclick=()=>{
       actionIndex=Number(choice.dataset.actionIndex);previewIndex=0;renderSelectedAction();
@@ -54,12 +53,18 @@
     const img=$('actionGif');
     $('actionPlaybackStatus').textContent='GIF 載入中…';
     img.onload=()=>{$('actionPlaybackStatus').textContent='';};
-    img.onerror=()=>{$('actionPlaybackStatus').textContent='GIF 載入失敗，請點選上方官方預覽重試。';};
+    img.onerror=()=>{$('actionPlaybackStatus').textContent='GIF 載入失敗，請重新選擇展示版本。';};
     img.alt=`${activeBox.zh}：${action.zh} ${action.ko}，${preview.label}`;
     img.removeAttribute('src');img.src=preview.path;
-    $('actionOriginalLink').href=preview.path;
   }
   $('actionDialogClose').onclick=()=>dialog.close();
+  function moveAction(step){
+    if(!activeBox)return;
+    actionIndex=(actionIndex+step+activeBox.actions.length)%activeBox.actions.length;
+    previewIndex=0;renderSelectedAction();
+  }
+  $('actionPrev').onclick=()=>moveAction(-1);
+  $('actionNext').onclick=()=>moveAction(1);
   dialog.addEventListener('click',event=>{if(event.target===dialog)dialog.close()});
   dialog.addEventListener('close',()=>{
     $('actionGif').onload=null;$('actionGif').onerror=null;$('actionGif').removeAttribute('src');
@@ -68,11 +73,10 @@
     activeBox=null;
   });
   dialog.addEventListener('keydown',event=>{
-    if(!activeBox||event.target.matches('button,a,summary'))return;
+    if(!activeBox)return;
     if(event.key==='ArrowRight'||event.key==='ArrowLeft'){
       event.preventDefault();
-      actionIndex=(actionIndex+(event.key==='ArrowRight'?1:-1)+activeBox.actions.length)%activeBox.actions.length;
-      previewIndex=0;renderSelectedAction();
+      moveAction(event.key==='ArrowRight'?1:-1);
     }
   });
 })();

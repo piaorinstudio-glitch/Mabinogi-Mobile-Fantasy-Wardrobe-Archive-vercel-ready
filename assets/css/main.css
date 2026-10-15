@@ -432,3 +432,34 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
   .action-variants button,.action-playback-controls button{min-height:44px}
   .action-gif-frame img{max-height:46vh}.action-meta div{flex-wrap:wrap}.action-meta dd{text-align:left}
 }
+
+/* Match the legend viewer: floating variants, centered image, bottom poses. */
+.action-dialog{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:84px 90px 112px;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:hidden;box-sizing:border-box}
+.action-dialog[open]{display:flex;align-items:center;justify-content:center}
+.action-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.action-dialog #actionDialogClose{position:absolute;right:20px;top:20px;width:52px;height:52px;border:0;font-size:36px;background:#fff}
+.action-dialog-body{width:100%;min-width:0;max-height:100%}
+.action-stage{padding:0;display:flex;justify-content:center;align-items:center}
+.action-gif-frame{background:transparent;min-height:0;border-radius:12px;max-width:100%}
+.action-gif-frame img{width:auto;height:auto;max-width:100%;max-height:calc(100dvh - 196px);border-radius:12px}
+.action-dialog .action-variants{position:absolute;top:16px;left:50%;transform:translateX(-50%);display:flex;justify-content:center;flex-wrap:wrap;gap:5px;width:max-content;max-width:calc(100% - 150px);margin:0;padding:5px;border-radius:24px;background:rgba(255,255,255,.95);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.action-dialog .action-variants button{border:0;background:transparent;color:#655b53;min-height:38px;padding:8px 18px;font-weight:900}
+.action-dialog .action-variants button[aria-pressed=true]{background:#f3d27a;color:#523e27}
+.action-dialog .action-choices{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - 180px);max-height:88px;overflow:auto;padding:5px;gap:5px;border:0;border-radius:24px;background:rgba(255,255,255,.95)}
+.action-dialog .action-choice{flex:0 1 auto;min-height:38px;padding:8px 15px;border:0;border-radius:20px;text-align:center;background:transparent;font-size:14px}
+.action-dialog .action-choice span{display:none}
+.action-dialog .action-choice[aria-pressed=true]{background:#f3d27a;color:#523e27}
+.action-viewer-prev,.action-viewer-next{position:absolute;top:50%;transform:translateY(-50%);width:60px;height:60px;border:0;border-radius:50%;background:rgba(255,255,255,.95);color:#4d4540;font-size:40px;cursor:pointer}
+.action-viewer-prev{left:16px}.action-viewer-next{right:16px}
+.action-dialog .action-playback-status{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:8px 14px;border-radius:20px;background:rgba(255,255,255,.94);pointer-events:none}
+@media(max-width:760px){
+ .action-dialog{padding:110px 10px 164px}
+ .action-dialog #actionDialogClose{right:10px;top:12px;width:42px;height:42px}
+ .action-dialog .action-variants{top:12px;left:50%;transform:translateX(-50%);max-width:calc(100% - 120px);max-height:86px;overflow:auto}
+ .action-dialog .action-variants button{min-height:40px;padding:7px 12px}
+ .action-gif-frame img{max-height:calc(100dvh - 274px)}
+ .action-dialog .action-choices{bottom:70px;max-width:calc(100% - 20px);max-height:84px}
+ .action-dialog .action-choice{padding:7px 11px;min-width:0;min-height:40px;font-size:12px}
+ .action-viewer-prev,.action-viewer-next{top:auto;bottom:12px;transform:none;width:46px;height:46px;font-size:32px}
+ .action-viewer-prev{left:12px}.action-viewer-next{right:12px}
+}
