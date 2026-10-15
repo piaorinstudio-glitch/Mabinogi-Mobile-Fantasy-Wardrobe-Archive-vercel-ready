@@ -399,12 +399,16 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
 .action-dialog-head h2{margin:0;font-family:"Noto Serif TC",Georgia,serif;font-size:26px;line-height:1.35}
 .action-dialog-head p{margin:5px 0 0;color:var(--muted);font-size:14px;overflow-wrap:anywhere}
 #actionDialogClose{flex:none;min-width:44px;height:44px;padding:0;border:1px solid var(--line);border-radius:50%;background:#fff;color:var(--ink);font-size:28px;cursor:pointer}
-.action-dialog-body{display:grid;grid-template-columns:210px minmax(0,1fr)}
-.action-choices{display:flex;flex-direction:column;gap:8px;align-items:stretch;padding:16px;border-right:1px solid var(--line);background:#f6f0e4}
+.action-dialog-body{display:block}
+.action-choices{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;gap:8px;padding:16px 0 0}
 .action-choice{padding:11px 12px;min-height:52px;border:1px solid transparent;border-radius:10px;text-align:left;background:#fffdf7;color:var(--ink);cursor:pointer;font-size:14px;overflow-wrap:anywhere}
 .action-choice strong,.action-choice span{display:block}.action-choice span{margin-top:4px;color:var(--muted);font-size:13px}
 .action-choice[aria-pressed=true]{border-color:#72957a;background:#e4eee0}
-.action-stage{padding:20px;min-width:0;font-size:16px;line-height:1.6}
+.action-stage{padding:20px;min-width:0;font-size:16px;line-height:1.6;text-align:center}
+.action-official-preview{display:table;margin:0 auto 16px;padding:9px 22px;border-radius:999px;background:#5a7b60;color:#fff;text-decoration:none;font-size:14px;font-weight:800}
+.action-official-preview:focus-visible{outline:3px solid #397452;outline-offset:4px}
+.action-variants{justify-content:center}
+.action-playback-status:empty{display:none}
 .action-stage h3{margin:0;font-size:23px;line-height:1.4}.action-stage>p[lang=ko]{margin:2px 0 12px;font-size:14px;color:var(--muted)}
 .action-variants,.action-playback-controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
 .action-variants button,.action-playback-controls button{min-height:42px;border:1px solid var(--line);border-radius:999px;padding:8px 13px;background:#fffdf8;color:var(--ink);font-size:14px;font-weight:700;cursor:pointer}
@@ -422,7 +426,7 @@ body.viewer-open .image-wrap.pet-image .pet-rarity-hover{opacity:0!important;vis
   .action-dialog{width:calc(100% - 16px);max-height:96vh;max-height:96dvh;border-radius:14px}
   .action-dialog-head{padding:12px}.action-dialog-head h2{font-size:21px}
   .action-dialog-body{grid-template-columns:minmax(0,1fr)}
-  .action-choices{flex-direction:row;flex-wrap:wrap;padding:10px;gap:6px;border-right:0;border-bottom:1px solid var(--line)}
+  .action-choices{flex-direction:row;flex-wrap:wrap;padding:12px 0 0;gap:6px;border:0}
   .action-choice{flex:1 1 125px;min-width:0;padding:8px 10px}
   .action-stage{padding:12px}.action-stage h3{font-size:20px}
   .action-variants button,.action-playback-controls button{min-height:44px}
