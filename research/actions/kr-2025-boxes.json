@@ -1,0 +1,610 @@
+{
+  "scope": "Korean Deka separately sold action boxes, launch through December 2025",
+  "checkedDate": "2026-10-15",
+  "boxes": [
+    {
+      "krName": "신호의 액션! 상자",
+      "labelHint": "信號",
+      "start": "2025-06-19",
+      "end": "2025-07-17T05:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 2957837,
+      "actions": [
+        {
+          "nameKr": "아님 X",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "04아님X남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/68dacd54-cde9-49b2-a590-2d5cb568e723/04%EC%95%84%EB%8B%98X%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            }
+          ],
+          "ko": "아님 X"
+        },
+        {
+          "nameKr": "경례 2",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "05경례2여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/9ae1317b-3183-4ff2-9910-8f930ab0a77c/05%EA%B2%BD%EB%A1%802%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            }
+          ],
+          "ko": "경례 2"
+        },
+        {
+          "nameKr": "아하",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "06아하남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250618/5a5fdfbf-01d7-443e-b401-ca0cd3627188/06%EC%95%84%ED%95%98%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            }
+          ],
+          "ko": "아하"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/2957837",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "신호의 액션! 상자",
+      "zh": "信號",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-06-19",
+      "endDate": "2025-07-17T05:59:00+09:00",
+      "price": 2000
+    },
+    {
+      "krName": "한여름의 액션! 상자",
+      "labelHint": "盛夏",
+      "start": "2025-07-17",
+      "end": "2025-08-21T05:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 3037059,
+      "actions": [
+        {
+          "nameKr": "손부채",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "손부채남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/98155e80-7138-4411-9371-9334036912dd/%EC%86%90%EB%B6%80%EC%B1%84%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "손부채아이.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/d1c4e71c-e2bf-4984-8180-89e528828b5f/%EC%86%90%EB%B6%80%EC%B1%84%EC%95%84%EC%9D%B4.gif",
+              "filenameInterpretation": "兒童（檔名未註性別）"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "손부채여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/c2331145-2251-40b1-a969-3f90a92adecc/%EC%86%90%EB%B6%80%EC%B1%84%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "손부채"
+        },
+        {
+          "nameKr": "불꽃놀이",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "불꽃놀이남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/74980839-6f96-4569-a4cb-678d4dbdbb1e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "불꽃놀이아이.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/71f21f0b-0144-44f2-b48c-028b3733b429/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%95%84%EC%9D%B4.gif",
+              "filenameInterpretation": "兒童（檔名未註性別）"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "불꽃놀이여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/636c8d77-d346-4e09-bd75-8ee61286d87e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "불꽃놀이"
+        },
+        {
+          "nameKr": "수박먹기",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "수박먹기남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/72edd699-d092-43f2-8ce6-113bd13bee2b/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "수박먹기아이.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/f45439a3-02ff-415e-8235-8cda7e26385d/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%95%84%EC%9D%B4.gif",
+              "filenameInterpretation": "兒童（檔名未註性別）"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "수박먹기여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250716/509e5d23-9ccd-419a-9eb9-53cc51baddb7/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "수박먹기"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3037059",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "한여름의 액션! 상자",
+      "zh": "盛夏",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-07-17",
+      "endDate": "2025-08-21T05:59:00+09:00",
+      "price": 2000
+    },
+    {
+      "krName": "낭만의 여름 액션! 상자",
+      "labelHint": "浪漫夏日",
+      "start": "2025-08-21",
+      "end": "2025-09-24T23:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 3100664,
+      "notes": [
+        "End date corrected in official 9/11 amendment from 2025-09-25 05:59 to 2025-09-24 23:59.",
+        "음악듣기 official action name differs from 음악감상 in filenames; retain official table name."
+      ],
+      "actions": [
+        {
+          "nameKr": "부채질",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "부채질남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/27f0e802-d43f-4f03-974d-94a5d165edd5/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "부채질남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/048bc59e-62c7-4123-baa6-a836701510dc/%EB%B6%80%EC%B1%84%EC%A7%88%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "부채질여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/9a2e346e-64da-4c71-a0e6-b3163a5b2d1a/%EB%B6%80%EC%B1%84%EC%A7%88%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "부채질"
+        },
+        {
+          "nameKr": "음악듣기",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "음악감상남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/c9476100-b682-4663-9d24-d2e2f04d56d7/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "음악감상여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/1eae1419-040f-467d-b614-2b9f4fae3d00/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "음악감상여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/18361a37-c9ba-4f0d-8277-642d887e378d/%EC%9D%8C%EC%95%85%EA%B0%90%EC%83%81%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "음악듣기"
+        },
+        {
+          "nameKr": "반디잡기",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "반디잡기남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/d629f1d2-5d6b-4936-9199-a7d35c7fbbe6/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "반디잡기여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/2e8cad2d-5cb7-417c-b9d2-5c8468779960/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "반디잡기여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250820/58e04750-be20-4ff2-a9a6-88d5587f80cb/%EB%B0%98%EB%94%94%EC%9E%A1%EA%B8%B0%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "반디잡기"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "낭만의 여름 액션! 상자",
+      "zh": "浪漫夏日",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-08-21",
+      "endDate": "2025-09-24T23:59:00+09:00",
+      "price": 2000
+    },
+    {
+      "krName": "경건한 액션! 상자",
+      "labelHint": "虔誠",
+      "start": "2025-09-25",
+      "end": "2025-10-30T05:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 3147454,
+      "actions": [
+        {
+          "nameKr": "다짐",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "다짐남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/506f7f05-d08f-4a7a-92a2-46cb8aa38ffe/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "다짐남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/80e451b4-1b2a-403b-9bee-bf4d1c2fb386/%EB%8B%A4%EC%A7%90%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "다짐여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ac77797f-4ef2-477d-b496-39ddc1203bdd/%EB%8B%A4%EC%A7%90%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "다짐"
+        },
+        {
+          "nameKr": "간청",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "간청남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/2beed8a1-5d54-443f-9e27-4fecbab019b1/%EA%B0%84%EC%B2%AD%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "간청여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/7aba0073-bbc0-49c7-ba63-ad1fc50979eb/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "간청여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/1b0cef05-7f30-411e-8460-748aee77d585/%EA%B0%84%EC%B2%AD%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "간청"
+        },
+        {
+          "nameKr": "기도",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "기도남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/59d3b2ec-06d8-4acc-91d4-35df377926f0/%EA%B8%B0%EB%8F%84%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "기도여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/ce6bf619-0191-42ef-aaa8-33e3c00509cb/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 3",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "기도여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20250923/48fadf75-e6ab-4e21-93bd-5afb86e0869e/%EA%B8%B0%EB%8F%84%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "기도"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3147454",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "경건한 액션! 상자",
+      "zh": "虔誠",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-09-25",
+      "endDate": "2025-10-30T05:59:00+09:00",
+      "price": 2000
+    },
+    {
+      "krName": "가벼운 스텝 액션",
+      "labelHint": "輕盈舞步",
+      "start": "2025-10-30",
+      "end": "2025-11-27T05:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 3201519,
+      "notes": [
+        "Official product title/table is 가벼운 스텝 액션 (without ! 상자); update note 3201526 uses 가벼운 스텝 액션 상자."
+      ],
+      "actions": [
+        {
+          "nameKr": "트위스트댄스",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "트위스트댄스남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/f2fd210e-a8ff-400a-a25e-e9a5c749e130/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "트위스트댄스여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/1e4f340a-58be-4c6b-a577-12bbceb2d853/%ED%8A%B8%EC%9C%84%EC%8A%A4%ED%8A%B8%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "트위스트댄스"
+        },
+        {
+          "nameKr": "브이스텝댄스",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "브이스텝여아댄스.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/fd80f494-d993-4611-b748-d066b50b8b8b/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EC%97%AC%EC%95%84%EB%8C%84%EC%8A%A4.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "브이스텝댄스남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/dfdd7bf0-0428-4a33-8de3-4ac8c7b91fad/%EB%B8%8C%EC%9D%B4%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            }
+          ],
+          "ko": "브이스텝댄스"
+        },
+        {
+          "nameKr": "투스텝댄스",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "투스텝댄스남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/8f18e477-bb0f-4916-a462-e95ab5a26816/%ED%88%AC%EC%8A%A4%ED%85%9D%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "투스텝여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251029/aa73dd2d-573c-442f-b2d1-44f31432990e/%ED%88%AC%EC%8A%A4%ED%85%9D%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "투스텝댄스"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3201519",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "가벼운 스텝 액션",
+      "zh": "輕盈舞步",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-10-30",
+      "endDate": "2025-11-27T05:59:00+09:00",
+      "price": 2000
+    },
+    {
+      "krName": "즐거운 항해 액션! 상자",
+      "labelHint": "歡樂航海",
+      "start": "2025-11-27",
+      "end": "2025-12-18T05:50:00+09:00",
+      "priceDeka": 1200,
+      "noticeId": 3272482,
+      "notes": [
+        "End time corrected from 05:59 to 05:50 by 12/16 official amendment and notice 3310676.",
+        "Official note: adult male telescope facial expression and raid entry telescope were scheduled to be fixed 12/18."
+      ],
+      "actions": [
+        {
+          "nameKr": "오션댄스",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "오션댄스남아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ca9025d0-e976-4cd8-b2fc-b07a27c3ae3c/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EB%82%A8%EC%95%84.gif",
+              "filenameInterpretation": "男童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "오션댄스여자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/33095053-52a1-491a-9a38-322892a2c1b2/%EC%98%A4%EC%85%98%EB%8C%84%EC%8A%A4%EC%97%AC%EC%9E%90.gif",
+              "filenameInterpretation": "女性"
+            }
+          ],
+          "ko": "오션댄스"
+        },
+        {
+          "nameKr": "망원경보기",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "망원경보기여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/ad4b16db-df1b-45f5-8a37-0b33b4b9a7f4/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "망원경보기남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251126/7c0cb930-0ee3-499b-afc0-1990876a0307/%EB%A7%9D%EC%9B%90%EA%B2%BD%EB%B3%B4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            }
+          ],
+          "ko": "망원경보기"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3272482",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "즐거운 항해 액션! 상자",
+      "zh": "歡樂航海",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-11-27",
+      "endDate": "2025-12-18T05:50:00+09:00",
+      "price": 1200
+    },
+    {
+      "krName": "겨울 휴일의 액션! 상자",
+      "labelHint": "冬日假期",
+      "start": "2025-12-18",
+      "end": "2026-01-15T05:59:00+09:00",
+      "priceDeka": 2000,
+      "noticeId": 3311093,
+      "actions": [
+        {
+          "nameKr": "선물은나야",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "선물은나야남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/b193c367-721e-431a-a250-4a9746b03ea1/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "선물은나야여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/385860ad-c215-465b-a0f4-a143209a49d3/%EC%84%A0%EB%AC%BC%EC%9D%80%EB%82%98%EC%95%BC%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            }
+          ],
+          "ko": "선물은나야"
+        },
+        {
+          "nameKr": "눈스프레이",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "눈스프레이남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/1d4a2e67-1de3-48f4-b11b-cfe97c8539b7/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "눈스프레이여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/a04ab950-6c3f-43c0-bb3d-61217bee4893/%EB%88%88%EC%8A%A4%ED%94%84%EB%A0%88%EC%9D%B4%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            }
+          ],
+          "ko": "눈스프레이"
+        },
+        {
+          "nameKr": "눈사람만들기",
+          "previews": [
+            {
+              "variant": "官方預覽 1",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "눈사람만들기남자.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/6f85613c-7fde-4cc0-8152-9f843886b73e/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EB%82%A8%EC%9E%90.gif",
+              "filenameInterpretation": "男性"
+            },
+            {
+              "variant": "官方預覽 2",
+              "variantBasis": "Sequence within the official notice, with linked filename preserved separately",
+              "originalFilename": "눈사람만들기여아.gif",
+              "url": "https://dszw1qtcnsa5e.cloudfront.net/community/20251217/e7b190ae-efb1-48fe-a65c-72cd6e47a368/%EB%88%88%EC%82%AC%EB%9E%8C%EB%A7%8C%EB%93%A4%EA%B8%B0%EC%97%AC%EC%95%84.gif",
+              "filenameInterpretation": "女童"
+            }
+          ],
+          "ko": "눈사람만들기"
+        }
+      ],
+      "source": "https://mabinogimobile.nexon.com/News/Notice/3311093",
+      "startTimeNote": "After scheduled maintenance (exact sale-open clock time not specified)",
+      "purchaseLimit": "Once per server",
+      "saleLocation": "[게임 내 메뉴] → [캐시샵] → [아이템샵] → [데카]",
+      "ko": "겨울 휴일의 액션! 상자",
+      "zh": "冬日假期",
+      "zhStatus": "使用者初步名稱，待台服正式譯名核對",
+      "date": "2025-12-18",
+      "endDate": "2026-01-15T05:59:00+09:00",
+      "price": 2000
+    }
+  ],
+  "counts": {
+    "boxes": 7,
+    "actions": 20,
+    "originalGifUrls": 46
+  },
+  "completenessNotes": [
+    "All GIFs linked in the target action-box sections of these seven notices have been recorded. GIF URLs extracted by clicking official page image links; web image/gif content-type/cache errors are extraction-tool limitations, not confirmed download failures.",
+    "No extra male/female variations can be invented beyond these official previews. Signal has one linked preview per action.",
+    "Chinese labels are initial user hints, not verified Taiwan official names. Taiwan research required.",
+    "Pre-June launch/April/May completeness audit continuing; exclude free event box and non-Deka/gold packages."
+  ]
+}

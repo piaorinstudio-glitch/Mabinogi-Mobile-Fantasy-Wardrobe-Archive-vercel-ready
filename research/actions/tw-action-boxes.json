@@ -1,0 +1,149 @@
+{
+  "checkedAt": "2026-10-15",
+  "timezone": "Asia/Taipei",
+  "scope": "Separately sold action boxes under 商城 → 道具商店 → 德卡; exclude package rewards, promotional grants and other currencies.",
+  "verificationMethod": "Nexon Taiwan official announcement pages opened in the in-app browser; rendered text and DOM image URLs inspected. Search official 公告 board by title+content 動作 across both result pages.",
+  "confirmedBoxCount": 4,
+  "completenessNote": "No additional separately sold Deka action box was confirmed by the inspected official search results as of the check date. This does not prove other Korean boxes are unreleased in Taiwan; their Taiwan release status must be 尚未確認 unless a positive official announcement is found.",
+  "boxes": [
+    {
+      "matchKey": "한여름의 액션! 상자",
+      "nameZhOfficial": "盛夏動作箱",
+      "noticeTitle": "幸運箱與道具商店",
+      "noticePublishedAt": "2026-07-22T00:00:00+08:00",
+      "noticeUrl": "https://tw.nexon.com/mabinogimobile/home/news/notice/3505035",
+      "forumUrl": "https://forum.nexon.com/mabinogimobiletw/7125?threadId=3505035",
+      "firstSaleDate": "2026-07-22",
+      "saleStartQualifier": null,
+      "saleEndAt": "2026-08-19T05:59:00+08:00",
+      "priceDeka": 2000,
+      "purchaseLimit": "每伺服器1次",
+      "released": true,
+      "current": false,
+      "statusZh": "台服已推出",
+      "actionNamesZhOfficial": ["手扇風", "煙火", "吃西瓜"],
+      "actions": [
+        {"nameZhOfficial":"手扇風","previews":[
+          {"variantLabel":"男性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/98155e80-7138-4411-9371-9334036912dd/%EC%86%90%EB%B6%80%EC%B1%84%EB%82%A8%EC%9E%90.gif"},
+          {"variantLabel":"孩童（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/d1c4e71c-e2bf-4984-8180-89e528828b5f/%EC%86%90%EB%B6%80%EC%B1%84%EC%95%84%EC%9D%B4.gif"},
+          {"variantLabel":"女性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/c2331145-2251-40b1-a969-3f90a92adecc/%EC%86%90%EB%B6%80%EC%B1%84%EC%97%AC%EC%9E%90.gif"}
+        ]},
+        {"nameZhOfficial":"煙火","previews":[
+          {"variantLabel":"男性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/74980839-6f96-4569-a4cb-678d4dbdbb1e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EB%82%A8%EC%9E%90.gif"},
+          {"variantLabel":"孩童（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/71f21f0b-0144-44f2-b48c-028b3733b429/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%95%84%EC%9D%B4.gif"},
+          {"variantLabel":"女性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/636c8d77-d346-4e09-bd75-8ee61286d87e/%EB%B6%88%EA%BD%83%EB%86%80%EC%9D%B4%EC%97%AC%EC%9E%90.gif"}
+        ]},
+        {"nameZhOfficial":"吃西瓜","previews":[
+          {"variantLabel":"男性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/72edd699-d092-43f2-8ce6-113bd13bee2b/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EB%82%A8%EC%9E%90.gif"},
+          {"variantLabel":"孩童（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/f45439a3-02ff-415e-8235-8cda7e26385d/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%95%84%EC%9D%B4.gif"},
+          {"variantLabel":"女性（官方素材檔名）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20250716/509e5d23-9ccd-419a-9eb9-53cc51baddb7/%EC%88%98%EB%B0%95%EB%A8%B9%EA%B8%B0%EC%97%AC%EC%9E%90.gif"}
+        ]}
+      ]
+    },
+    {
+      "matchKey": "낭만의 여름 액션! 상자",
+      "nameZhOfficial": "浪漫夏日動作箱",
+      "noticeTitle": "8/19(三) 幸運箱與道具商店說明",
+      "noticePublishedAt": "2026-08-19T06:00:00+08:00",
+      "noticeUrl": "https://tw.nexon.com/mabinogimobile/home/news/notice/3527227",
+      "forumUrl": "https://forum.nexon.com/mabinogimobiletw/7125?threadId=3527227",
+      "firstSaleDate": "2026-08-19",
+      "saleStartQualifier": "維護後",
+      "saleEndAt": "2026-09-09T05:59:00+08:00",
+      "priceDeka": 2000,
+      "purchaseLimit": "每伺服器1次",
+      "released": true,
+      "current": false,
+      "statusZh": "台服已推出",
+      "actionNamesZhOfficial": ["搧扇子", "聽音樂", "抓螢火蟲"],
+      "actions": [
+        {"nameZhOfficial":"搧扇子","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/e970787e-881f-4e01-8b3b-a21a93898606/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/bf859a8c-6722-4335-8834-3631f9755409/.gif"}
+        ]},
+        {"nameZhOfficial":"聽音樂","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/827aa2a0-afaa-49ff-aa29-5873447403a9/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/f57c76c3-a9e1-48ce-a54b-8b17f8a60b66/.gif"}
+        ]},
+        {"nameZhOfficial":"抓螢火蟲","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/77c43fa3-d3ee-4370-8145-540404870326/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260818/174430d4-3d53-4ea0-a9d1-e29c1b6c7ddf/.gif"}
+        ]}
+      ]
+    },
+    {
+      "matchKey": "가벼운 스텝 액션! 상자",
+      "nameZhOfficial": "輕盈舞步動作",
+      "nameZhOfficialAlternate": "輕盈舞步動作箱",
+      "nameNote": "商品公告標題及商品表格寫輕盈舞步動作；2026-10-14維護公告下架清單寫輕盈舞步動作箱。兩者同一商品。",
+      "noticeTitle": "9/9(三) 幸運箱與道具商店說明",
+      "noticePublishedAt": "2026-09-09T06:00:00+08:00",
+      "noticeUrl": "https://tw.nexon.com/mabinogimobile/home/news/notice/3541055",
+      "forumUrl": "https://forum.nexon.com/mabinogimobiletw/7125?threadId=3541055",
+      "endConfirmationUrl": "https://tw.nexon.com/mabinogimobile/home/news/notice/3562593",
+      "firstSaleDate": "2026-09-09",
+      "saleStartQualifier": "維護後",
+      "saleEndAt": "2026-10-14T05:59:00+08:00",
+      "priceDeka": 2000,
+      "purchaseLimit": "每伺服器1次",
+      "released": true,
+      "current": false,
+      "statusZh": "台服已推出",
+      "actionNamesZhOfficial": ["扭扭舞", "V步舞", "雙步舞"],
+      "actions": [
+        {"nameZhOfficial":"扭扭舞","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/d2a00949-84af-416a-8251-7a264ae3bf3f/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/783d2de9-69a6-42df-8625-07fdaf8edc19/.gif"}
+        ]},
+        {"nameZhOfficial":"V步舞","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/d928aebc-06c1-45b3-9ae8-7f670a38146a/V.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/97cee464-2d6f-49c1-bbbe-f24c59715078/V.gif"}
+        ]},
+        {"nameZhOfficial":"雙步舞","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/9c20860a-18d7-41ea-9165-c58a7261437b/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20260908/17039169-3915-4013-bc5c-bf7ddf9db4e9/.gif"}
+        ]}
+      ]
+    },
+    {
+      "matchKey": "신호의 액션! 상자",
+      "nameZhOfficial": "信號動作箱",
+      "noticeTitle": "10/14(三) 幸運箱與道具商店說明",
+      "noticePublishedAt": "2026-10-14T06:00:00+08:00",
+      "noticeUrl": "https://tw.nexon.com/mabinogimobile/home/news/notice/3562703",
+      "forumUrl": "https://forum.nexon.com/mabinogimobiletw/7125?threadId=3562703",
+      "firstSaleDate": "2026-10-14",
+      "saleStartQualifier": "維護後",
+      "saleEndAt": "2026-11-25T05:59:00+08:00",
+      "priceDeka": 2000,
+      "purchaseLimit": "每伺服器1次",
+      "released": true,
+      "current": true,
+      "statusZh": "台服當期",
+      "actionNamesZhOfficial": ["不是X", "敬禮2", "啊哈"],
+      "actions": [
+        {"nameZhOfficial":"不是X","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/23faa916-8f0e-428e-9781-302afd98ebad/X.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/a2e766da-ad30-4a96-8ce4-813d32f49264/X.gif"},
+          {"variantLabel":"預覽3（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/c5853c63-fc76-42b5-ac8e-862a5f83d5a7/X.gif"}
+        ]},
+        {"nameZhOfficial":"敬禮2","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/736d6816-77b6-44bd-902e-7366c92e0468/2.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/90671656-1773-435f-985a-0a5b8c981e3d/2.gif"},
+          {"variantLabel":"預覽3（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/37460a80-067e-4227-987d-00f0f84a6fae/2.gif"}
+        ]},
+        {"nameZhOfficial":"啊哈","previews":[
+          {"variantLabel":"預覽1（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/36b36ffe-32e6-449a-8c4d-12b4d2192844/.gif"},
+          {"variantLabel":"預覽2（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/b364a0a1-c57b-42b0-b9f6-e08e4f301830/.gif"},
+          {"variantLabel":"預覽3（公告未標示性別）","url":"https://dszw1qtcnsa5e.cloudfront.net/community/20261013/d2e176b4-0129-4b2f-a101-e4f5d64c176b/.gif"}
+        ]}
+      ]
+    }
+  ],
+  "excludedExamples": [
+    {"nameZh":"萬眾矚目動作箱","reason":"皇家交響全套套組累購獎勵及套組點數商店，非德卡單獨販售","source":"https://tw.nexon.com/mabinogimobile/home/news/notice/3541044"},
+    {"nameZh":"美味動作箱","reason":"皇家交響全套套組累購獎勵及套組點數商店，非德卡單獨販售","source":"https://tw.nexon.com/mabinogimobile/home/news/notice/3541044"},
+    {"nameZh":"甜蜜微風挑戰套組","reason":"M幣套組內含動作，非德卡單獨販售","source":null}
+  ],
+  "unknownTaiwanStatusRule": {"released":null,"current":null,"statusZh":"尚未確認","firstSaleDate":null,"noticeUrl":null}
+}

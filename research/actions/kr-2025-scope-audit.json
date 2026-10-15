@@ -1,0 +1,74 @@
+{
+  "checkedDate": "2026-10-15",
+  "scope": "Before 2025-06-19 launch and early-item-shop audit",
+  "conclusion": "No additional qualifying Deka separately sold action box confirmed in the official launch, April and May sources examined. This is a bounded source audit, not an inference that absence of search results proves no product ever existed.",
+  "sources": [
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2757703",
+      "title": "(수정) 기간제 패키지 안내( ~4/24 14:59)",
+      "date": "2025-03-27",
+      "finding": "Launch dated limited products notice covers lucky boxes, dye boxes, weekly/monthly/class packages; no action box in reviewed content."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2757701",
+      "title": "(수정) 상시 상품 안내",
+      "date": "2025-03-27",
+      "finding": "Launch dated permanent-product page (subsequently amended in 2026) contains no action-box title in current content. Historical overwritten content cannot be reconstructed from this current version."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Update/2803825",
+      "title": "(수정) 4/10(목) 업데이트 노트",
+      "date": "2025-04-10",
+      "finding": "New products section names growth special packages and weekly packages; no Deka action box."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2839212",
+      "title": "(추가) 럭키 박스&아이템샵 안내",
+      "date": "2025-04-24",
+      "finding": "April item-shop notice has fashion/pet lucky boxes and Cash Shop Point dye boxes; no Deka action box."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2876897",
+      "title": "(완료) 5/9(금) 임시점검 안내 (06:00 ~ 08:10)",
+      "date": "2025-05-08",
+      "finding": "Mentions some future social actions inadvertently applied during 5/8 maintenance; does not establish an action box sold for Deka."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Update/2893063",
+      "title": "(수정) 5/15(목) 업데이트 노트",
+      "date": "2025-05-15",
+      "finding": "모두 함께 액션! 상자 is free login event reward 5/15–5/28, not Deka individually sold box.",
+      "excludedProduct": "모두 함께 액션! 상자",
+      "actions": [
+        "레트로댄스",
+        "오른손반쪽하트",
+        "왼손반쪽하트",
+        "최고2"
+      ]
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2906348",
+      "title": "아이템샵 안내(염색약 선택상자)",
+      "date": "2025-05-22",
+      "finding": "Only dye box source; no action box."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/2918992",
+      "title": "아이템샵 안내(꾸러기 응원단 악기&봄의 선율 악기)",
+      "date": "2025-05-29",
+      "finding": "Only instruments bought for Cash Shop Points; no Deka action box."
+    },
+    {
+      "url": "https://mabinogimobile.nexon.com/News/Notice/3100664",
+      "title": "(수정) 8/21(목) 신규 아이템샵 안내",
+      "date": "2025-08-21",
+      "finding": "달밤의 늑대인간 보드게임 패키지 includes four actions but is 798,000 Gold package; explicitly exclude its six 바로너!/나아냐! GIFs from Deka action-box archive.",
+      "excludedProduct": "달밤의 늑대인간 보드게임 패키지"
+    }
+  ],
+  "limits": [
+    "Official site geo-redirects local TW shell reads to /en/Main; use primary-source content returned by web tool and original linked CDN images.",
+    "All 46 image links in the target seven Deka action-box sections extracted. Web fetch errors on image/gif are not actual CDN download validation.",
+    "Searches for early month terms and additional 액션!/행동! Deka boxes found no qualifying extra 2025 box; cannot claim an exhaustive historical database beyond the inspected official notices."
+  ]
+}
