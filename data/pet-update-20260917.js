@@ -35,3 +35,17 @@
     legendEpicNote: '目前未找到可可靠核對的「재빠른 경계 SS」完整數值，因此不猜測。'
   };
 })();
+
+// 2026-10-15 new families. The sale notice does NOT document innate skill/stat values.
+(() => {
+  const M=window.MABI;
+  const families={marten:['담비','웨딩 담비','비행사 담비','신사 담비','노랑 담비'],
+    otter:['수달','세일러 수달','앞치마 수달','스카프 수달','갈색 수달']};
+  for(const [key,names] of Object.entries(families)){
+    for(const ko of names){M.PET_FAMILY_BY_KO[ko]=key;M.PET_STATS[ko]=[];}
+    M.PET_SKILL_FAMILIES[key]={base:'資料缺失',epic:'資料缺失',legendEpic:'資料缺失',
+      baseEffect:'資料缺失',epicEffect:'資料缺失',legendEpicEffect:'資料缺失',
+      baseNote:'韓服官方公告已確認外觀與稀有度；公告未提供固有技能與固定同行能力，待補遊戲內資料。',
+      epicNote:'韓服官方公告已確認外觀與稀有度；公告未提供固有技能與固定同行能力，待補遊戲內資料。'};
+  }
+})();
