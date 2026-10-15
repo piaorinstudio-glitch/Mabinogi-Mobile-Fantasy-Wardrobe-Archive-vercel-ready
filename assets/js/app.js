@@ -187,7 +187,7 @@ function closePetDetail(){
 function issueText(item){
   if(item.id==='pet-0')return '常駐池';
   if(item.server==='TW' && item.displayNumber)return item.displayNumber;
-  if(item.type==='lucky'||item.type==='pet')return `韓服 #${item.number}`;
+  if(item.type==='lucky'||item.type==='pet'||item.type==='action')return `韓服 #${item.number}`;
   if(item.type==='package'||item.type==='legend')return `第 ${item.number} 代`;
   if(item.type==='abyss'||item.type==='raid')return `第 ${item.number} 套`;
   return `第 ${item.number} 期`;
@@ -277,6 +277,11 @@ function render(){
   });
   $('#archiveCount').textContent=`共 ${rows.length} 筆`;
   if(!rows.length){$('#feed').innerHTML=`<div class="empty">沒有找到符合的外觀</div>`; return;}
+  if(state.type==='action'){
+    window.MABI.renderActionCards(rows);
+    location.hash='type=action';
+    return;
+  }
   const petHint=state.type==='pet'?'<div class="lucky-order-hint">※ 「韓服 #」代表<strong>韓服推出順序</strong>，下方日期為韓服推出日期。電腦：滑鼠移到寵物圖片可查看各稀有度並點選詳細資訊；手機：點圖片放大後查看。</div>':'';
   const luckyHint=state.type==='lucky'?'<div class="lucky-order-hint">※ 「韓服 #」代表<strong>韓服推出順序</strong>；下方日期為韓服推出日期。台服與韓服的上架組合、批次可能不同。</div>':'';
   const dungeonHint=(state.type==='abyss'||state.type==='raid')?'<div class="lucky-order-hint">※ 卡片右下角顯示<strong>時裝掉落副本</strong>。台服已推出的副本採用<strong>台服正式名稱＋韓服名稱</strong>；台服尚未推出的副本則使用<strong>中文暫譯＋韓服名稱</strong>。</div>':'';
@@ -373,7 +378,7 @@ function closeTips(){
   if(tipsTrigger&&document.contains(tipsTrigger))tipsTrigger.focus();
 }
 function renderSources(){
-  const types=['pass','lucky','package','legend','pet','abyss','raid'];
+  const types=['pass','lucky','package','legend','pet','abyss','raid','action'];
   $('#sourcesList').innerHTML=types.map(type=>{
     const rows=DATA.filter(item=>item.type===type&&item.notice);
     if(!rows.length)return '';
