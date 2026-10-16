@@ -1,22 +1,143 @@
 {
-  "recordCount": 114,
-  "appendOnly": true,
-  "dateBoundaries": true,
-  "tests": [
+  "dataChecks": "PASS",
+  "htmlLoadsData": true,
+  "appearanceRecords": 114,
+  "petCards": 24,
+  "changedStats": [
+    "세일러 수달",
+    "웨딩 담비"
+  ],
+  "otherPetFamiliesUnchanged": true,
+  "appearanceDataUnchanged": true,
+  "browser": [
     {
       "width": 1440,
-      "status": "PASS",
-      "errors": []
+      "result": "PASS",
+      "errors": [],
+      "cases": [
+        {
+          "ko": "웨딩 담비",
+          "skill": "흉포한 사랑 S",
+          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "legend": "詳細數值缺失",
+          "stats": "暴擊技能威力",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "세일러 수달",
+          "skill": "치유의 무지개 S",
+          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
+          "stats": "暴擊追擊",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "비행사 담비",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "앞치마 수달",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        }
+      ]
     },
     {
       "width": 390,
-      "status": "PASS",
-      "errors": []
+      "result": "PASS",
+      "errors": [],
+      "cases": [
+        {
+          "ko": "웨딩 담비",
+          "skill": "흉포한 사랑 S",
+          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "legend": "詳細數值缺失",
+          "stats": "暴擊技能威力",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "세일러 수달",
+          "skill": "치유의 무지개 S",
+          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
+          "stats": "暴擊追擊",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "비행사 담비",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "앞치마 수달",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        }
+      ]
     },
     {
       "width": 320,
-      "status": "PASS",
-      "errors": []
+      "result": "PASS",
+      "errors": [],
+      "cases": [
+        {
+          "ko": "웨딩 담비",
+          "skill": "흉포한 사랑 S",
+          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "legend": "詳細數值缺失",
+          "stats": "暴擊技能威力",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "세일러 수달",
+          "skill": "치유의 무지개 S",
+          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
+          "stats": "暴擊追擊",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "비행사 담비",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        },
+        {
+          "ko": "앞치마 수달",
+          "skill": "資料缺失",
+          "effect": "詳細數值缺失",
+          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
+          "stats": "詳細數值缺失",
+          "notes": "",
+          "overflow": false
+        }
+      ]
     }
   ]
 }
