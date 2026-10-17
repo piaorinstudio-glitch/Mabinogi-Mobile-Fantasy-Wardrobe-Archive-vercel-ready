@@ -57,18 +57,39 @@
   });
 
   Object.assign(M.PET_SKILL_FAMILIES.marten, {
+    baseEffect: '[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失',
     epic: '흉포한 사랑 S',
     epicEffect: '[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）',
-    epicNote: '來源：https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s；原生史詩婚禮貂遊戲面板。技能威力+2忠實保留原文；尚無證據確認是否隨等級改變，不推測成長規則。',
-    legendEpicNote: '尚未取得貂SS的完整遊戲面板，不由S版本推算。'
+    legendEpicEffect: '[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失',
+    baseNote: '只列同族技能共同作用；基本版本的名稱、係數、持續時間與冷卻尚缺完整面板，不沿用S數字。',
+    epicNote: '原生史詩婚禮貂遊戲面板。技能威力+2忠實保留原文；尚無證據確認是否隨等級改變，不推測成長規則。',
+    legendEpicNote: '只列同族技能共同作用；SS版本的名稱與完整數值尚缺面板，不由S版本推算。'
   });
 
   Object.assign(M.PET_SKILL_FAMILIES.otter, {
+    baseEffect: '[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失',
     epic: '치유의 무지개 S',
     legendEpic: '치유의 무지개 SS',
     epicEffect: '[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）',
     legendEpicEffect: '[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失',
-    epicNote: '來源：https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s；原生史詩水手水獺面板僅有固有技能，未顯示神速等學習技能。',
-    legendEpicNote: '來源：https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057；傳說水手水獺面板確認恢復最大生命值5%。同圖有神速減冷卻被動，因此不將顯示的14秒視為已排除修正後的SS預設冷卻，也不反推。'
+    baseNote: '只列同族技能共同作用；基本版本的名稱、恢復量與冷卻尚缺完整面板，不沿用S數字。',
+    epicNote: '原生史詩水手水獺面板僅有固有技能，未顯示神速等學習技能。',
+    legendEpicNote: '傳說水手水獺面板確認恢復最大生命值5%。同圖有神速減冷卻被動，因此不將顯示的14秒視為已排除修正後的SS預設冷卻，也不反推。'
   });
+
+  // Citations belong in the site's existing Sources dialog, never in pet footers.
+  M.PET_DETAIL_SOURCES = [
+    {title:'寵物培養與固有技能升階規則',url:'https://mabinogimobile.nexon.com/Info/Guide/2751130',kind:'韓服官方指南'},
+    {title:'浣熊固有技能與等級上限調整',url:'https://mabinogimobile.nexon.com/News/Update/3511370',kind:'韓服官方更新'},
+    {title:'貓頭鷹施法與蓄力速度效果調整',url:'https://mabinogimobile.nexon.com/News/Update/2999050',kind:'韓服官方更新'},
+    {title:'寵物技能面板整理：挪威森林貓、小豬、西施犬、博美犬',url:'https://peak.nexon.com/post/2736',kind:'玩家遊戲面板'},
+    {title:'牧羊犬S與西施犬各階級技能面板',url:'https://gonryu.tistory.com/54',kind:'玩家遊戲面板'},
+    {title:'小狐狸S／SS技能面板',url:'https://dszw1qtcnsa5e.cloudfront.net/community/20250331/e0f3a922-907b-4c90-89c0-d31179befa3b/20250401032441856.png',kind:'遊戲內截圖'},
+    {title:'台服寵物資料與用語交叉核對',url:'https://mabi.hongkongfootprint.com/2026/09/mabi-mobile-pet.html',kind:'玩家整理'},
+    {title:'台服寵物技能討論',url:'https://forum.gamer.com.tw/C.php?bsn=32564&snA=2621',kind:'玩家社群'},
+    {title:'婚禮貂S技能與固定同行能力｜影片02:41',url:'https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s',kind:'玩家遊戲面板'},
+    {title:'水手水獺S技能與固定同行能力｜影片02:11',url:'https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s',kind:'玩家遊戲面板'},
+    {title:'水手水獺SS技能與固定同行能力',url:'https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057',kind:'玩家遊戲面板'},
+    {title:'快樂粉豆貓、企鵝王與小熊S技能及同行能力',kind:'使用者提供台服截圖'}
+  ];
 })();

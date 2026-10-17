@@ -100,22 +100,19 @@ function cleanPetNote(value){
 }
 function petSkillNameText(value){
   const s=String(value||'').trim();
-  if(!s || /未知|待確認|名稱待確認/.test(s))return '資料缺失';
-  return s;
+  if(!s || /未知|待確認|名稱待確認|^(?:資料缺失|詳細數值缺失)$/.test(s))return '詳細數值缺失';
+  return s.replace(/\s*(S{1,2})$/,' $1');
 }
 function petSkillEffectText(value){
   const raw=String(value||'').trim();
-  if(!raw)return '資料缺失';
-
-  const cleaned=cleanPetInfoText(raw);
-
-  const missingDetail=/未知|確切.*(?:未|尚未)|(?:未|尚未).*確切|未可靠核對|尚未可靠核對|未能.*核對|未從.*核對|未從.*確認|尚無可靠資料|目前尚無可靠資料|未確認數字|數值會隨寵物等級成長|詳細數值尚未確認/.test(raw);
-
-  if(missingDetail){
-    return cleaned ? `${cleaned}\n詳細數值缺失` : '詳細數值缺失';
-  }
-
-  return cleaned||'資料缺失';
+  const marker='詳細數值缺失';
+  if(!raw)return marker;
+  const missing=/詳細數值缺失|資料缺失|資料待確認|詳細數值尚未確認|未知|待確認/;
+  const hasMissing=missing.test(raw);
+  const description=raw.split('\n').map(line=>line.trim())
+    .filter(line=>line&&!/^(?:詳細數值缺失|資料缺失|資料待確認|詳細數值尚未確認|未知|待確認)[。.]?$/.test(line))
+    .join('\n');
+  return hasMissing?(description?`${description}\n${marker}`:marker):description;
 }
 function renderPetSkillEffect(el,value){
   const text=petSkillEffectText(value);
@@ -138,6 +135,7 @@ function openPetDetail(button){
   const stats=PET_STATS[ko]||[];
   const nativeEpic=rarity==='史詩';
   petDetailTrigger=button;
+  $('#petDetailModal .pet-detail-label').textContent='固有技能';
   $('#petDetailTitle').textContent=zh||ko||'寵物詳細資訊';
   $('#petDetailKo').textContent=ko;
   const rarityEl=$('#petDetailRarity');
@@ -148,9 +146,10 @@ function openPetDetail(button){
   versionEl.textContent=nativeEpic?'原生史詩｜技能 S':'升階至史詩｜技能';
   versionEl.className=`pet-skill-version-chip ${nativeEpic?'native':'promoted'}`;
 
-  const currentSkillName=nativeEpic?(family.epic||family.base):(family.base||family.epic);
-  const currentSkillEffect=nativeEpic?(family.epicEffect||family.effect):(family.baseEffect||family.effect);
+  const currentSkillName=nativeEpic?family.epic:family.base;
+  const currentSkillEffect=nativeEpic?family.epicEffect:family.baseEffect;
   $('#petSkillName').textContent=petSkillNameText(currentSkillName);
+  $('#petSkillName').hidden=$('#petSkillName').textContent==='詳細數值缺失';
   renderPetSkillEffect($('#petSkillEffect'),currentSkillEffect);
 
   const legendSkillName=nativeEpic
@@ -158,11 +157,12 @@ function openPetDetail(button){
     :family.epic;
   const legendSkillEffect=nativeEpic
     ?family.legendEpicEffect
-    :(family.epicEffect||family.effect);
+    :family.epicEffect;
   const legendWrap=$('#petLegendSkill');
   const legendVersionEl=$('#petLegendSkillVersion');
   if(legendVersionEl)legendVersionEl.textContent=nativeEpic?'升階至傳說｜技能 SS':'升階至傳說｜技能 S';
   $('#petLegendSkillName').textContent=petSkillNameText(legendSkillName);
+  $('#petLegendSkillName').hidden=$('#petLegendSkillName').textContent==='詳細數值缺失';
   renderPetSkillEffect($('#petLegendSkillEffect'),legendSkillEffect);
   legendWrap.hidden=false;
 
@@ -171,10 +171,11 @@ function openPetDetail(button){
 
   const statWrap=$('#petStatPills');statWrap.replaceChildren();
   stats.forEach(stat=>statWrap.appendChild(createPetStatPill(stat)));
-  if(!stats.length){statWrap.appendChild(createPetStatPill('資料待確認'))}
-  const currentNote=nativeEpic?(family.epicNote||''):(family.baseNote||'');
-  const legendNote=nativeEpic?(family.legendEpicNote||''):(family.epicNote||'');
-  $('#petDataNote').textContent=[currentNote,legendNote].filter(Boolean).join('\n');
+  if(!stats.length){
+    const missing=document.createElement('span');missing.className='pet-missing-detail';missing.textContent='詳細數值缺失';statWrap.appendChild(missing);
+  }
+  // Research notes remain in the data/audit files, not inside the player-facing description.
+  $('#petDataNote').replaceChildren();
   const modal=$('#petDetailModal');modal.classList.add('show');modal.setAttribute('aria-hidden','false');
   document.body.style.overflow='hidden';
   $('#petDetailClose').focus();
@@ -381,9 +382,20 @@ function renderSources(){
   const types=['pass','lucky','package','legend','pet','abyss','raid','action'];
   $('#sourcesList').innerHTML=types.map(type=>{
     const rows=DATA.filter(item=>item.type===type&&item.notice);
-    if(!rows.length)return '';
-    return `<section class="source-group"><h3>${LABELS[type][0]}</h3><div class="source-links">${rows.map(item=>`<a class="source-link" href="${item.notice}" target="_blank" rel="noopener noreferrer"><span>${issueText(item)}｜${item.zh||item.ko||'官方公告'} ↗</span><span class="source-date">${item.date||''}</span></a>`).join('')}</div></section>`;
+    const official=rows.length?`<section class="source-group"><h3>${LABELS[type][0]}</h3><div class="source-links">${rows.map(item=>`<a class="source-link" href="${item.notice}" target="_blank" rel="noopener noreferrer"><span>${issueText(item)}｜${item.zh||item.ko||'官方公告'} ↗</span><span class="source-date">${item.date||''}</span></a>`).join('')}</div></section>`:'';
+    return official+(type==='pet'?renderPetDetailSources():'');
   }).join('');
+}
+function renderPetDetailSources(){
+  const sources=window.MABI.PET_DETAIL_SOURCES||[];
+  if(!sources.length)return '';
+  const escape=value=>String(value||'').replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const links=sources.map(source=>{
+    const title=escape(source.title),kind=escape(source.kind);
+    if(!/^https:\/\//i.test(source.url||''))return `<div class="source-link"><span>${title}</span><span class="source-date">${kind}</span></div>`;
+    return `<a class="source-link" href="${escape(source.url)}" target="_blank" rel="noopener noreferrer"><span>${title} ↗</span><span class="source-date">${kind}</span></a>`;
+  }).join('');
+  return `<section class="source-group" id="petDetailSources"><h3>寵物技能與同行能力</h3><div class="source-links">${links}</div></section>`;
 }
 function openSources(){renderSources();$('#sourcesModal').classList.add('show');$('#sourcesModal').setAttribute('aria-hidden','false');document.body.style.overflow='hidden';$('#sourcesClose').focus()}
 function closeSources(){$('#sourcesModal').classList.remove('show');$('#sourcesModal').setAttribute('aria-hidden','true');document.body.style.overflow=''}
