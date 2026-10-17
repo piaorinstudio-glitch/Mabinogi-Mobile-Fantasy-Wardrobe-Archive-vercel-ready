@@ -77,6 +77,20 @@
     legendEpicNote: '傳說水手水獺面板確認恢復最大生命值5%。同圖有神速減冷卻被動，因此不將顯示的14秒視為已排除修正後的SS預設冷卻，也不反推。'
   });
 
+  // 2026-10-17: exact Taiwan base/S owl panels supplied by the user.
+  // Override here so the package does not replace unrelated legacy pet data.
+  Object.assign(M.PET_SKILL_FAMILIES.owl, {
+    base: '疾速的振翅',
+    epic: '疾速的振翅 S',
+    legendEpic: '疾速的振翅 SS',
+    baseEffect: '[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）',
+    epicEffect: '[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）',
+    legendEpicEffect: '[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失',
+    baseNote: '使用者提供台服黑色小貓頭鷹菁英面板，確認基本版10%、5秒、冷卻30秒。',
+    epicNote: '使用者提供台服白色小貓頭鷹史詩面板，確認S版12%、5秒、冷卻30秒。',
+    legendEpicNote: '尚缺SS原始面板，不由基本10%與S12%推算SS數值。'
+  });
+
   // Citations belong in the site's existing Sources dialog, never in pet footers.
   M.PET_DETAIL_SOURCES = [
     {title:'寵物培養與固有技能升階規則',url:'https://mabinogimobile.nexon.com/Info/Guide/2751130',kind:'韓服官方指南'},
@@ -90,6 +104,7 @@
     {title:'婚禮貂S技能與固定同行能力｜影片02:41',url:'https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s',kind:'玩家遊戲面板'},
     {title:'水手水獺S技能與固定同行能力｜影片02:11',url:'https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s',kind:'玩家遊戲面板'},
     {title:'水手水獺SS技能與固定同行能力',url:'https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057',kind:'玩家遊戲面板'},
-    {title:'快樂粉豆貓、企鵝王與小熊S技能及同行能力',kind:'使用者提供台服截圖'}
+    {title:'快樂粉豆貓、企鵝王與小熊S技能及同行能力',kind:'使用者提供台服截圖'},
+    {title:'白色／黑色小貓頭鷹｜基本、S技能與同行能力',kind:'使用者提供台服截圖'}
   ];
 })();

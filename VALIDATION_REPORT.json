@@ -1,185 +1,97 @@
 {
-  "baseline": "Current deployed data/pets.js + unchanged existing static files; apply only the three packaged website files",
-  "appearanceDataUnchanged": true,
-  "otherPetFamiliesUnchanged": true,
-  "companionDataUnchanged": true,
-  "records": 114,
+  "date": "2026-10-17",
+  "result": "PASS",
+  "baseline": "Deployed website files fetched before editing; only owl data, one source entry and data-file cache version change",
+  "appearanceRecords": 114,
   "petCards": 24,
-  "sourceEntries": 12,
+  "appearanceDataUnchanged": true,
+  "companionStatsUnchanged": true,
+  "otherSkillFamiliesUnchanged": true,
+  "appUnchanged": true,
+  "sourceEntryAdded": {
+    "title": "白色／黑色小貓頭鷹｜基本、S技能與同行能力",
+    "kind": "使用者提供台服截圖"
+  },
+  "evidence": {
+    "tw-white-owl-s.png": {
+      "bytes": 250979,
+      "sha256": "c64d2e35642b5be37a12b588a5587c727b19d84f272310e45d49f135a0e85e05"
+    },
+    "tw-black-owl-base.png": {
+      "bytes": 245885,
+      "sha256": "4c87059217560dc876717e0335f8219e2ede8ac17e3f2b11b32268003f049f84"
+    }
+  },
   "browser": [
     {
       "width": 1440,
       "variantsChecked": 88,
       "errors": [],
       "result": "PASS",
-      "sources": {
-        "detailCount": 12,
-        "links": [
-          {
-            "href": "https://mabinogimobile.nexon.com/Info/Guide/2751130",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/3511370",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/2999050",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://peak.nexon.com/post/2736",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gonryu.tistory.com/54",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://dszw1qtcnsa5e.cloudfront.net/community/20250331/e0f3a922-907b-4c90-89c0-d31179befa3b/20250401032441856.png",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabi.hongkongfootprint.com/2026/09/mabi-mobile-pet.html",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://forum.gamer.com.tw/C.php?bsn=32564&snA=2621",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-        ],
-        "labels": [
-          "通行證",
-          "幸運箱",
-          "全套套組",
-          "傳說時裝",
-          "寵物",
-          "寵物技能與同行能力",
-          "深淵副本時裝",
-          "團隊副本時裝",
-          "動作箱"
-        ],
-        "allOfficialCount": 114,
-        "overflow": false
-      },
-      "details": [
+      "owlCases": [
         {
-          "ko": "웨딩 담비",
-          "skill": "흉포한 사랑 S",
-          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "legend": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "stats": "暴擊技能威力",
+          "ko": "흰 아기 올빼미",
+          "title": "白色小貓頭鷹",
+          "name": "疾速的振翅 S",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 SS",
+          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
+          "stats": "追擊攻擊力",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "비행사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "갈색 아기 올빼미",
+          "title": "棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "신사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회색 아기 올빼미",
+          "title": "灰色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防絕招",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "노랑 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회갈색 아기 올빼미",
+          "title": "灰棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防強擊強化",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "세일러 수달",
-          "skill": "치유의 무지개 S",
-          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
-          "stats": "暴擊追擊",
+          "ko": "까만 아기 올빼미",
+          "title": "黑色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "앞치마 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "스카프 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         }
       ]
@@ -189,174 +101,70 @@
       "variantsChecked": 88,
       "errors": [],
       "result": "PASS",
-      "sources": {
-        "detailCount": 12,
-        "links": [
-          {
-            "href": "https://mabinogimobile.nexon.com/Info/Guide/2751130",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/3511370",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/2999050",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://peak.nexon.com/post/2736",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gonryu.tistory.com/54",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://dszw1qtcnsa5e.cloudfront.net/community/20250331/e0f3a922-907b-4c90-89c0-d31179befa3b/20250401032441856.png",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabi.hongkongfootprint.com/2026/09/mabi-mobile-pet.html",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://forum.gamer.com.tw/C.php?bsn=32564&snA=2621",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-        ],
-        "labels": [
-          "通行證",
-          "幸運箱",
-          "全套套組",
-          "傳說時裝",
-          "寵物",
-          "寵物技能與同行能力",
-          "深淵副本時裝",
-          "團隊副本時裝",
-          "動作箱"
-        ],
-        "allOfficialCount": 114,
-        "overflow": false
-      },
-      "details": [
+      "owlCases": [
         {
-          "ko": "웨딩 담비",
-          "skill": "흉포한 사랑 S",
-          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "legend": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "stats": "暴擊技能威力",
+          "ko": "흰 아기 올빼미",
+          "title": "白色小貓頭鷹",
+          "name": "疾速的振翅 S",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 SS",
+          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
+          "stats": "追擊攻擊力",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "비행사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "갈색 아기 올빼미",
+          "title": "棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "신사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회색 아기 올빼미",
+          "title": "灰色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防絕招",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "노랑 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회갈색 아기 올빼미",
+          "title": "灰棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防強擊強化",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "세일러 수달",
-          "skill": "치유의 무지개 S",
-          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
-          "stats": "暴擊追擊",
+          "ko": "까만 아기 올빼미",
+          "title": "黑色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "앞치마 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "스카프 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         }
       ]
@@ -366,178 +174,73 @@
       "variantsChecked": 88,
       "errors": [],
       "result": "PASS",
-      "sources": {
-        "detailCount": 12,
-        "links": [
-          {
-            "href": "https://mabinogimobile.nexon.com/Info/Guide/2751130",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/3511370",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabinogimobile.nexon.com/News/Update/2999050",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://peak.nexon.com/post/2736",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gonryu.tistory.com/54",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://dszw1qtcnsa5e.cloudfront.net/community/20250331/e0f3a922-907b-4c90-89c0-d31179befa3b/20250401032441856.png",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://mabi.hongkongfootprint.com/2026/09/mabi-mobile-pet.html",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://forum.gamer.com.tw/C.php?bsn=32564&snA=2621",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=161s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://www.youtube.com/watch?v=OwBCx0a_X8E&t=131s",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          },
-          {
-            "href": "https://gall.dcinside.com/mgallery/board/view/?id=enban&no=1439057",
-            "target": "_blank",
-            "rel": "noopener noreferrer"
-          }
-        ],
-        "labels": [
-          "通行證",
-          "幸運箱",
-          "全套套組",
-          "傳說時裝",
-          "寵物",
-          "寵物技能與同行能力",
-          "深淵副本時裝",
-          "團隊副本時裝",
-          "動作箱"
-        ],
-        "allOfficialCount": 114,
-        "overflow": false
-      },
-      "details": [
+      "owlCases": [
         {
-          "ko": "웨딩 담비",
-          "skill": "흉포한 사랑 S",
-          "effect": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "legend": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "stats": "暴擊技能威力",
+          "ko": "흰 아기 올빼미",
+          "title": "白色小貓頭鷹",
+          "name": "疾速的振翅 S",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 SS",
+          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
+          "stats": "追擊攻擊力",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "비행사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "갈색 아기 올빼미",
+          "title": "棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "신사 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회색 아기 올빼미",
+          "title": "灰色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防絕招",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "노랑 담비",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，提高寵物主人的技能威力與攻擊力。\n詳細數值缺失",
-          "legend": "[主動] 施放時，於 23 秒期間，寵物主人的技能威力增加 2、攻擊力增加 6%。（冷卻時間：60 秒）",
-          "stats": "詳細數值缺失",
+          "ko": "회갈색 아기 올빼미",
+          "title": "灰棕色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "破防強擊強化",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         },
         {
-          "ko": "세일러 수달",
-          "skill": "치유의 무지개 S",
-          "effect": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 5%。\n詳細數值缺失",
-          "stats": "暴擊追擊",
+          "ko": "까만 아기 올빼미",
+          "title": "黑色小貓頭鷹",
+          "name": "疾速的振翅",
+          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
+          "legendName": "疾速的振翅 S",
+          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
+          "stats": "快速攻擊快速技能",
           "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "앞치마 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "스카프 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 수달",
-          "skill": "詳細數值缺失",
-          "effect": "[主動] 施放時，恢復寵物主人的生命值。\n詳細數值缺失",
-          "legend": "[主動] 施放時，恢復寵物主人最大生命值的 4%。（冷卻時間：14 秒）",
-          "stats": "詳細數值缺失",
-          "notes": "",
-          "notesDisplay": "none",
-          "captionCount": 0,
-          "linkCount": 0,
+          "footerCaption": false,
+          "links": 0,
           "overflow": false
         }
       ]
     }
-  ],
-  "result": "PASS"
+  ]
 }
