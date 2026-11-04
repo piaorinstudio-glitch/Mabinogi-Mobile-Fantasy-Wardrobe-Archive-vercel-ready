@@ -1,246 +1,81 @@
 {
-  "date": "2026-10-17",
-  "result": "PASS",
-  "baseline": "Deployed website files fetched before editing; only owl data, one source entry and data-file cache version change",
-  "appearanceRecords": 114,
-  "petCards": 24,
-  "appearanceDataUnchanged": true,
-  "companionStatsUnchanged": true,
-  "otherSkillFamiliesUnchanged": true,
-  "appUnchanged": true,
-  "sourceEntryAdded": {
-    "title": "白色／黑色小貓頭鷹｜基本、S技能與同行能力",
-    "kind": "使用者提供台服截圖"
-  },
-  "evidence": {
-    "tw-white-owl-s.png": {
-      "bytes": 250979,
-      "sha256": "c64d2e35642b5be37a12b588a5587c727b19d84f272310e45d49f135a0e85e05"
+  "date": "2026-11-04",
+  "repo": "piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready",
+  "branch": "main",
+  "delivery": "complete GitHub-root overlay without index changes; replaces already loaded data/tw-update-20261014.js",
+  "homepage_loads_patch": "verified using GitHub main index.html earlier in this turn",
+  "node_check": "passed",
+  "runtime_data_smoke": "passed",
+  "new_records": 7,
+  "recovered_existing_records": 4,
+  "image_paths": {
+    "image/lucky-41.png": {
+      "bytes": 527373,
+      "width": 720,
+      "height": 600,
+      "sha256": "b225fec1f7530cd097a9fd583e54c2fef8474074a70a2ed45c6d25109a1e20ef"
     },
-    "tw-black-owl-base.png": {
-      "bytes": 245885,
-      "sha256": "4c87059217560dc876717e0335f8219e2ede8ac17e3f2b11b32268003f049f84"
+    "image/lucky-42.png": {
+      "bytes": 521460,
+      "width": 720,
+      "height": 600,
+      "sha256": "a310a9c8f314f2959a0bd1a94b37a48734cdb06e3c40848629ba77b1108f7fb0"
+    },
+    "image/package-12.png": {
+      "bytes": 794655,
+      "width": 900,
+      "height": 750,
+      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
+    },
+    "image/package-8.png": {
+      "bytes": 848377,
+      "width": 900,
+      "height": 750,
+      "sha256": "0cda912bfbd50b54401ae550d6a52d875f407ba67b27d38a36677126af30bb03"
+    },
+    "image/package-9.png": {
+      "bytes": 890216,
+      "width": 900,
+      "height": 750,
+      "sha256": "45d6c2900d153058b12bc47ba8b9d96241e14de6507a36c25d11178a947a16b1"
+    },
+    "image/pass-14.png": {
+      "bytes": 794655,
+      "width": 900,
+      "height": 750,
+      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
+    },
+    "image/pet-23.png": {
+      "bytes": 924493,
+      "width": 900,
+      "height": 750,
+      "sha256": "feba05bf638f6703046d6dc9113249076545b4b4b9a0f2427354cfd9bd2deb1a"
+    },
+    "image/pet-24.png": {
+      "bytes": 634784,
+      "width": 720,
+      "height": 600,
+      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
+    },
+    "image/pet-25.png": {
+      "bytes": 634784,
+      "width": 720,
+      "height": 600,
+      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
     }
   },
-  "browser": [
-    {
-      "width": 1440,
-      "variantsChecked": 88,
-      "errors": [],
-      "result": "PASS",
-      "owlCases": [
-        {
-          "ko": "흰 아기 올빼미",
-          "title": "白色小貓頭鷹",
-          "name": "疾速的振翅 S",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 SS",
-          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
-          "stats": "追擊攻擊力",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 아기 올빼미",
-          "title": "棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회색 아기 올빼미",
-          "title": "灰色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防絕招",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회갈색 아기 올빼미",
-          "title": "灰棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防強擊強化",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "까만 아기 올빼미",
-          "title": "黑色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        }
-      ]
-    },
-    {
-      "width": 390,
-      "variantsChecked": 88,
-      "errors": [],
-      "result": "PASS",
-      "owlCases": [
-        {
-          "ko": "흰 아기 올빼미",
-          "title": "白色小貓頭鷹",
-          "name": "疾速的振翅 S",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 SS",
-          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
-          "stats": "追擊攻擊力",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 아기 올빼미",
-          "title": "棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회색 아기 올빼미",
-          "title": "灰色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防絕招",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회갈색 아기 올빼미",
-          "title": "灰棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防強擊強化",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "까만 아기 올빼미",
-          "title": "黑色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        }
-      ]
-    },
-    {
-      "width": 320,
-      "variantsChecked": 88,
-      "errors": [],
-      "result": "PASS",
-      "owlCases": [
-        {
-          "ko": "흰 아기 올빼미",
-          "title": "白色小貓頭鷹",
-          "name": "疾速的振翅 S",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 SS",
-          "legendEffect": "[主動] 施放時，提高寵物主人的技能使用速度、攻擊速度、施法及蓄力速度。\n詳細數值缺失",
-          "stats": "追擊攻擊力",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "갈색 아기 올빼미",
-          "title": "棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회색 아기 올빼미",
-          "title": "灰色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防絕招",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "회갈색 아기 올빼미",
-          "title": "灰棕色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "破防強擊強化",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        },
-        {
-          "ko": "까만 아기 올빼미",
-          "title": "黑色小貓頭鷹",
-          "name": "疾速的振翅",
-          "effect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 10%。（冷卻時間：30 秒）",
-          "legendName": "疾速的振翅 S",
-          "legendEffect": "[主動] 施放時，於 5 秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%。（冷卻時間：30 秒）",
-          "stats": "快速攻擊快速技能",
-          "notes": "",
-          "footerCaption": false,
-          "links": 0,
-          "overflow": false
-        }
-      ]
-    }
+  "file_names": [
+    "data/tw-update-20261014.js",
+    "UPDATE_NOTES.txt",
+    "VALIDATION_REPORT.json",
+    "image/lucky-41.png",
+    "image/lucky-42.png",
+    "image/package-12.png",
+    "image/package-8.png",
+    "image/package-9.png",
+    "image/pass-14.png",
+    "image/pet-23.png",
+    "image/pet-24.png",
+    "image/pet-25.png"
   ]
 }

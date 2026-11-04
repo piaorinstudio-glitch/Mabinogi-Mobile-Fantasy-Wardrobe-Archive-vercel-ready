@@ -1,54 +1,54 @@
-貓頭鷹技能補充更新包
-日期：2026/10/17
+《瑪奇 Mobile》台韓服更新包｜2026/10/28–2026/11/04（台灣時間）
+製作基準：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready / main
+更新方式：解壓縮 ZIP 後，將 data/ 與 image/ 檔案按原路徑上傳到 GitHub 根目錄，覆蓋 data/tw-update-20261014.js。
 
-【本次補充】
-依使用者提供的台服原始遊戲面板：
+【檔案載入】
+此版採取「已載入檔案補丁」：main 的 index.html 已經載入 data/tw-update-20261014.js，且位於 data/site-config.js 之後、assets/js/app.js 之前。
+因此只需替換這個已載入的 JS，無須重寫首頁 index.html；它在原有台服10/14紀錄之後依序加入原本未載入的 Crion 套組、2026/10/29 韓服通行證／限定寵物、2026/11/04 台服已推出的咒術迴戰聯名。
+這次不修改動作箱及 GitHub Actions 部署設定。
 
-1. 基本版「疾速的振翅」
-   主動：施放時，於5秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加10%。冷卻時間30秒。
-   對應證據：黑色小貓頭鷹、菁英，固有技能未帶S。
-   原低稀有度個體仍需升至史詩才能使用，此使用條件沿用既有介面。
+【韓服 10/29 已推出】
+1. pass-14 — 코지데이 모험가 패스｜Cozy Day 冒險家通行證（暫譯）｜10/29至12/16 23:59（韓國時間）｜高級通行證1,980 M Cash、70階。image/pass-14.png，官方宣傳圖。
+2. package-12 — 코지데이 컬렉션 백｜Cozy Day 收藏包（暫譯）｜通行證第25階達成後可購買，優惠價格／期限見資料；image/package-12.png 為同頁可辨識服裝的官方通行證宣傳圖副本（非單獨的收藏包產品圖）。
+3. pet-23 — 유령 리트리버｜幽靈黃金獵犬（暫譯）、菁英、限定販售｜10/29至11/12 05:59（韓國時間）；特殊禮包4,900 M Cash，不是常駐寵物幸運箱。image/pet-23.png 是官方禮包宣傳圖。
 
-2. S版「疾速的振翅 S」
-   主動：施放時，於5秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加12%。冷卻時間30秒。
-   對應證據：白色小貓頭鷹、原生史詩。
+【台服 11/04 已推出／韓服 11/05 預告】
+4. lucky-41 — 여민 깃 제복｜束襟制服｜image/lucky-41.png，台服官方上架圖片（使用者提供）。
+5. lucky-42 — 양면 스쿠나 의상｜兩面宿儺服飾｜image/lucky-42.png，台服官方上架圖片（使用者提供）。
+6. pet-24 — 옥견 혼｜玉犬・渾（史詩）｜image/pet-24.png，台服官方式神寵物幸運箱合照。
+7. pet-25 — 누에｜鵺（史詩）｜image/pet-25.png，共用同張台服官方式神寵物幸運箱合照（兩個實體 PNG）。
+台服販售期間2026/11/04維護後至12/02 05:59；韓服預定11/05維護後至12/03 05:59（各伺服器當地時間）。
 
-3. 同行能力核對
-   白色小貓頭鷹：追擊、攻擊力。
-   黑色小貓頭鷹：快速攻擊、快速技能。
-   這兩款的能力種類原本已正確，因此本次不改固定同行能力資料。
-   黑色是獨立外觀，不是棕色，不互相替換。
+【原 repo 遺漏修正】
+main 有 data/catalog-update-20261001.js，卻未從 index.html 載入。本包把相同四筆資料加入已載入的 JS：package-8～11。
+其中 image/package-8.png（Crion Striker）與 image/package-9.png（Crion Dog Tag）已放入兩張韓服官方實體 PNG。package-10.png、package-11.png 已存在於 main，本包不重複加入。
 
-4. SS尚缺原始面板
-   保留共同作用描述與「詳細數值缺失」。
-   不由10%、12%猜測SS百分比，也不把舊的無法確認的15%當作已驗證值。
+【寵物技能、效果、同行能力】
+三隻新寵物（幽靈黃金獵犬、玉犬・渾、鵺）僅能從官方公告確認稀有度、取得方式、系列或裝備規則；尚無可核實的固有技能／升階 S/SS 效果／固定同行能力面板。資料檔已明確標記「資料缺失／詳細數值缺失」，沒有用相同系列一般寵物技能推算。
+貂、水獺的既有變體已在 repo，沒有重複建立。
 
-【來源放置】
-只在既有「資料來源」視窗新增：
-「白色／黑色小貓頭鷹｜基本、S技能與同行能力」
-來源類型：使用者提供台服截圖。
-不在寵物詳細頁底部新增備註、來源、外觀敘述或其他補充文字。
+【檢查過但未新增圖鑑卡片】
+咒術聯名票券、變身商品與 My Home 裝飾禮包不等於全套新時裝；預告的團隊副本難度尚未確認有獨立新外觀主圖，因此不憑空新增。
 
-【本次網站檔案】
-- data/pet-update-20260917.js：貓頭鷹資料補充、來源紀錄。
-- index.html：只更新上述資料檔的快取版本字串，沒有改版面。
-不覆蓋data/pets.js，不修改其他寵物或其他分類的資料。
+【來源】
+韓服通行證：https://mabinogimobile.nexon.com/News/Notice/3571556
+韓服萬聖節限定：https://mabinogimobile.nexon.com/News/Notice/3571557
+韓服聯名：https://mabinogimobile.nexon.com/News/Notice/3571431
+台服聯名：https://tw.nexon.com/mabinogimobile/home/news/notice/3569092
+Crion 套組：https://mabinogimobile.nexon.com/News/Notice/3554491
 
-【安裝】
-這是增量覆蓋包，不是整個網站。
-解壓後，把index.html與data資料夾合併至原本GitHub本機專案根目錄，同名檔案選取取代。
-不要先刪除原網站或整個資料夾。
-GitHub Desktop檢查變更後，Commit → Push；若在獨立分支，確認後合併至main。
-不需要安裝套件、不需要額外建置或執行下載器。
+【ZIP 內新增／替換檔案】
+替換 data/tw-update-20261014.js
+新增 image/package-8.png
+新增 image/package-9.png
+新增 image/pass-14.png
+新增 image/package-12.png（共用通行證宣傳圖）
+新增 image/pet-23.png
+新增 image/lucky-41.png
+新增 image/lucky-42.png
+新增 image/pet-24.png（寵物合照）
+新增 image/pet-25.png（寵物合照副本）
+新增 UPDATE_NOTES.txt
+新增 VALIDATION_REPORT.json
 
-【已驗證】
-上傳前先核對正式網站，確認前一版頁面與資料來源修正已部署。
-用正式網站目前的data/pets.js套用本包，確認：
-- 原有114筆外觀資料、24張寵物卡片、同行能力及其餘技能家族未變。
-- 88隻寵物在1440、390、320像素寬度皆可開啟。
-- 黑色基本10%／升傳說S12%，白色原生S12%／SS缺值顯示正確。
-- 無JavaScript語法與執行錯誤；詳細頁沒有多餘底部文字或來源。
-- 來源紀錄位於既有資料來源視窗。
-
-UPDATE_NOTES.txt與VALIDATION_REPORT.json是交付紀錄，可不放上網站。
-本次未代替你推送GitHub或部署正式網站。
+此 ZIP 全部媒體為實體 PNG（無遠端圖片路徑，也沒有占位圖），頁面資料中的 image 指向本地 image/ 目錄。

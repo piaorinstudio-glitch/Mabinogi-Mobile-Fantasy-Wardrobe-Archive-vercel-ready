@@ -85,3 +85,192 @@
     archives:['https://erinn.tw/notices/3562703','https://erinn.tw/notices/3562691'],
     note:'本次官方網頁內文未正常載入；10/14商品內容以官方公告存檔交叉核對，保留原公告網址。'};
 })();
+
+// 2026-11-04 official Taiwan Jujutsu Kaisen collaboration.
+// Deliberately embedded in this already-loaded script, so index.html DOES NOT need modification.
+// These 4 records are backed by real PNG images attached by the user; see UPDATE_NOTES.txt.
+(() => {
+  const M = window.MABI;
+  if (!M || !Array.isArray(M.DATA)) throw new Error('The 2026-11-04 update requires data/catalog.js');
+  const krNotice='https://mabinogimobile.nexon.com/News/Notice/3571431';
+  const twNotice='https://tw.nexon.com/mabinogimobile/home/news/notice/3569092';
+  const twEnd='2026-12-02T05:59:00+08:00';
+  const shared = {date:'2026-11-05',endDate:'2026-12-03',year:'2026',notice:krNotice,
+    twDate:'2026-11-04',twEndDate:twEnd,twNotice,twNameStatus:'official_tw',nameStatus:'official_tw'};
+  const rows=[
+    {id:'lucky-41',type:'lucky',typeLabel:'幸運箱',number:41,zh:'束襟制服',ko:'여민 깃 제복',
+      lines:['束襟制服','여민 깃 제복','咒術迴戰聯名時裝票券','台服2026/11/04'],
+      image:'image/lucky-41.png',latest:true, ...shared},
+    {id:'lucky-42',type:'lucky',typeLabel:'幸運箱',number:42,zh:'兩面宿儺服飾',ko:'양면 스쿠나 의상',
+      lines:['兩面宿儺服飾','양면 스쿠나 의상','咒術迴戰聯名時裝票券','台服2026/11/04'],
+      image:'image/lucky-42.png',latest:true, ...shared},
+    {id:'pet-24',type:'pet',typeLabel:'寵物',number:24,zh:'玉犬・渾',ko:'옥견 혼',kind:'聯動',
+      lines:['玉犬・渾','옥견 혼','咒術迴戰 式神：寵物幸運箱（史詩）'],
+      image:'image/pet-24.png',imageNote:'使用官方台服寵物幸運箱合照（玉犬・渾與鵺）',
+      variants:[{zh:'玉犬・渾',ko:'옥견 혼',rarity:'史詩'}], ...shared},
+    {id:'pet-25',type:'pet',typeLabel:'寵物',number:25,zh:'鵺',ko:'누에',kind:'聯動',
+      lines:['鵺','누에','咒術迴戰 式神：寵物幸運箱（史詩）'],
+      image:'image/pet-25.png',imageNote:'使用官方台服寵物幸運箱合照（玉犬・渾與鵺）',
+      variants:[{zh:'鵺',ko:'누에',rarity:'史詩'}], ...shared}
+  ];
+  const byId=new Map(M.DATA.map((row,i)=>[row.id,i]));
+  for(const row of rows){
+    const idx=byId.get(row.id);
+    if(idx===undefined){byId.set(row.id,M.DATA.length);M.DATA.push(row);}
+    else if(M.DATA[idx].ko===row.ko){Object.assign(M.DATA[idx],row);}
+    else throw new Error('Record ID collision: '+row.id);
+  }
+  M.TW_CURRENT_IDS=new Set(M.TW_CURRENT_IDS||[]);
+  M.TW_RELEASED_IDS=new Set(M.TW_RELEASED_IDS||[]);
+  const now=Date.now(), begin=Date.parse('2026-11-04T00:00:00+08:00'), end=Date.parse(twEnd);
+  for(const row of rows){
+    M.TW_RELEASED_IDS.add(row.id);
+    if(now>=begin&&now<end)M.TW_CURRENT_IDS.add(row.id);
+    else M.TW_CURRENT_IDS.delete(row.id);
+  }
+  M.TW_STATUS_UPDATED='2026-11-04';
+  M.TW_STATUS_SOURCES=[...(M.TW_STATUS_SOURCES||[]),
+    {label:'台服 2026/11/04 咒術迴戰聯名幸運箱',url:twNotice},
+    {label:'韓服 2026/11/05 咒術迴戰聯名商品（預告）',url:krNotice}];
+  // These are NOT demonstrated to share base skills with the standard wolf/owl.
+  M.PET_STATS=M.PET_STATS||{};
+  M.PET_FAMILY_BY_KO=M.PET_FAMILY_BY_KO||{};
+  M.PET_SKILL_FAMILIES=M.PET_SKILL_FAMILIES||{};
+  for(const [ko,id] of [['옥견 혼','jjk_gyokuken_20261105'],['누에','jjk_nue_20261105']]){
+    M.PET_STATS[ko]=[];
+    M.PET_FAMILY_BY_KO[ko]=id;
+    M.PET_SKILL_FAMILIES[id]={
+      base:'資料缺失',epic:'資料缺失',legendEpic:'資料缺失',
+      baseEffect:'固有技能效果未取得可核對的面板。詳細數值缺失',
+      epicEffect:'固有技能及技能效果尚待遊戲內面板。詳細數值缺失',
+      legendEpicEffect:'升階至傳說後的固有技能及效果未確認。詳細數值缺失',
+      baseNote:'官方確認為史詩寵物，但未在公告提供固有技能或固定同行能力的數值。',
+      epicNote:'官方確認對應一般系列的標籤機率／傳說寵物裝備套裝規則；不等於確認固有技能。',
+      legendEpicNote:'官方確認升階失敗可得傳說寵物選擇箱碎片，SS效果未見可靠面板。'};
+  }
+})();
+
+// 2026-10-01 Crion packages: already present in the repo but not loaded by its index.html.
+// Included here after the 2026-10-14 rotation, before the 2026-11-04 additions.
+(() => {
+  const M = window.MABI = window.MABI || {};
+  const data = Array.isArray(M.DATA) ? M.DATA : (M.DATA = []);
+  const items = [
+    {id:'package-8',type:'package',typeLabel:'全套套組',number:8,zh:'Crion Striker（暫譯）',ko:'크리온 스트라이커',lines:['Crion Striker（暫譯）','크리온 스트라이커'],date:'2026-10-01',endDate:'2026-10-29',year:'2026',notice:'https://mabinogimobile.nexon.com/News/Notice/3554491',image:'image/package-8.png'},
+    {id:'package-9',type:'package',typeLabel:'全套套組',number:9,zh:'Crion Dog Tag（暫譯）',ko:'크리온 독 택',lines:['Crion Dog Tag（暫譯）','크리온 독 택'],date:'2026-10-01',endDate:'2026-10-29',year:'2026',notice:'https://mabinogimobile.nexon.com/News/Notice/3554491',image:'image/package-9.png'},
+    {id:'package-10',type:'package',typeLabel:'全套套組',number:10,zh:'Crion Pop Patch（暫譯）',ko:'크리온 팝 패치',lines:['Crion Pop Patch（暫譯）','크리온 팝 패치'],date:'2026-10-01',endDate:'2026-10-29',year:'2026',notice:'https://mabinogimobile.nexon.com/News/Notice/3554491',image:'image/package-10.png'},
+    {id:'package-11',type:'package',typeLabel:'全套套組',number:11,zh:'Crion Wire（暫譯）',ko:'크리온 와이어',lines:['Crion Wire（暫譯）','크리온 와이어'],date:'2026-10-01',endDate:'2026-10-29',year:'2026',notice:'https://mabinogimobile.nexon.com/News/Notice/3554491',image:'image/package-11.png'}
+  ];
+  const byId = new Map(data.map((item,index)=>[item.id,index]));
+  for(const item of items){
+    const index=byId.get(item.id);
+    if(index===undefined){byId.set(item.id,data.length);data.push(item);}
+    else if(data[index].ko===item.ko){data[index]={...data[index],...item};}
+    else throw new Error('Crion package ID collision: '+item.id);
+  }
+})();
+
+// Mark previously featured Korean pass and lucky boxes as no longer the newest.
+(() => {
+  const data = window.MABI?.DATA || [];
+  for (const item of data) {
+    if ((item.type==='pass' || item.type==='lucky') && item.server!=='TW') item.latest=false;
+  }
+})();
+
+// KR/TW official notice research as of 2026-11-04 (Asia/Taipei).
+// New photographs must be real, locally stored PNG before this script is deployed.
+// Loaded after existing data/tw-update-20261014.js and before assets/js/app.js.
+(() => {
+  const M = window.MABI = window.MABI || {};
+  const data = Array.isArray(M.DATA) ? M.DATA : (M.DATA = []);
+  const krPass = 'https://mabinogimobile.nexon.com/News/Notice/3571556';
+  const krGhost = 'https://mabinogimobile.nexon.com/News/Notice/3571557';
+  const krJJK = 'https://mabinogimobile.nexon.com/News/Notice/3571431';
+  const twJJK = 'https://tw.nexon.com/mabinogimobile/home/news/notice/3569092';
+  const newEntries = [
+    { id:'pass-14',type:'pass',typeLabel:'冒險家通行證',number:14,
+      zh:'Cozy Day 冒險家通行證（暫譯）',ko:'코지데이 모험가 패스',
+      nameStatus:'provisional',lines:['Cozy Day 冒險家通行證（暫譯）','코지데이 모험가 패스','Cozy Day 花漾耳環｜코지데이 블라썸 이어링'],
+      date:'2026-10-29',endDate:'2026-12-16',year:'2026',notice:krPass,
+      image:'image/pass-14.png',latest:true,priceMCash:1980,
+      notes:['高級通行證70階；第5階獎勵 Cozy Day 花漾耳環；第25階可取得 Cozy Day 收藏包。'] },
+    { id:'package-12',type:'package',typeLabel:'全套套組',number:12,
+      zh:'Cozy Day 收藏包（暫譯）',ko:'코지데이 컬렉션 백',nameStatus:'provisional',
+      lines:['Cozy Day 收藏包（暫譯）','코지데이 컬렉션 백','含貝雷帽、針織上衣、護腕、鞋子；性別款不同'],
+      date:'2026-10-29',endDate:'2027-01-28',year:'2026',notice:krPass,
+      image:'image/package-12.png',priceMCash:1000,
+      notes:['先完成當期高級通行證25階後可購買；至2026/12/16 23:59優惠1000 M Cash，其後2000 M Cash。'] },
+    { id:'pet-23',type:'pet',typeLabel:'寵物',number:23,
+      zh:'幽靈黃金獵犬（菁英，暫譯）',ko:'유령 리트리버',nameStatus:'provisional',
+      kind:'限定',lines:['幽靈黃金獵犬（菁英，暫譯）','유령 리트리버 (엘리트)'],
+      date:'2026-10-29',endDate:'2026-11-12',year:'2026',notice:krGhost,
+      image:'image/pet-23.png',variants:[{zh:'幽靈黃金獵犬',ko:'유령 리트리버',rarity:'菁英'}],
+      notes:['期間限定禮包，售價4900 M Cash。固有技能、升階效果、固定同行能力尚缺可驗證面板，不推測。'] },
+    { id:'lucky-41',type:'lucky',typeLabel:'幸運箱',number:41,
+      zh:'束襟制服',ko:'여민 깃 제복',nameStatus:'official_tw',
+      lines:['束襟制服','여민 깃 제복','套裝｜束襟制服','여민 깃 제복'],
+      date:'2026-11-05',endDate:'2026-12-03',year:'2026',notice:krJJK,
+      twDate:'2026-11-04',twEndDate:'2026-12-02T05:59:00+08:00',twNotice:twJJK,
+      image:'image/lucky-41.png',latest:true,
+      notes:['韓服預定11/05維護後；台服已11/04推出。使用咒術迴戰聯名時裝票券。'] },
+    { id:'lucky-42',type:'lucky',typeLabel:'幸運箱',number:42,
+      zh:'兩面宿儺服飾',ko:'양면 스쿠나 의상',nameStatus:'official_tw',
+      lines:['兩面宿儺服飾','양면 스쿠나 의상','套裝｜兩面宿儺服飾','양면 스쿠나 의상'],
+      date:'2026-11-05',endDate:'2026-12-03',year:'2026',notice:krJJK,
+      twDate:'2026-11-04',twEndDate:'2026-12-02T05:59:00+08:00',twNotice:twJJK,
+      image:'image/lucky-42.png',latest:true,
+      notes:['韓服預定11/05維護後；台服已11/04推出。使用咒術迴戰聯名時裝票券。'] },
+    { id:'pet-24',type:'pet',typeLabel:'寵物',number:24,
+      zh:'玉犬・渾',ko:'옥견 혼',nameStatus:'official_tw',kind:'聯動',
+      lines:['玉犬・渾','옥견 혼','史詩｜咒術迴戰 式神：寵物幸運箱'],
+      date:'2026-11-05',endDate:'2026-12-03',year:'2026',notice:krJJK,
+      twDate:'2026-11-04',twEndDate:'2026-12-02T05:59:00+08:00',twNotice:twJJK,
+      image:'image/pet-24.png',variants:[{zh:'玉犬・渾',ko:'옥견 혼',rarity:'史詩'}],
+      notes:['幼狼系列標籤與傳說裝備套裝規則相同，但不能據此推斷固有技能數值。'] },
+    { id:'pet-25',type:'pet',typeLabel:'寵物',number:25,
+      zh:'鵺',ko:'누에',nameStatus:'official_tw',kind:'聯動',
+      lines:['鵺','누에','史詩｜咒術迴戰 式神：寵物幸運箱'],
+      date:'2026-11-05',endDate:'2026-12-03',year:'2026',notice:krJJK,
+      twDate:'2026-11-04',twEndDate:'2026-12-02T05:59:00+08:00',twNotice:twJJK,
+      image:'image/pet-25.png',variants:[{zh:'鵺',ko:'누에',rarity:'史詩'}],
+      notes:['貓頭鷹系列標籤與傳說裝備套裝規則相同，但不能據此推斷固有技能數值。'] }
+  ];
+  const byId = new Map(data.map((row,i)=>[row.id,i]));
+  for (const row of newEntries) {
+    const idx = byId.get(row.id);
+    if (idx == null) { byId.set(row.id,data.length);data.push(row); }
+    else if (data[idx].ko === row.ko) Object.assign(data[idx],row);
+    else throw new Error('New update ID collides with an unrelated record: '+row.id);
+  }
+  // Keep previously released items; only these four outfits/pets are TW on-sale as of 11/04.
+  M.TW_CURRENT_IDS = new Set(M.TW_CURRENT_IDS || []);
+  M.TW_RELEASED_IDS = new Set(M.TW_RELEASED_IDS || []);
+  const now = Date.now();
+  for (const id of ['lucky-41','lucky-42','pet-24','pet-25']) {
+    const row = data.find(x=>x.id===id);
+    M.TW_RELEASED_IDS.add(id);
+    if (now >= Date.parse('2026-11-04T00:00:00+08:00') && now < Date.parse(row.twEndDate)) M.TW_CURRENT_IDS.add(id);
+    else M.TW_CURRENT_IDS.delete(id);
+  }
+  M.TW_STATUS_UPDATED='2026-11-04';
+  M.TW_STATUS_SOURCES=[...(M.TW_STATUS_SOURCES||[]),
+    {label:'2026/11/04台服咒術迴戰聯名幸運箱',url:twJJK},
+    {label:'2026/11/05韓服咒術迴戰聯名商品公告',url:krJJK},
+    {label:'2026/10/29韓服Cozy Day通行證與收藏包',url:krPass},
+    {label:'2026/10/29韓服萬聖節幽靈獵犬禮包',url:krGhost}];
+  M.PET_STATS=M.PET_STATS||{};
+  M.PET_FAMILY_BY_KO=M.PET_FAMILY_BY_KO||{};
+  M.PET_SKILL_FAMILIES=M.PET_SKILL_FAMILIES||{};
+  for(const [ko,family] of [['유령 리트리버','ghost_retriever_20261029'],['옥견 혼','jjk_gyokuken_20261105'],['누에','jjk_nue_20261105']]){
+    M.PET_FAMILY_BY_KO[ko]=family;
+    M.PET_STATS[ko]=[];
+    M.PET_SKILL_FAMILIES[family]={
+      base:'資料缺失',epic:'資料缺失',legendEpic:'資料缺失',
+      baseEffect:'詳細數值缺失',epicEffect:'詳細數值缺失',legendEpicEffect:'詳細數值缺失',
+      baseNote:'官方僅確認販售／稀有度；固有技能未取得可核實的遊戲內面板。',
+      epicNote:'無法確認升階技能及效果，不依同類寵物的技能推估。',
+      legendEpicNote:'傳說升階技能及效果待核實。'
+    };
+  }
+})();
