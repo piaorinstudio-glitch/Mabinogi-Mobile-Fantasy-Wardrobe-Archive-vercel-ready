@@ -1,0 +1,42 @@
+瑪奇 Mobile — 動作箱恢復與流量優化（第 1 階段）
+製作日期：2026-11-04（台灣）
+對照來源：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready，main 分支
+
+已確認 main 現況
+- 14 組動作箱、100 筆動作預覽引用（對應 92 個不重複 GIF 檔）、92 張 PNG 封面尚在原儲存庫。
+- 原始 GIF 總計約 1,220 MiB，因此不應發布到網站。
+- index.html 已停用動作分類、data/actions.js 與舊預覽 JS。
+- .github/workflows/deploy-pages.yml 原先完全排除 image/actions/、data/actions.js、assets/js/action-gallery.js。
+
+此 ZIP 包含以下「需新增／替換」檔案
+[替換] .github/workflows/deploy-pages.yml
+[新增] assets/js/action-gallery-video.js
+[新增] scripts/build_action_site.py
+[新增] RESTORE_NOTES.txt（本檔）
+
+部署方式
+1. 解壓縮 ZIP，保留資料夾路徑，將上述檔案上傳至 repo main 根目錄並覆蓋同名檔。
+2. 新 workflow 將被 main 的 push 觸發。也可在 GitHub Actions 手動執行 Deploy GitHub Pages (optimized action videos)。
+3. workflow 會使用 repo 中原有 92 個 GIF 轉成 H.264 MP4（12fps、最長邊 480px、CRF32）。
+4. 生成 site-dist/ 發布內容時，會加回「動作箱」按鈕、載入資料與新的預覽程式，將所有預覽路徑改為 .mp4，並將動作預覽 HTML 改用原生 video 元素。
+5. 站點只會發布 92 張 PNG、92 個 MP4，絕不發布 GIF；訪客點開動作才下載對應 MP4。
+6. ffmpeg 的產出存於 Actions cache，日後更新若 GIF 未變動可避免重轉。
+
+注意事項
+- 此 ZIP 不含 92 個 MP4 實體檔案。當前工作環境無法下載 repo 內 1.2 GiB GIF，因此改由 GitHub Actions 使用已在 repo 內的原檔轉換；不需要從外部網址下載圖片或 GIF。
+- 此方法恢復的是「發布版」site-dist/index.html；儲存庫 main 原始 index.html 維持不變，由腳本在部署時安全補回分類與 script。若未來更新 index.html 結構，腳本在無法安全定位時會停止部署，而非破壞其他區塊。
+- 原 GIF 保留於 repository 供日後重新壓縮，但不包含於 GitHub Pages 發布內容。Git 倉庫本身的容量不會減少；降低的是訪客的下載量與 GitHub Pages 公布檔案容量。
+- Actions 初次執行須轉換全部 92 個影片，其後可透過快取加速。流量仍取決於實際訪客數和每個影片大小，並非零成本。
+- GitHub 外掛目前只授予讀取權限，故本次無法直接替你 push 至 main；需要自行上傳 ZIP 解壓後的檔案。
+
+驗證
+- 轉檔輸出必須小於對應 GIF，否則工作流程失敗。
+- 必須生成與原 previews 相同數量的 MP4，且每個封面 PNG 都存在。
+- index.html 必須有動作箱分類、動作資料 script 與 video 預覽 script。
+- 發布版 image/actions/ 不得存在任何 .gif。
+- 驗證不過就停止部署，不會發布壞掉的網站。
+
+後續第 2 階段
+- 比對 2026/10/28～2026/11/04 的韓服及台服公告與 main 分支。
+- 新外觀必須取得 PNG 實體圖片，寵物詳細欄位若無可靠數據明確標缺失。
+- 另製作可上傳網站的更新 ZIP，不混入此次動作箱優化。
