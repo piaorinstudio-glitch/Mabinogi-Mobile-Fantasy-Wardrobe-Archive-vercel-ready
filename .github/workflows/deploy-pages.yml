@@ -26,24 +26,22 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Build lightweight website
+      - name: Ensure FFmpeg
         run: |
-          mkdir -p site-dist
-          rsync -a \
-            --exclude='/.git/' \
-            --exclude='/.github/' \
-            --exclude='/site-dist/' \
-            --exclude='/image/actions/' \
-            --exclude='/data/actions.js' \
-            --exclude='/assets/js/action-gallery.js' \
-            --exclude='/research/' \
-            --exclude='/docs/' \
-            --exclude='/scripts/' \
-            --exclude='/*.py' \
-            --exclude='/*.json' \
-            --exclude='/*.txt' \
-            ./ site-dist/
-          touch site-dist/.nojekyll
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Cache action videos
+        uses: actions/cache@v4
+        with:
+          path: action-video-cache
+          key: action-mp4-${{ hashFiles('scripts/build_action_site.py', 'GIF_MANIFEST.json') }}
+
+      - name: Build optimized website
+        run: |
+          python3 scripts/build_action_site.py
           du -sh site-dist
 
       - name: Configure Pages
