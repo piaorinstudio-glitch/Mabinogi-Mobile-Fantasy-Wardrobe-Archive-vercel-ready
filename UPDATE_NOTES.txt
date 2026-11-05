@@ -1,28 +1,42 @@
-瑪奇 Mobile｜11/05 寵物頁更新未顯示：快取修復包
-對照 GitHub main：31295b413f4b42353cfbe8b5df7034f48e0c8126
-對照部署：GitHub Pages run 41966110400（已成功，2026/11/05 12:11 台灣時間）
+Mabinogi Mobile - 2026/11/05 Taiwan-only order and pet-detail correction
+Source GitHub main at 21400a5dfea346ed4c25b9379a09b1e97c474117
 
-發現：
-1. 已部署的 data/tw-update-20261014.js 有新資料：pet-24「咒術迴戰 式神：寵物幸運箱」一張卡，兩個 variants（玉犬・渾、鵺），以及兩個技能與同行能力。
-2. 但部署版 index.html 引用 data/tw-update-20261014.js，未加版本號。瀏覽器可能沿用先前已快取的舊資料，導致出現兩張卡或舊技能。
-3. assets/js/app.js 的預設排序 state.sort='old'，聯名寵物日期 2026/11/04，卡片在寵物列表底部；請用「新到舊」排序查看。
+WHAT CHANGED
+1. Remove the following Crion cards from the website: package-8/9/10/11.
+   catalog-update-20261001.js has been made inert to avoid reintroducing them.
+2. Two Taiwan JJK fashion lucky boxes: lucky-41 (台版 #2) and lucky-42 (台版 #3).
+   One Taiwan JJK pet lucky box: pet-24 (台版 #2), with two selectable pets.
+3. pairOrder=2/3 keeps the original interleaving rule: 韓服 #n -> 台版 #n.
+4. Pet detail data: 玉犬・渾 has 破防嚎叫 S (7 s, +3%, 8 s cooldown)
+   and two featured companion attributes 技能威力+14 / 攻擊力+8.
+   鵺 has 疾速的振翅 S (5 s, +12%, 30 s cooldown)
+   and two featured attributes 追擊+14 / 攻擊力+8.
+   Shared five base attributes +5 and 魅力+3000 are retained in data
+   without displaying nine repetitive badges. The SS stats remain explicitly unknown.
+5. Keep Cozy Day pass-14, package-12 (display as 第 8 代 after the four removed Crion entries), ghost retriever pet-23, all other catalog items.
+6. index.html receives a cache-busting version for the updated Taiwan data JS.
+7. Existing animation/MP4 JavaScript and deploy workflow are NOT modified.
 
-修復範圍：
-- 只替換根目錄 index.html 中 tw-update-20261014.js 的 script 網址，補上 ?v=20261105-petpool-fix。
-- 其他 HTML、JavaScript、圖片一律不變，Crion 套組與動作箱不受影響。
-- index.html 已透過已部署的 Pages artifact 逆推原始碼並核對 GitHub blob SHA 完全一致，再修改唯一一行。
+UPDATED/ADDED FILES
+- index.html (replace)
+- data/tw-update-20261014.js (replace)
+- data/catalog-update-20261001.js (replace with safe inert module)
+- image/lucky-41.png, image/lucky-42.png, image/pet-24.png (verified existing PNGs)
+- image/pass-14.png, image/package-12.png, image/pet-23.png (verified existing PNGs)
+- UPDATE_NOTES.txt (this file)
 
-上傳方法：
-1. 解壓本 ZIP。
-2. 將 index.html 上傳至 GitHub repository 根目錄，覆蓋同名檔案，提交 main。
-3. 等 GitHub Actions > Deploy GitHub Pages 成功，打開 https://www.piaorinstudio.com/?v=20261105-petpool-fix#type=pet
-4. 若仍顯示舊卡，按 Ctrl+Shift+R（強制重新載入），分類選「寵物」，排序選「新到舊」。
-5. 只應看到一張「咒術迴戰 式神：寵物幸運箱」；點圖片上的「玉犬・渾」或「鵺」查看技能。
+CLEANUP IN GITHUB
+GitHub web upload overlays files and cannot delete old files automatically.
+The following obsolete images remain in Git history/branch unless separately deleted:
+image/package-8.png, image/package-9.png, image/package-10.png,
+image/package-11.png, image/pet-25.png.
+They are not referenced by the corrected website or new data file.
 
-現有關鍵數據：
-- 玉犬・渾：破防嚎叫 S，破防敵人可用，7 秒內無防備傷害 +3%，冷卻 8 秒；固定同行：技能威力 +14、攻擊力 +8、五維 +5、魅力 +3000。
-- 鵺：疾速的振翅 S，5 秒內技能使用速度等 +12%，冷卻 30 秒；固定同行：追擊 +14、攻擊力 +8、五維 +5、魅力 +3000。
-- 兩者皆為同一台服聯動寵物幸運箱（販售至 2026/12/02 05:59）。
+DEPLOY
+Extract ZIP, upload contents retaining root paths to main, commit, let Pages redeploy.
+The published action-player builder continues to operate unchanged.
 
-此更新包不是重新產出寵物資料；寵物資料與 PNG 本來已在 main / Pages artifact 正確存在。這次只修復可能造成舊資料殘留的引用 URL。
-注意：因外部網站即時讀取在工作環境中受限，無法驗證你瀏覽器實際拿到的 HTTP 快取版本。已驗證部署產物包含正確資料。
+VALIDATION
+- Use the included updated data with the site's other unchanged scripts.
+- Check Taiwan numbering, order, pool count, category and skill detail against screenshots.
+- Main branch will not be modified by this ZIP automatically.
