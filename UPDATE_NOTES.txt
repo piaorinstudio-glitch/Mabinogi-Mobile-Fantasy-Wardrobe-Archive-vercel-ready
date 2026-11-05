@@ -1,55 +1,28 @@
-《瑪奇 Mobile》台韓服外觀更新更正版 — 2026/11/04
-基準 repo：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
+瑪奇 Mobile｜11/05 寵物頁更新未顯示：快取修復包
+對照 GitHub main：31295b413f4b42353cfbe8b5df7034f48e0c8126
+對照部署：GitHub Pages run 41966110400（已成功，2026/11/05 12:11 台灣時間）
 
-本次修正：
-1. 「束襟制服」與「兩面宿儺服飾」是台服 2026/11/04 已推出的咒術迴戰聯名時裝幸運箱；
-   兩筆已加 server=TW、displayNumber=台服聯名、展示日期改為台服 11/04，不再顯示「韓服 #41/#42」。
-   韓服公告預定 11/05 上架的資訊保留為 krDate/krNotice，不會誤寫成台服推出日期。
-2. 「玉犬・渾」和「鵺」屬於同一個「咒術迴戰 式神：寵物幸運箱」；寵物分類只保留 pet-24 一張卡，
-   卡片 variants 內有兩個史詩寵物，點選任一變體即可開啟獨立技能資訊。
-   舊的 pet-25 圖鑑資料於頁面載入時刪去，避免重複卡片；此 ZIP 不包含 image/pet-25.png。
-   GitHub 既有的 image/pet-25.png 如果仍存在，不會由 ZIP 主動刪除，也不影響網站。
-3. 玉犬・渾（史詩 S，等級 1 面板，使用者台服截圖）：
-   固有技能：破防嚎叫 S。
-   效果：[主動] 鎖定的敵人處於破防狀態時可施放。施放時 7 秒內主人無防備傷害增加 3%；冷卻 8 秒。
-   固定同行能力：力量+5、技巧+5、智力+5、意志+5、幸運+5、攻擊力+8、技能威力+14、魅力+3000。
-4. 鵺（史詩 S，等級 1 面板，使用者台服截圖）：
-   固有技能：疾速的振翅 S。
-   效果：[主動] 施放時 5 秒內主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%；冷卻 30 秒。
-   固定同行能力：力量+5、技巧+5、智力+5、意志+5、幸運+5、追擊+14、攻擊力+8、魅力+3000。
-5. 兩隻寵物升階至傳說後的 SS 技能尚缺實機面板，不猜測數值。保留原站其他寵物資料。
-6. 四款 Crion 套組全部保留：
-   Crion Striker／크리온 스트라이커、Crion Dog Tag／크리온 독 택、
-   Crion Pop Patch／크리온 팝 패치、Crion Wire／크리온 와이어。
-   已存在的 package-10、package-11 圖片在 GitHub 保留，不需要重新上傳。
-7. 韓服 Cozy Day 冒險家通行證、Cozy Day 收藏包、幽靈黃金獵犬圖片及資料保留。
-   其他分類、動作箱 MP4 部署、GitHub Pages workflow 均未改動。
+發現：
+1. 已部署的 data/tw-update-20261014.js 有新資料：pet-24「咒術迴戰 式神：寵物幸運箱」一張卡，兩個 variants（玉犬・渾、鵺），以及兩個技能與同行能力。
+2. 但部署版 index.html 引用 data/tw-update-20261014.js，未加版本號。瀏覽器可能沿用先前已快取的舊資料，導致出現兩張卡或舊技能。
+3. assets/js/app.js 的預設排序 state.sort='old'，聯名寵物日期 2026/11/04，卡片在寵物列表底部；請用「新到舊」排序查看。
 
-取得方式／時段：
-- 台服聯名時裝與式神：聯名專屬幸運箱，台服 2026/11/04 維護後至 2026/12/02 05:59。
-- 韓服 Cozy Day 通行證：2026/10/29 上架；高級票券 1,980 M Cash。
-- 韓服幽靈獵犬：2026/10/29 上架；菁英限定禮包，4,900 M Cash，至 11/12 05:59。
-- Crion：2026/10/01～10/29 韓服套組，不刪除歷史圖鑑。
+修復範圍：
+- 只替換根目錄 index.html 中 tw-update-20261014.js 的 script 網址，補上 ?v=20261105-petpool-fix。
+- 其他 HTML、JavaScript、圖片一律不變，Crion 套組與動作箱不受影響。
+- index.html 已透過已部署的 Pages artifact 逆推原始碼並核對 GitHub blob SHA 完全一致，再修改唯一一行。
 
-本次 ZIP 中新增／替換檔案（直接解壓於 GitHub 根目錄）：
-[替換] data/tw-update-20261014.js
-[重附] image/lucky-41.png
-[重附] image/lucky-42.png
-[重附] image/pet-24.png （雙寵同池共用官方宣傳圖）
-[重附] image/pass-14.png
-[重附] image/package-12.png
-[重附] image/pet-23.png
-[重附] image/package-8.png
-[重附] image/package-9.png
-[說明] UPDATE_NOTES.txt
-[驗證] VALIDATION_REPORT.json
+上傳方法：
+1. 解壓本 ZIP。
+2. 將 index.html 上傳至 GitHub repository 根目錄，覆蓋同名檔案，提交 main。
+3. 等 GitHub Actions > Deploy GitHub Pages 成功，打開 https://www.piaorinstudio.com/?v=20261105-petpool-fix#type=pet
+4. 若仍顯示舊卡，按 Ctrl+Shift+R（強制重新載入），分類選「寵物」，排序選「新到舊」。
+5. 只應看到一張「咒術迴戰 式神：寵物幸運箱」；點圖片上的「玉犬・渾」或「鵺」查看技能。
 
-HTML 載入：既有 index.html 已載入 data/tw-update-20261014.js，並在 assets/js/app.js 之前執行，故無須覆蓋 index.html。
-注意：此修正對既有 main 的 11/04 更新資料設計，請勿另行搭配先前 ZIP 覆蓋較舊版資料。
+現有關鍵數據：
+- 玉犬・渾：破防嚎叫 S，破防敵人可用，7 秒內無防備傷害 +3%，冷卻 8 秒；固定同行：技能威力 +14、攻擊力 +8、五維 +5、魅力 +3000。
+- 鵺：疾速的振翅 S，5 秒內技能使用速度等 +12%，冷卻 30 秒；固定同行：追擊 +14、攻擊力 +8、五維 +5、魅力 +3000。
+- 兩者皆為同一台服聯動寵物幸運箱（販售至 2026/12/02 05:59）。
 
-官方公告：
-台服：https://tw.nexon.com/mabinogimobile/home/news/notice/3569092
-韓服聯名：https://mabinogimobile.nexon.com/News/Notice/3571431
-韓服通行證：https://mabinogimobile.nexon.com/News/Notice/3571556
-韓服幽靈獵犬：https://mabinogimobile.nexon.com/News/Notice/3571557
-Crion：https://mabinogimobile.nexon.com/News/Notice/3554491
+此更新包不是重新產出寵物資料；寵物資料與 PNG 本來已在 main / Pages artifact 正確存在。這次只修復可能造成舊資料殘留的引用 URL。
+注意：因外部網站即時讀取在工作環境中受限，無法驗證你瀏覽器實際拿到的 HTTP 快取版本。已驗證部署產物包含正確資料。

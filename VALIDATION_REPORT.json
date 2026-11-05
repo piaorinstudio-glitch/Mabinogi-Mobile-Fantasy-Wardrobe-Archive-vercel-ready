@@ -1,97 +1,20 @@
 {
-  "baseRepo": "piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready",
-  "expectedMainCommitAtInspection": "31eb813d08038384ba316b9965376ee580353797",
-  "jsSyntax": "pass",
-  "runtime": {
-    "records": 12,
-    "crion": 5,
-    "twLucky": 2,
-    "twPetPool": 1,
-    "variants": 2,
-    "crionIds": [
-      "package-8",
-      "package-9",
-      "package-10",
-      "package-11"
-    ]
+  "baseline_commit": "31295b413f4b42353cfbe8b5df7034f48e0c8126",
+  "baseline_index_git_blob_sha": "2f12cde00e03baa46535ad36b2ac3768f3dd2028",
+  "new_index_git_blob_sha": "26f73ecb3e17b9cc56d54039a00fff76bf278ac4",
+  "deployed_verified": {
+    "artifact": "GitHub Pages run 41966110400",
+    "pet_pool": true,
+    "pet_variant_count": 2,
+    "screenshots_verified": true,
+    "new_skills": true
   },
-  "twSharedPetPool": true,
-  "crionPreserved": true,
-  "pageHtmlAlreadyLoads": "data/tw-update-20261014.js",
-  "indexModificationRequired": false,
-  "imageCount": 8,
-  "images": {
-    "image/lucky-41.png": {
-      "format": "PNG",
-      "size": [
-        720,
-        600
-      ],
-      "bytes": 527373,
-      "sha256": "b225fec1f7530cd097a9fd583e54c2fef8474074a70a2ed45c6d25109a1e20ef"
-    },
-    "image/lucky-42.png": {
-      "format": "PNG",
-      "size": [
-        720,
-        600
-      ],
-      "bytes": 521460,
-      "sha256": "a310a9c8f314f2959a0bd1a94b37a48734cdb06e3c40848629ba77b1108f7fb0"
-    },
-    "image/pet-24.png": {
-      "format": "PNG",
-      "size": [
-        720,
-        600
-      ],
-      "bytes": 634784,
-      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
-    },
-    "image/pass-14.png": {
-      "format": "PNG",
-      "size": [
-        900,
-        750
-      ],
-      "bytes": 794655,
-      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
-    },
-    "image/package-12.png": {
-      "format": "PNG",
-      "size": [
-        900,
-        750
-      ],
-      "bytes": 794655,
-      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
-    },
-    "image/pet-23.png": {
-      "format": "PNG",
-      "size": [
-        900,
-        750
-      ],
-      "bytes": 924493,
-      "sha256": "feba05bf638f6703046d6dc9113249076545b4b4b9a0f2427354cfd9bd2deb1a"
-    },
-    "image/package-8.png": {
-      "format": "PNG",
-      "size": [
-        900,
-        750
-      ],
-      "bytes": 848377,
-      "sha256": "0cda912bfbd50b54401ae550d6a52d875f407ba67b27d38a36677126af30bb03"
-    },
-    "image/package-9.png": {
-      "format": "PNG",
-      "size": [
-        900,
-        750
-      ],
-      "bytes": 890216,
-      "sha256": "45d6c2900d153058b12bc47ba8b9d96241e14de6507a36c25d11178a947a16b1"
-    }
-  }
+  "modified_source_files": [
+    "index.html"
+  ],
+  "changes": {
+    "old": "<script defer src=\"data/tw-update-20261014.js\"></script>",
+    "new": "<script defer src=\"data/tw-update-20261014.js?v=20261105-petpool-fix\"></script>"
+  },
+  "published_output_simulation_passed": true
 }
