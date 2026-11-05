@@ -1,81 +1,97 @@
 {
-  "date": "2026-11-04",
-  "repo": "piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready",
-  "branch": "main",
-  "delivery": "complete GitHub-root overlay without index changes; replaces already loaded data/tw-update-20261014.js",
-  "homepage_loads_patch": "verified using GitHub main index.html earlier in this turn",
-  "node_check": "passed",
-  "runtime_data_smoke": "passed",
-  "new_records": 7,
-  "recovered_existing_records": 4,
-  "image_paths": {
+  "baseRepo": "piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready",
+  "expectedMainCommitAtInspection": "31eb813d08038384ba316b9965376ee580353797",
+  "jsSyntax": "pass",
+  "runtime": {
+    "records": 12,
+    "crion": 5,
+    "twLucky": 2,
+    "twPetPool": 1,
+    "variants": 2,
+    "crionIds": [
+      "package-8",
+      "package-9",
+      "package-10",
+      "package-11"
+    ]
+  },
+  "twSharedPetPool": true,
+  "crionPreserved": true,
+  "pageHtmlAlreadyLoads": "data/tw-update-20261014.js",
+  "indexModificationRequired": false,
+  "imageCount": 8,
+  "images": {
     "image/lucky-41.png": {
+      "format": "PNG",
+      "size": [
+        720,
+        600
+      ],
       "bytes": 527373,
-      "width": 720,
-      "height": 600,
       "sha256": "b225fec1f7530cd097a9fd583e54c2fef8474074a70a2ed45c6d25109a1e20ef"
     },
     "image/lucky-42.png": {
+      "format": "PNG",
+      "size": [
+        720,
+        600
+      ],
       "bytes": 521460,
-      "width": 720,
-      "height": 600,
       "sha256": "a310a9c8f314f2959a0bd1a94b37a48734cdb06e3c40848629ba77b1108f7fb0"
     },
-    "image/package-12.png": {
-      "bytes": 794655,
-      "width": 900,
-      "height": 750,
-      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
-    },
-    "image/package-8.png": {
-      "bytes": 848377,
-      "width": 900,
-      "height": 750,
-      "sha256": "0cda912bfbd50b54401ae550d6a52d875f407ba67b27d38a36677126af30bb03"
-    },
-    "image/package-9.png": {
-      "bytes": 890216,
-      "width": 900,
-      "height": 750,
-      "sha256": "45d6c2900d153058b12bc47ba8b9d96241e14de6507a36c25d11178a947a16b1"
+    "image/pet-24.png": {
+      "format": "PNG",
+      "size": [
+        720,
+        600
+      ],
+      "bytes": 634784,
+      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
     },
     "image/pass-14.png": {
+      "format": "PNG",
+      "size": [
+        900,
+        750
+      ],
       "bytes": 794655,
-      "width": 900,
-      "height": 750,
+      "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
+    },
+    "image/package-12.png": {
+      "format": "PNG",
+      "size": [
+        900,
+        750
+      ],
+      "bytes": 794655,
       "sha256": "2734eb3992242e06e279bf3edad26e7882fadc521823620d109bfca0ba0fccf7"
     },
     "image/pet-23.png": {
+      "format": "PNG",
+      "size": [
+        900,
+        750
+      ],
       "bytes": 924493,
-      "width": 900,
-      "height": 750,
       "sha256": "feba05bf638f6703046d6dc9113249076545b4b4b9a0f2427354cfd9bd2deb1a"
     },
-    "image/pet-24.png": {
-      "bytes": 634784,
-      "width": 720,
-      "height": 600,
-      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
+    "image/package-8.png": {
+      "format": "PNG",
+      "size": [
+        900,
+        750
+      ],
+      "bytes": 848377,
+      "sha256": "0cda912bfbd50b54401ae550d6a52d875f407ba67b27d38a36677126af30bb03"
     },
-    "image/pet-25.png": {
-      "bytes": 634784,
-      "width": 720,
-      "height": 600,
-      "sha256": "43b0c60e715f7aba195bea217bbf767a433cfff069717e5ce99e0b7b57599bc7"
+    "image/package-9.png": {
+      "format": "PNG",
+      "size": [
+        900,
+        750
+      ],
+      "bytes": 890216,
+      "sha256": "45d6c2900d153058b12bc47ba8b9d96241e14de6507a36c25d11178a947a16b1"
     }
-  },
-  "file_names": [
-    "data/tw-update-20261014.js",
-    "UPDATE_NOTES.txt",
-    "VALIDATION_REPORT.json",
-    "image/lucky-41.png",
-    "image/lucky-42.png",
-    "image/package-12.png",
-    "image/package-8.png",
-    "image/package-9.png",
-    "image/pass-14.png",
-    "image/pet-23.png",
-    "image/pet-24.png",
-    "image/pet-25.png"
-  ]
+  }
 }

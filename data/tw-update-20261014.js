@@ -274,3 +274,111 @@
     };
   }
 })();
+
+
+// 2026-11-04 correction: two TW fashion boxes and ONE TW collaboration pet pool.
+// Official TW in-game screenshots (user supplied) confirm the two epic S skills and companion attributes.
+// Keep all Crion package-8 through package-11 and all Korean pass / special-pet entries untouched.
+(() => {
+  'use strict';
+  const M=window.MABI;
+  if (!M || !Array.isArray(M.DATA)) throw new Error('TW JJK correction requires existing MABI.DATA');
+  const data=M.DATA;
+  const notice='https://tw.nexon.com/mabinogimobile/home/news/notice/3569092';
+  const krNotice='https://mabinogimobile.nexon.com/News/Notice/3571431';
+  const twEnd='2026-12-02T05:59:00+08:00';
+  const now=Date.now();
+  const start=Date.parse('2026-11-04T00:00:00+08:00');
+  const end=Date.parse(twEnd);
+  const common={server:'TW',displayNumber:'台服聯名',date:'2026-11-04',
+    twDate:'2026-11-04',twEndDate:twEnd,twNotice:notice,notice,
+    twReleased:true,twNameStatus:'official_tw',nameStatus:'official_tw',year:'2026',
+    krDate:'2026-11-05',krNotice,latest:true};
+  const outfits=[
+    {id:'lucky-41',zh:'束襟制服',ko:'여민 깃 제복',type:'lucky',typeLabel:'幸運箱',number:41,
+      lines:['束襟制服','여민 깃 제복','咒術迴戰聯名｜時裝幸運箱','台服2026/11/04'],
+      image:'image/lucky-41.png',notes:['台服正式名稱：束襟制服；台服11/04維護後販售至12/02 05:59。韓服11/05公告上架。'],...common},
+    {id:'lucky-42',zh:'兩面宿儺服飾',ko:'양면 스쿠나 의상',type:'lucky',typeLabel:'幸運箱',number:42,
+      lines:['兩面宿儺服飾','양면 스쿠나 의상','咒術迴戰聯名｜時裝幸運箱','台服2026/11/04'],
+      image:'image/lucky-42.png',notes:['台服正式名稱：兩面宿儺服飾；台服11/04維護後販售至12/02 05:59。韓服11/05公告上架。'],...common}
+  ];
+  for(const record of outfits){
+    let row=data.find(x=>x.id===record.id);
+    if(row)Object.assign(row,record);
+    else data.push(record);
+  }
+
+  // One lucky-box item contains two selectable epic pets; no duplicate cards.
+  const pooled={
+    ...common,
+    id:'pet-24',type:'pet',typeLabel:'寵物幸運箱',number:24,
+    zh:'咒術迴戰 式神：寵物幸運箱',ko:'옥견 혼 · 누에',
+    kind:'聯動',latest:true,image:'image/pet-24.png',
+    imageNote:'同一張台服官方幸運箱主圖包含玉犬・渾與鵺；兩者為同池史詩寵物。',
+    lines:['咒術迴戰 式神：寵物幸運箱','玉犬・渾｜옥견 혼','鵺｜누에',
+           '同一個寵物幸運箱，兩款皆為史詩寵物'],
+    variants:[
+      {zh:'玉犬・渾',ko:'옥견 혼',rarity:'史詩'},
+      {zh:'鵺',ko:'누에',rarity:'史詩'}
+    ],
+    notes:['請在此卡片點選玉犬・渾或鵺，查看各自固有技能與固定同行能力。',
+           '台服2026/11/04維護後推出，2026/12/02 05:59結束販售。']
+  };
+  const target=data.find(x=>x.id==='pet-24');
+  if(target)Object.assign(target,pooled);
+  else data.push(pooled);
+  // Ensure one pet box even if earlier scripts populated pet-25 separately.
+  for(let i=data.length-1;i>=0;i--){
+    if(data[i].id==='pet-25')data.splice(i,1);
+  }
+
+  M.TW_RELEASED_IDS=new Set(M.TW_RELEASED_IDS||[]);
+  M.TW_CURRENT_IDS=new Set(M.TW_CURRENT_IDS||[]);
+  for(const id of ['lucky-41','lucky-42','pet-24']){
+    M.TW_RELEASED_IDS.add(id);
+    if(now>=start && now<end)M.TW_CURRENT_IDS.add(id);
+    else M.TW_CURRENT_IDS.delete(id);
+  }
+  M.TW_RELEASED_IDS.delete('pet-25');
+  M.TW_CURRENT_IDS.delete('pet-25');
+  M.TW_STATUS_UPDATED='2026-11-04';
+
+  M.PET_STATS=M.PET_STATS||{};
+  M.PET_FAMILY_BY_KO=M.PET_FAMILY_BY_KO||{};
+  M.PET_SKILL_FAMILIES=M.PET_SKILL_FAMILIES||{};
+  const standardAttributes=['力量 +5','技巧 +5','智力 +5','意志 +5','幸運 +5'];
+  M.PET_STATS['옥견 혼']=[...standardAttributes,'攻擊力 +8','技能威力 +14','魅力 +3000'];
+  M.PET_STATS['누에']=[...standardAttributes,'追擊 +14','攻擊力 +8','魅力 +3000'];
+  const dogFamily='jjk_gyokuken_20261105';
+  M.PET_FAMILY_BY_KO['옥견 혼']=dogFamily;
+  M.PET_SKILL_FAMILIES[dogFamily]={
+    base:'資料缺失',epic:'破防嚎叫 S',legendEpic:'資料缺失',
+    baseEffect:'基本版本未提供可確認面板；詳細數值缺失',
+    epicEffect:'[主動] 寵物主人鎖定的敵人處於破防狀態時可施放。施放時，於7秒期間，寵物主人的無防備傷害增加3%。（冷卻時間：8秒）',
+    legendEpicEffect:'升階至傳說後的技能 SS 效果尚無可靠面板；詳細數值缺失',
+    epicNote:'台服2026/11/04玩家提供的「玉犬・渾」原生史詩等級1面板。',
+    legendEpicNote:'沒有使用其他幼狼寵物的數值推估。'
+  };
+  const nueFamily='jjk_nue_20261105';
+  M.PET_FAMILY_BY_KO['누에']=nueFamily;
+  M.PET_SKILL_FAMILIES[nueFamily]={
+    base:'資料缺失',epic:'疾速的振翅 S',legendEpic:'資料缺失',
+    baseEffect:'基本版本未提供可確認面板；詳細數值缺失',
+    epicEffect:'[主動] 施放時，於5秒期間，將寵物主人的技能使用速度、攻擊速度、施法及蓄力速度增加12%。（冷卻時間：30秒）',
+    legendEpicEffect:'升階至傳說後的技能 SS 效果尚無可靠面板；詳細數值缺失',
+    epicNote:'台服2026/11/04玩家提供的「鵺」原生史詩等級1面板。',
+    legendEpicNote:'不由既有貓頭鷹系列推估傳說版本數值。'
+  };
+  // Preserve supplementary official TW references for the two real pet panels.
+  M.PET_DETAIL_SOURCES=M.PET_DETAIL_SOURCES||[];
+  for(const record of [
+    {title:'台服2026/11/04 玉犬・渾 S 技能及固定同行能力',kind:'使用者提供台服遊戲面板'},
+    {title:'台服2026/11/04 鵺 S 技能及固定同行能力',kind:'使用者提供台服遊戲面板'}
+  ]){
+    if(!M.PET_DETAIL_SOURCES.some(x=>x.title===record.title))M.PET_DETAIL_SOURCES.push(record);
+  }
+  // Do not remove Crion packages; earlier data source still provides all four.
+  for(const id of ['package-8','package-9','package-10','package-11']){
+    if(!data.some(x=>x.id===id))throw new Error('Expected Crion package absent: '+id);
+  }
+})();

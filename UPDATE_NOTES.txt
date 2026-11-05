@@ -1,54 +1,55 @@
-《瑪奇 Mobile》台韓服更新包｜2026/10/28–2026/11/04（台灣時間）
-製作基準：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready / main
-更新方式：解壓縮 ZIP 後，將 data/ 與 image/ 檔案按原路徑上傳到 GitHub 根目錄，覆蓋 data/tw-update-20261014.js。
+《瑪奇 Mobile》台韓服外觀更新更正版 — 2026/11/04
+基準 repo：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
 
-【檔案載入】
-此版採取「已載入檔案補丁」：main 的 index.html 已經載入 data/tw-update-20261014.js，且位於 data/site-config.js 之後、assets/js/app.js 之前。
-因此只需替換這個已載入的 JS，無須重寫首頁 index.html；它在原有台服10/14紀錄之後依序加入原本未載入的 Crion 套組、2026/10/29 韓服通行證／限定寵物、2026/11/04 台服已推出的咒術迴戰聯名。
-這次不修改動作箱及 GitHub Actions 部署設定。
+本次修正：
+1. 「束襟制服」與「兩面宿儺服飾」是台服 2026/11/04 已推出的咒術迴戰聯名時裝幸運箱；
+   兩筆已加 server=TW、displayNumber=台服聯名、展示日期改為台服 11/04，不再顯示「韓服 #41/#42」。
+   韓服公告預定 11/05 上架的資訊保留為 krDate/krNotice，不會誤寫成台服推出日期。
+2. 「玉犬・渾」和「鵺」屬於同一個「咒術迴戰 式神：寵物幸運箱」；寵物分類只保留 pet-24 一張卡，
+   卡片 variants 內有兩個史詩寵物，點選任一變體即可開啟獨立技能資訊。
+   舊的 pet-25 圖鑑資料於頁面載入時刪去，避免重複卡片；此 ZIP 不包含 image/pet-25.png。
+   GitHub 既有的 image/pet-25.png 如果仍存在，不會由 ZIP 主動刪除，也不影響網站。
+3. 玉犬・渾（史詩 S，等級 1 面板，使用者台服截圖）：
+   固有技能：破防嚎叫 S。
+   效果：[主動] 鎖定的敵人處於破防狀態時可施放。施放時 7 秒內主人無防備傷害增加 3%；冷卻 8 秒。
+   固定同行能力：力量+5、技巧+5、智力+5、意志+5、幸運+5、攻擊力+8、技能威力+14、魅力+3000。
+4. 鵺（史詩 S，等級 1 面板，使用者台服截圖）：
+   固有技能：疾速的振翅 S。
+   效果：[主動] 施放時 5 秒內主人的技能使用速度、攻擊速度、施法及蓄力速度增加 12%；冷卻 30 秒。
+   固定同行能力：力量+5、技巧+5、智力+5、意志+5、幸運+5、追擊+14、攻擊力+8、魅力+3000。
+5. 兩隻寵物升階至傳說後的 SS 技能尚缺實機面板，不猜測數值。保留原站其他寵物資料。
+6. 四款 Crion 套組全部保留：
+   Crion Striker／크리온 스트라이커、Crion Dog Tag／크리온 독 택、
+   Crion Pop Patch／크리온 팝 패치、Crion Wire／크리온 와이어。
+   已存在的 package-10、package-11 圖片在 GitHub 保留，不需要重新上傳。
+7. 韓服 Cozy Day 冒險家通行證、Cozy Day 收藏包、幽靈黃金獵犬圖片及資料保留。
+   其他分類、動作箱 MP4 部署、GitHub Pages workflow 均未改動。
 
-【韓服 10/29 已推出】
-1. pass-14 — 코지데이 모험가 패스｜Cozy Day 冒險家通行證（暫譯）｜10/29至12/16 23:59（韓國時間）｜高級通行證1,980 M Cash、70階。image/pass-14.png，官方宣傳圖。
-2. package-12 — 코지데이 컬렉션 백｜Cozy Day 收藏包（暫譯）｜通行證第25階達成後可購買，優惠價格／期限見資料；image/package-12.png 為同頁可辨識服裝的官方通行證宣傳圖副本（非單獨的收藏包產品圖）。
-3. pet-23 — 유령 리트리버｜幽靈黃金獵犬（暫譯）、菁英、限定販售｜10/29至11/12 05:59（韓國時間）；特殊禮包4,900 M Cash，不是常駐寵物幸運箱。image/pet-23.png 是官方禮包宣傳圖。
+取得方式／時段：
+- 台服聯名時裝與式神：聯名專屬幸運箱，台服 2026/11/04 維護後至 2026/12/02 05:59。
+- 韓服 Cozy Day 通行證：2026/10/29 上架；高級票券 1,980 M Cash。
+- 韓服幽靈獵犬：2026/10/29 上架；菁英限定禮包，4,900 M Cash，至 11/12 05:59。
+- Crion：2026/10/01～10/29 韓服套組，不刪除歷史圖鑑。
 
-【台服 11/04 已推出／韓服 11/05 預告】
-4. lucky-41 — 여민 깃 제복｜束襟制服｜image/lucky-41.png，台服官方上架圖片（使用者提供）。
-5. lucky-42 — 양면 스쿠나 의상｜兩面宿儺服飾｜image/lucky-42.png，台服官方上架圖片（使用者提供）。
-6. pet-24 — 옥견 혼｜玉犬・渾（史詩）｜image/pet-24.png，台服官方式神寵物幸運箱合照。
-7. pet-25 — 누에｜鵺（史詩）｜image/pet-25.png，共用同張台服官方式神寵物幸運箱合照（兩個實體 PNG）。
-台服販售期間2026/11/04維護後至12/02 05:59；韓服預定11/05維護後至12/03 05:59（各伺服器當地時間）。
+本次 ZIP 中新增／替換檔案（直接解壓於 GitHub 根目錄）：
+[替換] data/tw-update-20261014.js
+[重附] image/lucky-41.png
+[重附] image/lucky-42.png
+[重附] image/pet-24.png （雙寵同池共用官方宣傳圖）
+[重附] image/pass-14.png
+[重附] image/package-12.png
+[重附] image/pet-23.png
+[重附] image/package-8.png
+[重附] image/package-9.png
+[說明] UPDATE_NOTES.txt
+[驗證] VALIDATION_REPORT.json
 
-【原 repo 遺漏修正】
-main 有 data/catalog-update-20261001.js，卻未從 index.html 載入。本包把相同四筆資料加入已載入的 JS：package-8～11。
-其中 image/package-8.png（Crion Striker）與 image/package-9.png（Crion Dog Tag）已放入兩張韓服官方實體 PNG。package-10.png、package-11.png 已存在於 main，本包不重複加入。
+HTML 載入：既有 index.html 已載入 data/tw-update-20261014.js，並在 assets/js/app.js 之前執行，故無須覆蓋 index.html。
+注意：此修正對既有 main 的 11/04 更新資料設計，請勿另行搭配先前 ZIP 覆蓋較舊版資料。
 
-【寵物技能、效果、同行能力】
-三隻新寵物（幽靈黃金獵犬、玉犬・渾、鵺）僅能從官方公告確認稀有度、取得方式、系列或裝備規則；尚無可核實的固有技能／升階 S/SS 效果／固定同行能力面板。資料檔已明確標記「資料缺失／詳細數值缺失」，沒有用相同系列一般寵物技能推算。
-貂、水獺的既有變體已在 repo，沒有重複建立。
-
-【檢查過但未新增圖鑑卡片】
-咒術聯名票券、變身商品與 My Home 裝飾禮包不等於全套新時裝；預告的團隊副本難度尚未確認有獨立新外觀主圖，因此不憑空新增。
-
-【來源】
-韓服通行證：https://mabinogimobile.nexon.com/News/Notice/3571556
-韓服萬聖節限定：https://mabinogimobile.nexon.com/News/Notice/3571557
+官方公告：
+台服：https://tw.nexon.com/mabinogimobile/home/news/notice/3569092
 韓服聯名：https://mabinogimobile.nexon.com/News/Notice/3571431
-台服聯名：https://tw.nexon.com/mabinogimobile/home/news/notice/3569092
-Crion 套組：https://mabinogimobile.nexon.com/News/Notice/3554491
-
-【ZIP 內新增／替換檔案】
-替換 data/tw-update-20261014.js
-新增 image/package-8.png
-新增 image/package-9.png
-新增 image/pass-14.png
-新增 image/package-12.png（共用通行證宣傳圖）
-新增 image/pet-23.png
-新增 image/lucky-41.png
-新增 image/lucky-42.png
-新增 image/pet-24.png（寵物合照）
-新增 image/pet-25.png（寵物合照副本）
-新增 UPDATE_NOTES.txt
-新增 VALIDATION_REPORT.json
-
-此 ZIP 全部媒體為實體 PNG（無遠端圖片路徑，也沒有占位圖），頁面資料中的 image 指向本地 image/ 目錄。
+韓服通行證：https://mabinogimobile.nexon.com/News/Notice/3571556
+韓服幽靈獵犬：https://mabinogimobile.nexon.com/News/Notice/3571557
+Crion：https://mabinogimobile.nexon.com/News/Notice/3554491
