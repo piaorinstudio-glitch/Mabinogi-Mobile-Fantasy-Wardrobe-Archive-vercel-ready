@@ -1,0 +1,41 @@
+瑪奇 Mobile UI 正式版更新包
+日期：2026/11/05（台灣）
+基底：main 08c3aba22ed4a6d007926d0cc69e5e253421ce2e（2026/11/05）
+
+套用方式
+1. 在 GitHub Desktop 的原儲存庫建立新分支 ui-clean-layout-20261105。
+2. 解壓縮本 ZIP，將 index.html、assets、scripts 等依原路徑放入儲存庫根目錄；遇到同名檔案覆蓋。
+3. Commit → Push，建立 Pull Request；確認差異只含本次5個程式檔與本說明，再合併 main。
+4. 既有 Deploy GitHub Pages 工作流程會自動執行；等 Build optimized website 與 Deploy website 完成，再重新整理網站。
+5. 不需要重新上傳圖片、GIF、MP4、data資料夾或整個儲存庫；不要刪除原有檔案。
+
+變更檔案
+[替換] index.html：相簿包層、精簡查詢列、小工具入口移除、新CSS/JS載入。
+[替換] assets/js/app.js：查詢與台服當期篩選、排序記憶、實際分類路由、小工具頁面移除。
+[新增] assets/css/archive-ui.css：粉嫩配色、緊湊標題與回憶照片、固定搜尋尺寸、手機相簿與彈窗。
+[新增] assets/js/archive-scroll.js：桌機逐排捲動，進入／重新整理／切換分類回頂端。
+[替換] scripts/build_action_site.py：讓部署流程支援移除小工具和新版app版本字串，保留動作箱MP4。
+
+行為
+- 桌機搜尋欄320×44px，手機容器寬×44px；空結果時也不跳動。
+- 保留中文／韓文搜尋、TIPS、寵物常駐／限定／聯動與一般版／長袍版。
+- 預設新到舊，記住使用者之後選擇的排序。
+- 手機自然滑動；桌機一個手勢一排，長卡片保留中段閱讀位置。
+- 進頁回頂端只套用桌機；手機沿用瀏覽器自然捲動。
+- 來源index原有7個啟用分類；發布腳本會如既有流程補回第8個動作箱分類及MP4。
+- 不改動外觀資料、台服編號與狀態、寵物數值、圖片或既有影片編碼參數。
+
+驗證
+- JavaScript語法通過。
+- 15項桌機逐排／回頂端測試通過。
+- 13項發布HTML相容性測試通過。
+- 實際瀏覽器在320、390、768、1440px檢查7分類，搜尋尺寸一致且無橫向溢出。
+- 實測空結果、台服當期篩選、中文搜尋、寵物詳細與時裝版本切換。
+- 原main.css、site-config.js、舊action-gallery.js、vercel.json與寵物／圖片檢視核心區塊保持一致。
+
+部署注意
+- 已連接GitHub外掛為只讀，因此這個更新包尚未替你提交／推送或合併main。
+- 本次沒有執行完整Linux影片轉檔與GitHub Actions部署；發布HTML準備流程已測試。
+- build_action_site.py有更新，既有Actions快取鍵可能改變，首次部署可能重轉影片，請等工作流程結束。
+- 手機已做瀏覽器尺寸模擬，尚未以實體iOS／Android裝置測試。
+- 若要還原，用另附rollback ZIP覆蓋原3個檔案；新增CSS/JS不再被載入，可保留。

@@ -1,6 +1,6 @@
 const {
   DATA,LABELS,TIPS_CONTENT,PET_STATS,PET_FAMILY_BY_KO,PET_SKILL_FAMILIES,
-  TW_CURRENT_IDS,TW_RELEASED_IDS,TW_STATUS_UPDATED,TOOL_LINKS
+  TW_CURRENT_IDS,TW_RELEASED_IDS,TW_STATUS_UPDATED
 }=window.MABI;
 function getTwStatusChip(item){
   if(item.type==='abyss'||item.type==='raid') return '';
@@ -8,7 +8,11 @@ function getTwStatusChip(item){
   if(TW_RELEASED_IDS.has(item.id)) return `<span class="tw-status-chip tw-status-released" title="台服曾經推出；目前未標示為當期，更新至 ${TW_STATUS_UPDATED}">台服已推出</span>`;
   return '';
 }
-let state={type:'pass',sort:'old',search:'',petKind:'all',legendView:'regular'};
+const ARCHIVE_SORT_KEY='mabi-archive-sort';
+function preferredSort(){
+  try{return localStorage.getItem(ARCHIVE_SORT_KEY)==='old'?'old':'new';}catch{return 'new';}
+}
+let state={type:'pass',sort:preferredSort(),search:'',petKind:'all',legendView:'regular',currentOnly:false};
 const $=(s,r=document)=>r.querySelector(s);
 const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));
 function normKind(k){return k==='常規'?'常駐':(k||'常駐')}
@@ -216,33 +220,37 @@ function itemMatches(item){
   const variantNames=(item.variants||[]).flatMap(v=>typeof v==='string'?[v]:[v.zh,v.ko]);
   return [item.zh,item.ko,item.origin,...(item.lines||[]),...variantNames].filter(Boolean).some(v=>String(v).toLowerCase().includes(q));
 }
-
-function renderTools(){
-  $('#sectionTitle').textContent='小工具'; $('#sectionTitle').dataset.en='TOOLS';
-  $('#sectionTipsBtn').style.display='none';
-  $('#archiveTools').style.display='none'; $('#sort').style.display='none'; $('#petFilters').classList.remove('show'); $('#legendViews').classList.remove('show'); $('#archiveCount').textContent='';
-  const cards=TOOL_LINKS.map(tool=>`<article class="tool-card">
-    <div class="tool-card-head">
-      <div class="tool-card-icon" aria-hidden="true">${tool.icon}</div>
-      <div><h3 class="tool-card-title">${tool.title}</h3><div class="tool-card-source">${tool.source}</div></div>
-    </div>
-    <p class="tool-card-desc">${tool.description}</p>
-    <a class="tool-open" href="${tool.url}" target="_blank" rel="noopener noreferrer" aria-label="開啟 ${tool.title}（外部網站，新分頁）">開啟工具 <span aria-hidden="true">↗</span></a>
-  </article>`).join('');
-  $('#feed').innerHTML=`<div class="tools-hub">
-    <section class="tools-intro">
-      <h2 class="tools-intro-title">玩家實用小工具</h2>
-      <p>這裡集中分享方便查資料的小工具與網站。之後有新的實用工具，可以繼續加在這一頁供大家選擇。</p>
-    </section>
-    <div class="tools-grid">${cards}<div class="tools-coming">更多小工具之後會陸續加入 ✦</div></div>
-  </div>`;
+function isCurrentItem(item){
+  if(item.type!=='action')return TW_CURRENT_IDS.has(item.id);
+  if(item.twReleased!==true)return false;
+  const now=Date.now();
+  return now>=Date.parse(`${item.twDate}T00:00:00+08:00`) && now<Date.parse(item.twEndDate);
+}
+function showActiveCategory(){
+  const active=$('.category.active'),nav=$('.category-nav');
+  if(!active||!nav)return;
+  const item=active.getBoundingClientRect(),bounds=nav.getBoundingClientRect();
+  if(item.left<bounds.left)nav.scrollLeft-=bounds.left-item.left;
+  else if(item.right>bounds.right)nav.scrollLeft+=item.right-bounds.right;
+}
+function renderArchiveControls(){
+  const supported=['pass','lucky','package','legend','pet','action'].includes(state.type);
+  const currentWrap=$('#archiveCurrentWrap'),currentOnly=$('#archiveCurrentOnly'),auditDate=$('#archiveAuditDate');
+  if(currentWrap)currentWrap.hidden=!supported;
+  if(currentOnly)currentOnly.checked=state.currentOnly;
+  if(auditDate){
+    auditDate.hidden=false;
+    auditDate.textContent=TW_STATUS_UPDATED?`核對至 ${formatKrDate(TW_STATUS_UPDATED)}`:'';
+  }
+  $('#sort').value=state.sort;
 }
 
 function render(){
   const [zh,en]=LABELS[state.type]||LABELS.pass;
   $$('.category').forEach(b=>b.classList.toggle('active',b.dataset.type===state.type));
-  if(state.type==='tools'){renderTools(); location.hash='type=tools'; return;}
-  $('#archiveTools').style.display='flex'; $('#sort').style.display='inline-block';
+  renderArchiveControls();
+  showActiveCategory();
+  $('#archiveTools').style.display=''; $('#sort').style.display='';
   $('#sectionTitle').textContent=zh; $('#sectionTitle').dataset.en=en;
   $('#sectionTipsBtn').style.display=(state.type==='legend'||state.type==='pet')?'inline-flex':'none';
   $('#petFilters').classList.toggle('show',state.type==='pet');
@@ -250,6 +258,8 @@ function render(){
   $$('.legend-view-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===state.legendView));
   let rows=DATA.filter(x=>x.type===state.type).filter(itemMatches);
   if(state.type==='pet' && state.petKind!=='all') rows=rows.filter(x=>kindKey(x.kind)===state.petKind);
+  const currentFilter=state.currentOnly&&['pass','lucky','package','legend','pet','action'].includes(state.type);
+  if(currentFilter)rows=rows.filter(isCurrentItem);
   rows.sort((a,b)=>{
     const anchor=(item)=>{
       if(item.server==='TW'&&item.pairAfterId){
@@ -277,7 +287,11 @@ function render(){
     return state.sort==='old'?d:-d;
   });
   $('#archiveCount').textContent=`共 ${rows.length} 筆`;
-  if(!rows.length){$('#feed').innerHTML=`<div class="empty">沒有找到符合的外觀</div>`; return;}
+  if(!rows.length){
+    $('#feed').innerHTML=`<div class="empty">${currentFilter?'目前沒有符合搜尋條件的台服當期資料，可取消「只看台服當期」查看其他內容。':'沒有找到符合的外觀，請試試其他關鍵字或分類條件。'}</div>`;
+    location.hash='type='+state.type;
+    return;
+  }
   if(state.type==='action'){
     window.MABI.renderActionCards(rows);
     location.hash='type=action';
@@ -418,12 +432,19 @@ $('#petDetailClose').onclick=closePetDetail;
 $('#petDetailModal').onclick=e=>{if(e.target.id==='petDetailModal')closePetDetail()};
 document.addEventListener('keydown',e=>{if($('#petDetailModal').classList.contains('show')){if(e.key==='Escape')closePetDetail()}else if($('#viewer').classList.contains('show')){if(e.key==='Escape')closeViewer();else if(e.key==='ArrowLeft')moveViewer(-1);else if(e.key==='ArrowRight')moveViewer(1)}else if(e.key==='Escape'&&$('#tipsModal').classList.contains('show'))closeTips();else if(e.key==='Escape'&&$('#sourcesModal').classList.contains('show'))closeSources()});
 $$('.category').forEach(btn=>btn.onclick=()=>{state.type=btn.dataset.type;state.search='';$('#archiveSearch').value='';render();});
-$('#sort').onchange=e=>{state.sort=e.target.value;render();};
+$('#sort').onchange=e=>{state.sort=e.target.value;try{localStorage.setItem(ARCHIVE_SORT_KEY,state.sort);}catch{}render();};
+if($('#archiveCurrentOnly'))$('#archiveCurrentOnly').onchange=e=>{state.currentOnly=e.target.checked;render();};
 $('#archiveSearch').oninput=e=>{state.search=e.target.value;render();};
 $$('.pet-filter-btn').forEach(btn=>btn.onclick=()=>{state.petKind=btn.dataset.kind;$$('.pet-filter-btn').forEach(b=>b.classList.toggle('active',b===btn));render();});
 $$('.legend-view-btn').forEach(btn=>btn.onclick=()=>{state.legendView=btn.dataset.view;render();});
 $('#sectionTipsBtn').onclick=openTips;
 $('#openSources').onclick=openSources;
-function initFromHash(){let t=(location.hash.match(/type=([^&]+)/)||[])[1]; if(t==='dye')t='tools'; if(t&&LABELS[t]) state.type=t; render();}
+function initFromHash(){
+  const type=(location.hash.match(/type=([^&]+)/)||[])[1];
+  // Removed and invalid category links return to the first available archive.
+  state.type=$$('.category').some(button=>button.dataset.type===type)?type:'pass';
+  render();
+}
 window.addEventListener('hashchange',initFromHash);
 initFromHash();
+

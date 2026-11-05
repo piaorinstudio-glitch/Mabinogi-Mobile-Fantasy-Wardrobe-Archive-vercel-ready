@@ -11,14 +11,15 @@ import re
 import shutil
 import subprocess
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
+from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "site-dist"
 CACHE = ROOT / "action-video-cache"
 NAV = '<button class="category" data-type="tools"><span class="cat-zh">小工具</span><span class="cat-en">TOOLS</span></button>'
 ACTION_NAV = '<button class="category" data-type="action"><span class="cat-zh">動作箱</span><span class="cat-en">ACTION</span></button>'
-APP_SCRIPT = '<script defer src="assets/js/app.js?v=20261016-pet-fix"></script>'
 SCRIPTS = ('<script defer src="data/actions.js?v=20261104-mp4"></script>'
            '<script defer src="assets/js/action-gallery-video.js?v=20261104-mp4"></script>')
 OLD_IMG = '<div class="action-gif-frame"><img id="actionGif" alt="" decoding="async"></div>'
@@ -28,6 +29,89 @@ NEW_VIDEO = ('<div class="action-gif-frame"><video id="actionVideo" controls mut
 GIF_PREVIEW_PATH = re.compile(r'("path"\s*:\s*"image/actions/[^"\r\n]+)\.gif(")', re.IGNORECASE)
 PNG_REFERENCES = re.compile(r'"(?:cover|image)"\s*:\s*"(image/actions/[^"\r\n]+\.png)"', re.IGNORECASE)
 VIDEO_REFERENCES = re.compile(r'"path"\s*:\s*"(image/actions/[^"\r\n]+\.mp4)"', re.IGNORECASE)
+SCRIPT_TAG = re.compile(r'<script\b[^>]*>\s*</script\s*>', re.IGNORECASE)
+NAV_TAG = re.compile(r'<nav\b[^>]*>[\s\S]*?</nav\s*>', re.IGNORECASE)
+BUTTON_TAG = re.compile(r'<button\b[^>]*>', re.IGNORECASE)
+
+
+class _TagAttributes(HTMLParser):
+    def __init__(self, opening_tag: str) -> None:
+        super().__init__(convert_charrefs=True)
+        self.attributes: dict[str, str | None] = {}
+        self.feed(opening_tag)
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        names = [name for name, _ in attrs]
+        if len(names) != len(set(names)):
+            raise RuntimeError(f'Duplicate attributes on {tag}; refusing unsafe edit')
+        self.attributes = dict(attrs)
+
+
+def _attributes(tag: str) -> dict[str, str | None]:
+    return _TagAttributes(tag[:tag.index('>') + 1]).attributes
+
+
+def _script_path(tag: str) -> str | None:
+    src = _attributes(tag).get('src')
+    if not src:
+        return None
+    parsed = urlsplit(src)
+    if parsed.scheme or parsed.netloc:
+        return None
+    return parsed.path.removeprefix('./').lstrip('/')
+
+
+def prepare_html(html: str) -> str:
+    """Add the published MP4 gallery without depending on a Tools tab or cache key."""
+    navs = [match for match in NAV_TAG.finditer(html)
+            if 'category-nav' in (_attributes(match.group()).get('class') or '').split()]
+    if len(navs) != 1:
+        raise RuntimeError(f'Category navigation: expected one match, got {len(navs)}')
+    nav = navs[0]
+    buttons = list(BUTTON_TAG.finditer(nav.group()))
+    action_buttons = [match for match in buttons
+                      if _attributes(match.group()).get('data-type') == 'action']
+    tools_buttons = [match for match in buttons
+                     if _attributes(match.group()).get('data-type') == 'tools']
+    if len(action_buttons) > 1 or len(tools_buttons) > 1:
+        raise RuntimeError('Duplicate Action or Tools navigation buttons; refusing unsafe edit')
+    if not action_buttons:
+        # Keep the old ordering when Tools is present; otherwise append within
+        # the category nav, without depending on unrelated footer navigation.
+        offset = tools_buttons[0].start() if tools_buttons else nav.group().rfind('</')
+        at = nav.start() + offset
+        html = html[:at] + ACTION_NAV + html[at:]
+
+    scripts = list(SCRIPT_TAG.finditer(html))
+    app = [match for match in scripts if _script_path(match.group()) == 'assets/js/app.js']
+    data = [match for match in scripts if _script_path(match.group()) == 'data/actions.js']
+    video = [match for match in scripts if _script_path(match.group()) == 'assets/js/action-gallery-video.js']
+    legacy = [match for match in scripts if _script_path(match.group()) == 'assets/js/action-gallery.js']
+    if len(app) != 1:
+        raise RuntimeError(f'app.js script: expected one match, got {len(app)}')
+    if legacy or len(data) > 1 or len(video) > 1:
+        raise RuntimeError('Legacy or duplicate action scripts; refusing unsafe edit')
+    for match in app + data + video:
+        attributes = _attributes(match.group())
+        if 'defer' not in attributes or 'async' in attributes or attributes.get('type') == 'module':
+            raise RuntimeError('Archive scripts must use ordered classic defer loading')
+    if not data and not video:
+        at = app[0].start()
+        html = html[:at] + SCRIPTS + html[at:]
+    elif len(data) != 1 or len(video) != 1 or not data[0].start() < video[0].start() < app[0].start():
+        raise RuntimeError('Expected one action data script then video gallery before app.js')
+
+    # Preserve the strict player layout check rather than guessing at unknown HTML.
+    old_count, new_count = html.count(OLD_IMG), html.count(NEW_VIDEO)
+    old_ids = len(re.findall(r'\bid\s*=\s*([\'"])actionGif\1', html, re.IGNORECASE))
+    new_ids = len(re.findall(r'\bid\s*=\s*([\'"])actionVideo\1', html, re.IGNORECASE))
+    if old_ids != old_count or new_ids != new_count:
+        raise RuntimeError('Unexpected or duplicate Action player identifiers')
+    if old_count == 1 and new_count == 0:
+        html = html.replace(OLD_IMG, NEW_VIDEO, 1)
+    elif old_count != 0 or new_count != 1:
+        raise RuntimeError('Action preview HTML does not match exactly one expected player')
+    return html
 
 
 def run(cmd: list[str], *, quiet: bool = False) -> None:
@@ -58,21 +142,7 @@ def build(*, no_encode: bool = False) -> None:
 
     html_path = DIST / 'index.html'
     html = html_path.read_text(encoding='utf-8')
-    # The action category was disabled on 2026-11-02; restore it before Tools.
-    if ACTION_NAV not in html:
-        require_once(html, NAV, 'Tools nav button')
-        html = html.replace(NAV, ACTION_NAV + NAV, 1)
-    if 'data/actions.js?' not in html:
-        require_once(html, APP_SCRIPT, 'app.js script')
-        html = html.replace(APP_SCRIPT, SCRIPTS + APP_SCRIPT, 1)
-    # Change the former image-only GIF viewer into a native video player.
-    if OLD_IMG in html:
-        require_once(html, OLD_IMG, 'old GIF viewer')
-        html = html.replace(OLD_IMG, NEW_VIDEO, 1)
-    elif NEW_VIDEO not in html:
-        raise RuntimeError('Action preview HTML does not match expected layout')
-    assert html.count('data-type="action"') == 1
-    assert 'assets/js/action-gallery-video.js?' in html
+    html = prepare_html(html)
     html_path.write_text(html, encoding='utf-8')
 
     # Preserve original library records in GitHub, rewrite only *published* preview paths.
@@ -155,3 +225,4 @@ if __name__ == '__main__':
     except (RuntimeError, subprocess.CalledProcessError) as exc:
         print(f'BUILD FAILED: {exc}', file=sys.stderr)
         sys.exit(1)
+
