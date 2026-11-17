@@ -1,42 +1,58 @@
-Mabinogi Mobile - 2026/11/05 Taiwan-only order and pet-detail correction
-Source GitHub main at 21400a5dfea346ed4c25b9379a09b1e97c474117
+《瑪奇 Mobile》韓服外觀圖鑑更新包（兩款幸運箱限定版）
+修訂：2026-11-17；新增外觀日期：2026-11-12
+GitHub: piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
+比對基準：main Git tree e50b484ff0ee42e305d95dacb53e002c1566bfc6
+原始 data/catalog-update-20260917.js Blob SHA：1e0a14557813bd705757b4ef75f7efd575841772
 
-WHAT CHANGED
-1. Remove the following Crion cards from the website: package-8/9/10/11.
-   catalog-update-20261001.js has been made inert to avoid reintroducing them.
-2. Two Taiwan JJK fashion lucky boxes: lucky-41 (台版 #2) and lucky-42 (台版 #3).
-   One Taiwan JJK pet lucky box: pet-24 (台版 #2), with two selectable pets.
-3. pairOrder=2/3 keeps the original interleaving rule: 韓服 #n -> 台版 #n.
-4. Pet detail data: 玉犬・渾 has 破防嚎叫 S (7 s, +3%, 8 s cooldown)
-   and two featured companion attributes 技能威力+14 / 攻擊力+8.
-   鵺 has 疾速的振翅 S (5 s, +12%, 30 s cooldown)
-   and two featured attributes 追擊+14 / 攻擊力+8.
-   Shared five base attributes +5 and 魅力+3000 are retained in data
-   without displaying nine repetitive badges. The SS stats remain explicitly unknown.
-5. Keep Cozy Day pass-14, package-12 (display as 第 8 代 after the four removed Crion entries), ghost retriever pet-23, all other catalog items.
-6. index.html receives a cache-busting version for the updated Taiwan data JS.
-7. Existing animation/MP4 JavaScript and deploy workflow are NOT modified.
+【本次保留的韓服新增項目】
+1. 누아르 오메르타 → 黑色緘默令（中文暫譯）
+   卡片 ID lucky-43；韓服幸運箱 #41。
+   2026-11-12 維護後～2026-12-16 23:59（韓國時間）。
+   取得：遊戲內商城 > 幸運箱；每次消耗高級時裝票券 1 張。
+   圖：image/lucky-43.png（真實的 900×750 PNG）。
+   官方公告：https://mabinogimobile.nexon.com/News/Notice/3579295
 
-UPDATED/ADDED FILES
-- index.html (replace)
-- data/tw-update-20261014.js (replace)
-- data/catalog-update-20261001.js (replace with safe inert module)
-- image/lucky-41.png, image/lucky-42.png, image/pet-24.png (verified existing PNGs)
-- image/pass-14.png, image/package-12.png, image/pet-23.png (verified existing PNGs)
-- UPDATE_NOTES.txt (this file)
+2. 스트리트 고스 캣 → 街頭哥德貓（中文暫譯）
+   卡片 ID lucky-44；韓服幸運箱 #42。
+   2026-11-12 維護後～2026-12-16 23:59（韓國時間）。
+   取得：遊戲內商城 > 幸運箱；每次消耗高級時裝票券 1 張。
+   圖：image/lucky-44.png（真實的 900×750 PNG）。
+   官方公告：https://mabinogimobile.nexon.com/News/Notice/3579295
 
-CLEANUP IN GITHUB
-GitHub web upload overlays files and cannot delete old files automatically.
-The following obsolete images remain in Git history/branch unless separately deleted:
-image/package-8.png, image/package-9.png, image/package-10.png,
-image/package-11.png, image/pet-25.png.
-They are not referenced by the corrected website or new data file.
+【依使用者要求排除】
+以下三款髮型套組完全不納入新 ZIP、不建立網站卡片：
+- package-13／센터파트 롱 웨이브
+- package-14／소프트 스윕 숏 헤어
+- package-15／컬리 숏펌
+三個對應 image/package-13.png～package-15.png 均不在本次 ZIP。
 
-DEPLOY
-Extract ZIP, upload contents retaining root paths to main, commit, let Pages redeploy.
-The published action-player builder continues to operate unchanged.
+【台服】
+尚未確認以上兩個商品的台服正式名稱與上架公告，使用中文暫譯，
+不標記台服已推出／當期。本次沒有修改既有台服狀態資料。
 
-VALIDATION
-- Use the included updated data with the site's other unchanged scripts.
-- Check Taiwan numbering, order, pool count, category and skill detail against screenshots.
-- Main branch will not be modified by this ZIP automatically.
+【寵物／深淵／團隊副本】
+本次不新增寵物、副本資料，也未更動既有技能欄位。
+
+【本 ZIP 全部檔案】
+替換：data/catalog-update-20260917.js
+新增：image/lucky-43.png
+新增：image/lucky-44.png
+新增／替換：UPDATE_NOTES.txt
+
+【index.html 與路徑】
+main 既有 index.html 已透過 <script defer src="data/catalog-update-20260917.js"></script>
+載入上方既有更新檔；不需要修改 index.html。
+請將 ZIP 解壓縮後的檔案上傳至 GitHub main 根目錄，保持資料夾相對位置。
+
+【注意：先前版本已上傳的情況】
+若你已將「含三款髮型」的舊更新包提交到 GitHub：
+- 上傳本 ZIP 的 JS 後，髮型卡片不會再由該更新檔產生。
+- 但上傳 ZIP 不會自動刪除已在 GitHub 的圖片檔。
+  若要完全移除請於 GitHub 手動刪除 image/package-13.png、
+  image/package-14.png、image/package-15.png（僅限確認這三張確為舊包新增時）。
+
+【驗證】
+- JS 基礎版本保留既有韓服紀錄；只保留兩款 11/12 新幸運箱。
+- JS 已通過 Node 語法檢查和模擬載入驗證。
+- 兩張圖片為 ZIP 內實際 PNG，且 image 路徑與資料欄位一致。
+- ZIP 已通過 CRC 完整性檢查，包含 4 個檔案。

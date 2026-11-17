@@ -159,3 +159,36 @@
     if(index<0)M.DATA.push(item);else M.DATA[index]={...M.DATA[index],...item};
   }
 })();
+
+// 2026-11-12 KR fashion lucky boxes only (no hairstyle packages).
+// The existing index.html already loads this file before assets/js/app.js.
+// Official notice: https://mabinogimobile.nexon.com/News/Notice/3579295
+(() => {
+  'use strict';
+  const M=window.MABI;
+  if(!M||!Array.isArray(M.DATA))throw new Error('Missing MABI.DATA');
+  const notice='https://mabinogimobile.nexon.com/News/Notice/3579295';
+  const date='2026-11-12',endDate='2026-12-16';
+  const additions=[
+    {id:'lucky-43',type:'lucky',typeLabel:'幸運箱',number:41,
+      zh:'黑色緘默令（暫譯）',ko:'누아르 오메르타',nameStatus:'provisional',
+      lines:['黑色緘默令（暫譯）','누아르 오메르타','時裝幸運箱','누아르 오메르타 페도라／수트／글러브／슈즈'],
+      date,endDate,year:'2026',notice,
+      image:'image/lucky-43.png',latest:true,
+      notes:['高級時裝票券 1 張／次；史詩套裝包含軟呢帽、男女裝西服、手套、鞋履。50 次保底菁英時裝選擇袋；100 次保底本系列時裝選擇袋。']},
+    {id:'lucky-44',type:'lucky',typeLabel:'幸運箱',number:42,
+      zh:'街頭哥德貓（暫譯）',ko:'스트리트 고스 캣',nameStatus:'provisional',
+      lines:['街頭哥德貓（暫譯）','스트리트 고스 캣','時裝幸運箱','스트리트 고스 캣 비니／웨어／하프 글러브／부츠'],
+      date,endDate,year:'2026',notice,
+      image:'image/lucky-44.png',latest:true,
+      notes:['高級時裝票券 1 張／次；史詩套裝包含毛帽、男女裝服飾、半指手套、靴子。50 次保底菁英時裝選擇袋；100 次保底本系列時裝選擇袋。']}
+  ];
+  const byId=new Map(M.DATA.map((item,i)=>[item.id,i]));
+  for(const item of M.DATA){if(item.type==='lucky'&&item.server!=='TW')item.latest=false;}
+  for(const item of additions){
+    const existing=byId.get(item.id);
+    if(existing===undefined){byId.set(item.id,M.DATA.length);M.DATA.push(item);}
+    else if(M.DATA[existing].ko===item.ko)M.DATA[existing]={...M.DATA[existing],...item};
+    else throw new Error('Catalog ID collision: '+item.id);
+  }
+})();
