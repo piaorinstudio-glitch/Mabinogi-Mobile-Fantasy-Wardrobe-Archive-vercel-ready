@@ -1,0 +1,26 @@
+瑪奇 Mobile 2026-11-17 GitHub Pages 外觀顯示修正
+==========================================
+GitHub main 已有 data/catalog-update-20260917.js 及 image/lucky-43.png、image/lucky-44.png。
+11/17 22:50 (台灣時間) 部署顯示成功，但首頁載入 data/catalog-update-20260917.js
+時沒有版本參數，可能被瀏覽器或 CDN 沿用舊版快取。
+
+本包只更新：
+.github/workflows/deploy-pages.yml
+
+處理方式：在既有 optimized website 建置後、發佈前，修改 site-dist/index.html 的
+catalog-update-20260917.js 載入網址，加上 ?v=20261117-lucky43-44。
+保留所有其他原有資源、部署步驟、台服資料和動作影片功能。
+同時在部署前檢查兩張 PNG 及兩筆 data ID/路徑是否存在。
+如果檔案不齊則使部署失敗，而不是靜默發佈缺圖網站。
+
+GitHub main 必須已經包含：
+- data/catalog-update-20260917.js (lucky-43/lucky-44)
+- image/lucky-43.png
+- image/lucky-44.png
+
+上傳：解壓縮，在 GitHub main 根目錄，保留 .github/workflows/ 路徑，
+覆蓋同名工作流程。點選 Actions > Deploy GitHub Pages 確認成功，
+再用 Ctrl+Shift+R 強制重整網站。
+
+注意：此修正僅在『已部署的 site-dist/index.html』寫入版本參數；
+GitHub 來源 index.html 不變。此設計保留現有 HTML 和動作箱的建置轉換。
