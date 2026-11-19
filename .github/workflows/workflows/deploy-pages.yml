@@ -1,0 +1,80 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Ensure FFmpeg
+        run: |
+          if ! command -v ffmpeg >/dev/null 2>&1; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+
+      - name: Cache action videos
+        uses: actions/cache@v4
+        with:
+          path: action-video-cache
+          key: action-mp4-${{ hashFiles('scripts/build_action_site.py', 'GIF_MANIFEST.json') }}
+
+      - name: Build optimized website
+        run: |
+          python3 scripts/build_action_site.py
+          du -sh site-dist
+
+      - name: Refresh KR lucky-box data version in deployed HTML
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root = Path('site-dist')
+          html = root / 'index.html'
+          old = 'src="data/catalog-update-20260917.js"'
+          new = 'src="data/catalog-update-20260917.js?v=20261117-lucky43-44"'
+          content = html.read_text(encoding='utf-8')
+          if content.count(old) != 1:
+              raise SystemExit('Missing or duplicate wardrobe JS script tag in generated index.html')
+          for image in ('image/lucky-43.png', 'image/lucky-44.png'):
+              img = root / image
+              if not img.is_file() or img.stat().st_size == 0:
+                  raise SystemExit(f'Missing new PNG in site-dist: {image}')
+          catalog = root / 'data/catalog-update-20260917.js'
+          data = catalog.read_text(encoding='utf-8')
+          for token in ('lucky-43', 'lucky-44', 'image/lucky-43.png', 'image/lucky-44.png'):
+              if token not in data:
+                  raise SystemExit(f'Missing new wardrobe item/path in site-dist catalog: {token}')
+          html.write_text(content.replace(old, new), encoding='utf-8')
+          print('Published HTML cache-bust and image/data checks passed')
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site-dist
+
+      - name: Deploy website
+        id: deployment
+        uses: actions/deploy-pages@v4
