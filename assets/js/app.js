@@ -221,11 +221,22 @@ function archiveItemName(item){
   const name=displayName(item.zh);
   return item.type==='pet'?name.replace(/\s*[（(](史詩|菁英|稀有|高級|傳說)[）)]$/,''):name;
 }
+function searchKey(value){
+  return displayName(value).normalize('NFKC').toLowerCase().replace(/[\s\p{P}]+/gu,'');
+}
+const oldNames={
+  'pass-5':['伊文星','Evenstar'],
+  'lucky-22':['預言的隱者'],
+  'pet-7':['金色倉鼠']
+};
 function itemMatches(item){
-  const q=state.search.trim().toLowerCase();
+  const q=searchKey(state.search);
   if(!q)return true;
   const variantNames=(item.variants||[]).flatMap(v=>typeof v==='string'?[v]:[v.zh,v.ko]);
-  return [item.zh,item.ko,item.origin,...(item.lines||[]),...variantNames].filter(Boolean).some(v=>displayName(v).toLowerCase().includes(q));
+  const aliases=Array.isArray(item.aliases)?item.aliases:[];
+  const terms=[item.zh,item.ko,item.origin,...(item.lines||[]),...variantNames,...aliases,...(oldNames[item.id]||[])];
+  if(item.type==='action')for(const action of item.actions||[])terms.push(action.zh,action.ko);
+  return terms.some(term=>searchKey(term).includes(q));
 }
 function isCurrentItem(item){
   if(item.type!=='action')return TW_CURRENT_IDS.has(item.id);
@@ -295,7 +306,14 @@ function render(){
   });
   $('#archiveCount').textContent=`共 ${rows.length} 筆`;
   if(!rows.length){
-    $('#feed').innerHTML=`<div class="empty">${currentFilter?'目前沒有符合搜尋條件的台服當期資料，可取消「只看台服當期」查看其他內容。':'沒有找到符合的外觀，請試試其他關鍵字或分類條件。'}</div>`;
+    $('#feed').innerHTML=`<div class="empty">${currentFilter?'目前沒有符合搜尋條件的台服當期資料，可取消「只看台服當期」查看其他內容。':'沒有找到符合的外觀，請試試其他關鍵字或分類條件。'} <button type="button" class="archive-clear">清除篩選</button></div>`;
+    $('.archive-clear').onclick=()=>{
+      state.search='';state.currentOnly=false;state.petKind='all';
+      $('#archiveSearch').value='';
+      $('.pet-filter-btn').forEach(button=>button.classList.toggle('active',button.dataset.kind==='all'));
+      render();
+      $('#archiveSearch').focus({preventScroll:true});
+    };
     location.hash='type='+state.type;
     return;
   }
@@ -319,7 +337,7 @@ function render(){
     const modeChip=item.type==='legend'?`<div class="legend-mode-chip">${state.legendView==='hooded'?'長袍版':'一般版'}</div>`:'';
     const viewerVariants=item.type==='legend'?` data-regular-image="${item.regularImage||item.image}" data-hooded-image="${item.hoodedImage||item.image}" data-viewer-mode="${state.legendView}"` : '';
     return `<article class="entry">
-      <div class="${wrapClass}" data-image="${displayImage}"${viewerVariants} tabindex="0" role="button" aria-label="放大查看 ${archiveItemName(item)||'外觀'}"><img src="${displayImage}" alt="${archiveItemName(item)} ${item.ko||''}" loading="lazy" decoding="async">${issueBadge(item)}${petRarityHover}</div>
+      <div class="${wrapClass}" data-image="${displayImage}" data-item-id="${item.id}"${viewerVariants} tabindex="0" role="button" aria-label="放大查看 ${archiveItemName(item)||'外觀'}"><img src="${displayImage}" alt="${archiveItemName(item)} ${item.ko||''}" loading="lazy" decoding="async">${issueBadge(item)}${petRarityHover}</div>
       <div class="entry-info">${tags}<div class="name-row"><span class="color-dot"></span><h3 class="name">${archiveItemName(item)||''}</h3></div><div class="ko">${item.ko||''}</div>${modeChip}</div>
     </article>`;
   }).join('');
@@ -333,6 +351,20 @@ function render(){
 let viewerItems=[],viewerIndex=0,viewerMode='regular',viewerTrigger=null,touchStartX=0,touchStartY=0;
 function showViewerItem(){
   const item=viewerItems[viewerIndex];if(!item)return;
+  const record=DATA.find(record=>record.id===item.element.dataset.itemId);
+  const metadata=$('#viewerTwInfo');
+  const released=record&&(record.server==='TW'||record.twReleased===true||TW_RELEASED_IDS.has(record.id));
+  const date=released&&(record.twDate||(record.server==='TW'?record.date:''));
+  const link=released&&(record.twNotice||(record.server==='TW'?record.notice:''));
+  metadata.hidden=!date&&!link;
+  metadata.replaceChildren();
+  if(date) metadata.append('台服上架 '+formatKrDate(date));
+  if(link&&/^https:\/\/(?:tw\.nexon\.com|forum\.nexon\.com)\//.test(link)){
+    const source=document.createElement('a');
+    source.href=link;source.target='_blank';source.rel='noopener noreferrer';source.textContent='台服公告';
+    metadata.append(source);
+  }
+  if(!metadata.childNodes.length)metadata.hidden=true;
   const hasModes=Boolean(item.regular&&item.hooded);
   $('#viewerImg').src=hasModes?(item[viewerMode]||item.src):item.src;
   $('#viewerImg').alt=item.alt+(hasModes?(viewerMode==='hooded'?' 長袍版':' 一般版'):'');
@@ -362,7 +394,7 @@ function closeViewer(){
   document.body.style.overflow='';
   document.body.classList.remove('viewer-open');
   if(viewerTrigger){
-    viewerTrigger.blur();
+    if(viewerTrigger.isConnected)viewerTrigger.focus({preventScroll:true});
     viewerTrigger=null;
   }
 }

@@ -78,10 +78,7 @@ main.wrap{padding-top:25px}
   .hero h1{gap:8px}
   .hero .title-small{font-size:clamp(22px,5.8vw,30px)}
   .hero .title-main{font-size:clamp(26px,7.6vw,38px);white-space:nowrap}
-  .hero-memories{order:2;display:flex;align-self:stretch;gap:12px;min-width:0;width:100%;overflow-x:auto;overflow-y:hidden;padding:9px 4px 11px;scroll-snap-type:x mandatory;scroll-padding-inline:4px;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:#b8d1c1 transparent}
-  .hero-memories .hero-photo{position:relative;display:block;flex:0 0 min(68vw,220px);left:auto;right:auto;top:auto;bottom:auto;width:min(68vw,220px);padding:6px 6px 11px;transform:none;border-radius:8px;scroll-snap-align:start;box-shadow:0 6px 12px rgba(103,85,62,.13)}
-  .hero-memories .hero-photo:before{top:-6px;width:72px;height:13px}
-  .hero-memories .hero-photo img{width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;background:#f7f0e5}
+  .hero-memories{display:none}
   .source-btn{position:static;order:3;align-self:center;margin:0;height:40px;font-size:13px}
   .category-nav{padding:3px 3px 9px}
   .category.active:before{bottom:4px;width:22px;height:2px}
@@ -136,3 +133,8 @@ main.wrap{padding-top:25px}
 }
 
 
+
+.archive-clear{margin-inline-start:.6em;padding:8px 14px;border:1px solid #d9cdb8;border-radius:999px;background:#fffaf0;color:inherit;font:inherit;cursor:pointer}
+.viewer-tw-info:not([hidden]){position:absolute;z-index:4;top:16px;left:16px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;max-width:calc(100% - 86px);padding:6px 10px;border-radius:10px;background:#fffaf0;color:#463e34;font-size:13px}
+.viewer-tw-info a{color:inherit;text-decoration:underline}
+@media(max-width:760px){.viewer-tw-info:not([hidden]){top:auto;bottom:calc(58px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);width:max-content;justify-content:center}.viewer:has(.viewer-tw-info:not([hidden])) img{max-height:calc(100dvh - 190px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}.viewer:has(.viewer-tw-info:not([hidden])) .viewer-pet-rarities{bottom:calc(105px + env(safe-area-inset-bottom))}.viewer:has(.viewer-tw-info:not([hidden])):has(.viewer-pet-rarities:not([hidden])) img{max-height:calc(100dvh - 270px - env(safe-area-inset-top) - env(safe-area-inset-bottom))}.archive-clear{min-height:44px}}
