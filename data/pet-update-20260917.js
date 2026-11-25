@@ -95,11 +95,25 @@
   const hamster = M.PET_SKILL_FAMILIES.hamster;
   if (hamster) {
     Object.assign(hamster, {
-      base: '小夥伴的應援',
-      epic: '小夥伴的應援 S',
-      legendEpic: '小夥伴的應援 SS'
+      base: '小同伴的應援',
+      epic: '小同伴的應援 S',
+      legendEpic: '小同伴的應援 SS'
     });
   }
+
+  // Taiwan Lv.1 panels supplied by the user. Keep values tied to the pictured pet.
+  M.PET_TW_LEVEL_ONE = {
+    '골든 햄스터': {
+      maxLevel: 35, nextXp: 38000, dyeSlots: 3,
+      epicEffect: '[主動] 施放後 10 秒內，寵物主人的強擊傷害增加 9%。（冷卻時間：50 秒）',
+      stats: {力量:5, 技巧:5, 智力:5, 意志:5, 幸運:5, 技能威力:14, 快速技能:14, 魅力:3000}
+    },
+    '갈색 햄스터': {
+      maxLevel: 30, nextXp: 38000, dyeSlots: 3,
+      baseEffect: '[主動] 施放後 10 秒內，寵物主人的強擊傷害增加 8%。（冷卻時間：50 秒）\n史詩以上才可使用固有技能。',
+      stats: {力量:5, 技巧:5, 智力:5, 意志:5, 幸運:5, 攻擊力:8, 傷害減少:14, 魅力:1500}
+    }
+  };
 
   // Values transcribed from the Korean launch panel report for these skill stages.
   Object.assign(M.PET_SKILL_FAMILIES.sheepdog, {
@@ -113,6 +127,7 @@
 
   // Citations belong in the site's existing Sources dialog, never in pet footers.
   M.PET_DETAIL_SOURCES = [
+    {title:'黃金倉鼠與棕色倉鼠：技能、等級及同行能力',kind:'使用者提供台服 Lv.1 遊戲面板'},
     {title:'英國牧羊犬：不同稀有度的技能與同行面板紀錄',url:'https://jun-ordinary.tistory.com/384',kind:'韓服玩家面板轉錄'},
     {title:'小豬系列固有技能原名',url:'https://peak.nexon.com/post/2760',kind:'韓服玩家攻略'},
     {title:'黑褐色博美犬：菁英 Lv.1 固有技能與同行詞條',url:'https://mabinogimobile.nexon.com/Community/Class/3341136',kind:'韓服玩家自報面板'},
