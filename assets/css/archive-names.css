@@ -1,0 +1,3 @@
+.entry-info,.name-row,.name-row .name,.pet-detail-title-row{min-width:0}
+.name-row .color-dot{flex-shrink:0}
+.entry-info .name,.entry-info .ko,.pet-rarity-name,.viewer-pet-rarity-btn>span:first-child,.pet-detail-title-row h2,.action-choice strong,.action-choice [lang=ko]{overflow-wrap:anywhere}

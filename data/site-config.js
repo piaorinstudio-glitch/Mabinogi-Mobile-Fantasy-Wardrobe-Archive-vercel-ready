@@ -2,6 +2,7 @@
 // TW_CURRENT_IDS = gold "台服當期"; TW_RELEASED_IDS = gray "台服已推出".
 // Abyss/Raid cards intentionally do not render these status chips.
 window.MABI=window.MABI||{};
+window.MABI.displayName=value=>String(value??'').replace(/[（(]\s*(暫譯|音譯|參考譯名)\s*[）)]|[，,、]\s*(暫譯|音譯|參考譯名)(?=\s*[）)])/g,'').trim();
 window.MABI.LABELS={
   pass:['通行證','PASS'],lucky:['幸運箱','LUCKY BOX'],package:['全套套組','SET ITEM'],
   legend:['傳說時裝','LEGEND'],pet:['寵物','PET'],abyss:['深淵副本時裝','ABYSS'],raid:['團隊副本時裝','RAID'],tools:['小工具','TOOLS']
@@ -33,11 +34,11 @@ window.MABI.TIPS_CONTENT={
   ],
   abyss:[
     ['怎麼取得','這裡收錄由特定深淵副本取得的時裝；卡片右下角直接標示掉落副本名稱。'],
-    ['名稱規則','台服已推出的副本使用台服正式名稱＋韓服名稱；尚未推出的則使用中文暫譯＋韓服原名。']
+    ['名稱規則','台服已推出的副本使用台服正式名稱＋韓服名稱；尚未推出的則使用韓文名稱的中文譯名＋韓服原名。']
   ],
   raid:[
     ['怎麼取得','這裡收錄由特定團隊副本取得的時裝；卡片右下角直接標示掉落團隊副本。'],
-    ['名稱規則','台服已推出的副本使用台服正式名稱＋韓服名稱；尚未推出的則使用中文暫譯＋韓服原名。']
+    ['名稱規則','台服已推出的副本使用台服正式名稱＋韓服名稱；尚未推出的則使用韓文名稱的中文譯名＋韓服原名。']
   ],
   tools:[
     ['用途','集中分享實用的瑪奇 Mobile 查詢頁面與玩家工具；之後可持續新增更多項目。'],

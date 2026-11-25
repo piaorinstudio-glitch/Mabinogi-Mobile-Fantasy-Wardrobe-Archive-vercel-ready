@@ -10,7 +10,7 @@
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const date = v => v ? String(v).slice(0, 10).replaceAll('-', '/') : '尚未確認';
   const money = v => Number.isFinite(v) ? `${v.toLocaleString('en-US')} 德卡` : '資料缺失';
-  const cleanName = v => String(v ?? '').replace(/（暫譯）/g, '');
+  const cleanName = value => M.displayName ? M.displayName(value) : String(value ?? '');
   let activeBox = null, actionIndex = 0, previewIndex = 0, trigger = null;
   let oldOverflow = '', visibleBoxes = [], playbackToken = 0;
   const video = $('actionVideo');
