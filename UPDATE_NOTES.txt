@@ -1,58 +1,81 @@
-《瑪奇 Mobile》韓服外觀圖鑑更新包（兩款幸運箱限定版）
-修訂：2026-11-17；新增外觀日期：2026-11-12
-GitHub: piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
-比對基準：main Git tree e50b484ff0ee42e305d95dacb53e002c1566bfc6
-原始 data/catalog-update-20260917.js Blob SHA：1e0a14557813bd705757b4ef75f7efd575841772
+瑪奇 Mobile 外觀圖鑑更新記錄（2026-11-25 台服 Season 1）
+GitHub 基準：piaorinstudio-glitch/Mabinogi-Mobile-Fantasy-Wardrobe-Archive-vercel-ready
+基準 main tree/commit：fd03c851cf158142cad51064180853e591fa5b59
 
-【本次保留的韓服新增項目】
-1. 누아르 오메르타 → 黑色緘默令（中文暫譯）
-   卡片 ID lucky-43；韓服幸運箱 #41。
-   2026-11-12 維護後～2026-12-16 23:59（韓國時間）。
-   取得：遊戲內商城 > 幸運箱；每次消耗高級時裝票券 1 張。
-   圖：image/lucky-43.png（真實的 900×750 PNG）。
-   官方公告：https://mabinogimobile.nexon.com/News/Notice/3579295
+【本次內容定位】
+韓服 2026-11-25 尚無新的外觀商品公告；韓服 11/26 維護預告已發布，但更新明細尚未公布。
+台服今日新增販售的主要外觀，與已收錄的韓服舊外觀相同。
+因此這個更新包是「台服正式譯名、推出時間、當期販售狀態及寵物資料補充」更新，
+不重複建立韓服卡片，不新增寵物技能數值，也不重複下載已存在的圖片。
 
-2. 스트리트 고스 캣 → 街頭哥德貓（中文暫譯）
-   卡片 ID lucky-44；韓服幸運箱 #42。
-   2026-11-12 維護後～2026-12-16 23:59（韓國時間）。
-   取得：遊戲內商城 > 幸運箱；每次消耗高級時裝票券 1 張。
-   圖：image/lucky-44.png（真實的 900×750 PNG）。
-   官方公告：https://mabinogimobile.nexon.com/News/Notice/3579295
+【已更新的台服狀態（韓服原名 → 台服正式名）】
+1. pass-5：이븐스타 → 暮星；台服 11/25～12/16 05:59；通行證 1,980 M 幣，含星鑄眼鏡、暮星收藏包。
+2. lucky-12：거룩한 신념 → 神聖信念；台服 11/25～12/16 05:59；商城幸運箱，頂級時裝票券。
+3. lucky-13：정화의 빛 → 淨化之光；台服 11/25～12/16 05:59；商城幸運箱，頂級時裝票券。
+4. lucky-22：예언의 은둔자 → 預言隱遁者；台服 11/25～12/16 05:59；商城幸運箱，頂級時裝票券。
+5. pet-7：햄스터 → 倉鼠系列；台服 11/25～12/16 05:59；商城寵物幸運箱，頂級寵物票券。
+6. package-3：로드나이트 → 領主騎士；台服 11/25～2027/01/13 05:59；全套套組 3,980 M 幣。
+7. legend-3：홀리 루체테 → 神聖光輝；台服 11/25～2027/01/13 05:59；史詩時裝合成、長袍專屬任務或點數商店。
 
-【依使用者要求排除】
-以下三款髮型套組完全不納入新 ZIP、不建立網站卡片：
-- package-13／센터파트 롱 웨이브
-- package-14／소프트 스윕 숏 헤어
-- package-15／컬리 숏펌
-三個對應 image/package-13.png～package-15.png 均不在本次 ZIP。
+【停止販售／保留歷史狀態】
+依舊公告期限，台服 pass-4、lucky-7、lucky-10、lucky-11、pet-5 於本次改版前結束當期販售，
+顯示「台服已推出」，不再顯示「台服當期」。11/4 咒術迴戰既有商品狀態仍保留，不會誤刪。
 
-【台服】
-尚未確認以上兩個商品的台服正式名稱與上架公告，使用中文暫譯，
-不標記台服已推出／當期。本次沒有修改既有台服狀態資料。
+【寵物補充】
+台服新增當期販售：黃金倉鼠（史詩）、棕色倉鼠（菁英）、白色倉鼠（稀有）、深灰色倉鼠（高級）。
+原本網站 pet-7 已有上述四變體及對應韓文名稱，且 data/pets.js 具有：
+- 固定同行能力：黃金倉鼠（技能威力／快速技能）；棕色（攻擊力／傷害減少）；
+  白色（連段強化／破防）；深灰色（絕招／要害迴避）。
+- 固有技能家族：작은 동반자의 응원 / S / SS。
+  既有資料：S 效果為 10 秒內強擊傷害 +9%、冷卻 50 秒；基本與 SS 部分數值仍缺失。
+- 台服 11/25 稱號「黃金倉鼠的朋友」：配戴智力 +50／幸運 +50；持有攻擊力 +20、
+  防禦力 +20、強擊強化 +130。這是「稱號」效果，不能誤認成寵物的固定同行能力。
+本包只將新確認的稱號與販售資料補入 pet-7 notes；未確認技能數值維持缺失，不猜測。
 
-【寵物／深淵／團隊副本】
-本次不新增寵物、副本資料，也未更動既有技能欄位。
+【圖片與卡片】
+本次 7 筆均為已有韓服外觀卡片，故「新增外觀卡片數 = 0」；新增圖片檔案數 = 0。
+已確認 GitHub main 存在以下實體圖檔（本站沿用既有 WebP，不依賴外站）：
+image/pass-5.webp
+image/lucky-12.webp
+image/lucky-13.webp
+image/lucky-22.webp
+image/pet-7.webp
+image/package-3.webp
+assets/normalized/legend/03_holy_lucete_regular.webp
+assets/normalized/legend/03_holy_lucete_hooded.webp
+不新增卡片，因此沒有需要另行下載的新增卡片 PNG，也沒有占位圖。
+今天時裝商店另外新增五款配件與其他動作箱；因網站既有分類不提供單件配件卡片、
+也無經核實可下載的全部新配件 PNG，本次未收錄為新圖鑑卡片，不宣稱已完成它們的圖片補檔。
 
-【本 ZIP 全部檔案】
-替換：data/catalog-update-20260917.js
-新增：image/lucky-43.png
-新增：image/lucky-44.png
+【本 ZIP 內的新增／替換檔案（共 3）】
+新增：data/tw-update-20261125.js
+替換：.github/workflows/deploy-pages.yml
 新增／替換：UPDATE_NOTES.txt
 
-【index.html 與路徑】
-main 既有 index.html 已透過 <script defer src="data/catalog-update-20260917.js"></script>
-載入上方既有更新檔；不需要修改 index.html。
-請將 ZIP 解壓縮後的檔案上傳至 GitHub main 根目錄，保持資料夾相對位置。
+【部署與 HTML】
+網站 GitHub Pages 不是直接發布 repo 根目錄，而是先執行 scripts/build_action_site.py 生成 site-dist。
+部署工作流程將在 site-dist/index.html 中，將新增的 data/tw-update-20261125.js
+置於既有 data/tw-update-20261014.js 之後、assets/js/app.js 之前，並加上版本參數。
+發布前會驗證上述 8 張已在 repo 的外觀圖檔存在、七筆資料 ID 都存在；未通過則不發布。
+因為 HTML 是 GitHub Pages 建置生成並注入，repo 根目錄的 index.html 不必替換；
+實際對外發布的 site-dist/index.html 會載入新版資料。
+請將 ZIP 解壓後直接放到 GitHub main 分支根目錄，保留 .github/workflows/ 和 data/ 路徑。
+不要把整個 ZIP 本身當成網頁檔上傳。
 
-【注意：先前版本已上傳的情況】
-若你已將「含三款髮型」的舊更新包提交到 GitHub：
-- 上傳本 ZIP 的 JS 後，髮型卡片不會再由該更新檔產生。
-- 但上傳 ZIP 不會自動刪除已在 GitHub 的圖片檔。
-  若要完全移除請於 GitHub 手動刪除 image/package-13.png、
-  image/package-14.png、image/package-15.png（僅限確認這三張確為舊包新增時）。
+【來源】
+台服原始官方公告：
+https://forum.nexon.com/mabinogimobiletw/7125?threadId=3586203
+https://forum.nexon.com/mabinogimobiletw/7125?threadId=3586204
+https://forum.nexon.com/mabinogimobiletw/7125?threadId=3586213
+https://forum.nexon.com/mabinogimobiletw/7125?threadId=3586209
+官方公告的可讀鏡像（逐項確認文字、圖片）：
+https://erinn.tw/notices/3586203
+https://erinn.tw/notices/3586204
+https://erinn.tw/notices/3586213
+https://erinn.tw/notices/3586209
+韓服 11/26 維護預告：
+https://mabinogimobile.nexon.com/News/Notice/3586172
 
-【驗證】
-- JS 基礎版本保留既有韓服紀錄；只保留兩款 11/12 新幸運箱。
-- JS 已通過 Node 語法檢查和模擬載入驗證。
-- 兩張圖片為 ZIP 內實際 PNG，且 image 路徑與資料欄位一致。
-- ZIP 已通過 CRC 完整性檢查，包含 4 個檔案。
+【驗證注意】
+此 ZIP 已於本地完成 JS 語法、部署 HTML 插入順序和路徑清單檢查；
+未實際提交到你的 GitHub、也尚未驗證對外網站的最新部署版本。
