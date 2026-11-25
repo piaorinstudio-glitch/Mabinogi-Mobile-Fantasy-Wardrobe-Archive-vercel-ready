@@ -139,6 +139,7 @@ function openPetDetail(button){
   const ko=button.dataset.petKo||'',zh=button.dataset.petZh||'',rarity=button.dataset.petRarity||'';
   const family=PET_SKILL_FAMILIES[PET_FAMILY_BY_KO[ko]]||{};
   const stats=PET_STATS[ko]||[];
+  const levelOne=window.MABI.PET_TW_LEVEL_ONE?.[ko];
   const nativeEpic=rarity==='史詩';
   petDetailTrigger=button;
   $('#petDetailModal .pet-detail-label').textContent='固有技能';
@@ -153,7 +154,7 @@ function openPetDetail(button){
   versionEl.className=`pet-skill-version-chip ${nativeEpic?'native':'promoted'}`;
 
   const currentSkillName=nativeEpic?family.epic:family.base;
-  const currentSkillEffect=nativeEpic?family.epicEffect:family.baseEffect;
+  const currentSkillEffect=nativeEpic?(levelOne?.epicEffect??family.epicEffect):(levelOne?.baseEffect??family.baseEffect);
   $('#petSkillName').textContent=petSkillNameText(currentSkillName);
   $('#petSkillName').hidden=$('#petSkillName').textContent==='詳細數值缺失';
   renderPetSkillEffect($('#petSkillEffect'),currentSkillEffect);
@@ -177,6 +178,11 @@ function openPetDetail(button){
 
   const statWrap=$('#petStatPills');statWrap.replaceChildren();
   stats.forEach(stat=>statWrap.appendChild(createPetStatPill(stat)));
+  const panel=$('#petLevelOneStats');
+  panel.hidden=!levelOne;
+  panel.textContent=levelOne
+    ? `台服 Lv.1｜${Object.entries(levelOne.stats).map(([name,value])=>`${name} +${value}`).join('、')}。最高等級 ${levelOne.maxLevel}，下次升級需 ${levelOne.nextXp.toLocaleString('zh-TW')} 經驗值，可染色部位 ${levelOne.dyeSlots} 個。`
+    : '';
   if(!stats.length){
     const missing=document.createElement('span');missing.className='pet-missing-detail';missing.textContent='詳細數值缺失';statWrap.appendChild(missing);
   }
@@ -215,6 +221,10 @@ function issueBadge(item){
   const showDate=item.type==='lucky'||item.type==='pet';
   if(!showDate)return `<span class="num-badge">${issueText(item)}</span>`;
   return `<span class="num-badge has-date"><span class="num-badge-main">${issueText(item)}</span><span class="num-badge-date">${formatKrDate(item.date)}</span></span>`;
+}
+function archiveItemName(item){
+  const name=displayName(item.zh);
+  return item.type==='pet'?name.replace(/\s*[（(](史詩|菁英|稀有|高級|傳說)[）)]$/,''):name;
 }
 function itemMatches(item){
   const q=state.search.trim().toLowerCase();
@@ -314,8 +324,8 @@ function render(){
     const modeChip=item.type==='legend'?`<div class="legend-mode-chip">${state.legendView==='hooded'?'長袍版':'一般版'}</div>`:'';
     const viewerVariants=item.type==='legend'?` data-regular-image="${item.regularImage||item.image}" data-hooded-image="${item.hoodedImage||item.image}" data-viewer-mode="${state.legendView}"` : '';
     return `<article class="entry">
-      <div class="${wrapClass}" data-image="${displayImage}"${viewerVariants} tabindex="0" role="button" aria-label="放大查看 ${displayName(item.zh)||'外觀'}"><img src="${displayImage}" alt="${displayName(item.zh)} ${item.ko||''}" loading="lazy" decoding="async">${issueBadge(item)}${petRarityHover}</div>
-      <div class="entry-info">${tags}<div class="name-row"><span class="color-dot"></span><h3 class="name">${displayName(item.zh)||''}</h3></div><div class="ko">${item.ko||''}</div>${modeChip}</div>
+      <div class="${wrapClass}" data-image="${displayImage}"${viewerVariants} tabindex="0" role="button" aria-label="放大查看 ${archiveItemName(item)||'外觀'}"><img src="${displayImage}" alt="${archiveItemName(item)} ${item.ko||''}" loading="lazy" decoding="async">${issueBadge(item)}${petRarityHover}</div>
+      <div class="entry-info">${tags}<div class="name-row"><span class="color-dot"></span><h3 class="name">${archiveItemName(item)||''}</h3></div><div class="ko">${item.ko||''}</div>${modeChip}</div>
     </article>`;
   }).join('');
   $$('.image-wrap').forEach(w=>{
@@ -398,7 +408,7 @@ function renderSources(){
   const types=['pass','lucky','package','legend','pet','abyss','raid','action'];
   $('#sourcesList').innerHTML=types.map(type=>{
     const rows=DATA.filter(item=>item.type===type&&item.notice);
-    const official=rows.length?`<section class="source-group"><h3>${LABELS[type][0]}</h3><div class="source-links">${rows.map(item=>`<a class="source-link" href="${item.notice}" target="_blank" rel="noopener noreferrer"><span>${issueText(item)}｜${displayName(item.zh)||item.ko||'官方公告'} ↗</span><span class="source-date">${item.date||''}</span></a>`).join('')}</div></section>`:'';
+    const official=rows.length?`<section class="source-group"><h3>${LABELS[type][0]}</h3><div class="source-links">${rows.map(item=>`<a class="source-link" href="${item.notice}" target="_blank" rel="noopener noreferrer"><span>${issueText(item)}｜${archiveItemName(item)||item.ko||'官方公告'} ↗</span><span class="source-date">${item.date||''}</span></a>`).join('')}</div></section>`:'';
     return official+(type==='pet'?renderPetDetailSources():'');
   }).join('');
 }
