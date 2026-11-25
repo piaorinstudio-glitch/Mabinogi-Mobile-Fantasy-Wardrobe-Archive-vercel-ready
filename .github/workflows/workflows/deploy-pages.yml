@@ -43,28 +43,40 @@ jobs:
           python3 scripts/build_action_site.py
           du -sh site-dist
 
-      - name: Refresh KR lucky-box data version in deployed HTML
+      - name: Load 2026-11-25 Taiwan update in deployed index.html
         run: |
           python3 - <<'PY'
           from pathlib import Path
           root = Path('site-dist')
           html = root / 'index.html'
-          old = 'src="data/catalog-update-20260917.js"'
-          new = 'src="data/catalog-update-20260917.js?v=20261117-lucky43-44"'
-          content = html.read_text(encoding='utf-8')
-          if content.count(old) != 1:
-              raise SystemExit('Missing or duplicate wardrobe JS script tag in generated index.html')
-          for image in ('image/lucky-43.png', 'image/lucky-44.png'):
-              img = root / image
-              if not img.is_file() or img.stat().st_size == 0:
-                  raise SystemExit(f'Missing new PNG in site-dist: {image}')
-          catalog = root / 'data/catalog-update-20260917.js'
-          data = catalog.read_text(encoding='utf-8')
-          for token in ('lucky-43', 'lucky-44', 'image/lucky-43.png', 'image/lucky-44.png'):
-              if token not in data:
-                  raise SystemExit(f'Missing new wardrobe item/path in site-dist catalog: {token}')
-          html.write_text(content.replace(old, new), encoding='utf-8')
-          print('Published HTML cache-bust and image/data checks passed')
+          src = root / 'data/tw-update-20261125.js'
+          if not src.is_file() or not src.stat().st_size:
+              raise SystemExit('Missing site-dist/data/tw-update-20261125.js')
+          text = src.read_text(encoding='utf-8')
+          for token in ('lucky-12', 'lucky-13', 'lucky-22', 'pet-7', 'pass-5', 'package-3', 'legend-3'):
+              if token not in text:
+                  raise SystemExit('Missing Taiwan status record: ' + token)
+          page = html.read_text(encoding='utf-8')
+          old_tag = '<script defer src="assets/js/app.js?v=20261105-ui"></script>'
+          new_tag = '<script defer src="data/tw-update-20261125.js?v=20261125-tw-s1"></script>'
+          if page.count(old_tag) != 1:
+              raise SystemExit('Could not find unique app.js script tag in generated index.html')
+          if new_tag not in page:
+              page = page.replace(old_tag, new_tag + old_tag)
+          old_catalog = 'src="data/catalog-update-20260917.js"'
+          if old_catalog in page:
+              page = page.replace(old_catalog, 'src="data/catalog-update-20260917.js?v=20261125-tw-s1"')
+          if page.count(new_tag) != 1 or page.index(new_tag) > page.index(old_tag):
+              raise SystemExit('Taiwan update script load order invalid')
+          for p in ('image/pass-5.webp','image/lucky-12.webp','image/lucky-13.webp',
+                    'image/lucky-22.webp','image/pet-7.webp','image/package-3.webp',
+                    'assets/normalized/legend/03_holy_lucete_regular.webp',
+                    'assets/normalized/legend/03_holy_lucete_hooded.webp'):
+              f = root / p
+              if not f.is_file() or not f.stat().st_size:
+                  raise SystemExit('Missing previously committed appearance image: ' + p)
+          html.write_text(page, encoding='utf-8')
+          print('TW 11/25 script loaded before app.js; existing artwork verified')
           PY
 
       - name: Configure Pages
