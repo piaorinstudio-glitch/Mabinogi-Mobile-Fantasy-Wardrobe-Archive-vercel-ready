@@ -91,8 +91,34 @@
     legendEpicNote: '尚缺SS原始面板，不由基本10%與S12%推算SS數值。'
   });
 
+  // Korean skill name: 작은 동반자의 응원. Chinese is a reference translation.
+  const hamster = M.PET_SKILL_FAMILIES.hamster;
+  if (hamster) {
+    Object.assign(hamster, {
+      base: '小夥伴的應援',
+      epic: '小夥伴的應援 S',
+      legendEpic: '小夥伴的應援 SS'
+    });
+  }
+
+  // Values transcribed from the Korean launch panel report for these skill stages.
+  Object.assign(M.PET_SKILL_FAMILIES.sheepdog, {
+    baseEffect: '[主動] 施放時，18 秒內寵物主人造成的傷害增加 5.5%，快速技能增加 2（韓服預覽值）。（冷卻時間：60 秒）',
+    epicEffect: '[主動] 施放時，23 秒內寵物主人造成的傷害增加 6%，快速技能增加 2（韓服預覽值）。（冷卻時間：60 秒）'
+  });
+  // Korean name: 풍요의 축복. The Chinese label is a reference translation.
+  Object.assign(M.PET_SKILL_FAMILIES.pig, {
+    base: '豐饒的祝福', epic: '豐饒的祝福 S', legendEpic: '豐饒的祝福 SS'
+  });
+
   // Citations belong in the site's existing Sources dialog, never in pet footers.
   M.PET_DETAIL_SOURCES = [
+    {title:'英國牧羊犬：不同稀有度的技能與同行面板紀錄',url:'https://jun-ordinary.tistory.com/384',kind:'韓服玩家面板轉錄'},
+    {title:'小豬系列固有技能原名',url:'https://peak.nexon.com/post/2760',kind:'韓服玩家攻略'},
+    {title:'黑褐色博美犬：菁英 Lv.1 固有技能與同行詞條',url:'https://mabinogimobile.nexon.com/Community/Class/3341136',kind:'韓服玩家自報面板'},
+    {title:'貂與水獺：各外觀及稀有度',url:'https://mabinogimobile.nexon.com/News/Notice/3562732',kind:'韓服官方公告'},
+    {title:'黃金倉鼠：固有技能原名與固定同行能力類型',url:'https://peak.nexon.com/post/2760',kind:'韓服玩家攻略'},
+    {title:'幽靈獵犬：販售與菁英稀有度',url:'https://mabinogimobile.nexon.com/News/Notice/3571557',kind:'韓服官方公告'},
     {title:'寵物培養與固有技能升階規則',url:'https://mabinogimobile.nexon.com/Info/Guide/2751130',kind:'韓服官方指南'},
     {title:'浣熊固有技能與等級上限調整',url:'https://mabinogimobile.nexon.com/News/Update/3511370',kind:'韓服官方更新'},
     {title:'貓頭鷹施法與蓄力速度效果調整',url:'https://mabinogimobile.nexon.com/News/Update/2999050',kind:'韓服官方更新'},

@@ -73,11 +73,12 @@ const PET_STAT_META={
   '暴擊':{icon:'✹',color:'#55d67c',bg:'#ebfbef',border:'#c7ecd0'}
 };
 function createPetStatPill(stat){
-  const meta=PET_STAT_META[stat]||{color:'#7d6857'};
+  const label=stat.trim().replace(/\s*\+\s*\d+(?:\.\d+)?%?$/, '');
+  const meta=PET_STAT_META[label]||{color:'#7d6857'};
   const span=document.createElement('span');
   span.className='pet-stat-pill';
   span.style.setProperty('--stat',meta.color);
-  span.textContent=stat;
+  span.textContent=label;
   return span;
 }
 let petDetailTrigger=null;
@@ -447,4 +448,3 @@ function initFromHash(){
 }
 window.addEventListener('hashchange',initFromHash);
 initFromHash();
-
