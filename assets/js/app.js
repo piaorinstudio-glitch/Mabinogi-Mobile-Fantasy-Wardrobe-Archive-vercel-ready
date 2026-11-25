@@ -178,11 +178,6 @@ function openPetDetail(button){
 
   const statWrap=$('#petStatPills');statWrap.replaceChildren();
   stats.forEach(stat=>statWrap.appendChild(createPetStatPill(stat)));
-  const panel=$('#petLevelOneStats');
-  panel.hidden=!levelOne;
-  panel.textContent=levelOne
-    ? `台服 Lv.1｜${Object.entries(levelOne.stats).map(([name,value])=>`${name} +${value}`).join('、')}。最高等級 ${levelOne.maxLevel}，下次升級需 ${levelOne.nextXp.toLocaleString('zh-TW')} 經驗值，可染色部位 ${levelOne.dyeSlots} 個。`
-    : '';
   if(!stats.length){
     const missing=document.createElement('span');missing.className='pet-missing-detail';missing.textContent='詳細數值缺失';statWrap.appendChild(missing);
   }
